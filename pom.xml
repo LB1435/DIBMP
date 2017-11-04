@@ -9,7 +9,7 @@
 	<packaging>pom</packaging>
 
 	<name>dibmp</name> 
-	<url>http://maven.apache.org</url>
+	<url>http://maven.apache.org</url> 
 
 	<properties>
 		<dibmp.version>0.0.1</dibmp.version>
