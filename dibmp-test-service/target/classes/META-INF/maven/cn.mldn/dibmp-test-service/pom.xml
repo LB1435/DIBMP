@@ -8,7 +8,7 @@
 		<artifactId>dibmp</artifactId>  
 		<version>0.0.1</version>
 	</parent>
-	<artifactId>dibmp-test-service</artifactId>
+	<artifactId>dibmp-test-service</artifactId> 
 	<name>dibmp-test-service</name>
 	<url>http://maven.apache.org</url>
 	<properties>
