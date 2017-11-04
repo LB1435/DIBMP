@@ -17,7 +17,7 @@
 	<dependencies>
 		<dependency>
 			<groupId>cn.mldn</groupId>
-			<artifactId>dibmp-util</artifactId>
+			<artifactId>dibmp-util</artifactId> 
 		</dependency>
 		<dependency>
 			<groupId>cn.mldn</groupId>
