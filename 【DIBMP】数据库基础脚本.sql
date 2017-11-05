@@ -6,11 +6,11 @@ CREATE DATABASE mldn CHARACTER SET UTF8 ;
 USE mldn ;
 -- 创建部门信息表，所拥有的权限与部门信息有关
 CREATE TABLE dept (
-   did                  bigint	AUTO_INCREMENT ,
-   dname                varchar(50),
-   mid			varchar(50),
-   maxnum		int ,
-   currnum		int ,
+   did         		bigint	AUTO_INCREMENT ,
+   dname       		varchar(50),
+   mid				varchar(50),
+   maxnum			int ,
+   currnum			int ,
    CONSTRAINT pk_did1 primary key (did)
 ) engine='innodb';
 
@@ -28,15 +28,15 @@ CREATE TABLE member (
    mid                  varchar(50) not null,
    lid                  int,
    did                  bigint,
-   name                varchar(50),
-   salary		double ,
+   name                 varchar(50),
+   salary				double ,
    phone                varchar(20),
    password             varchar(32),
    photo                varchar(200),
    note                 text,
    hiredate             date,
    inmid                varchar(50) ,
-   locked		int default 0 ,
+   locked				int default 0 ,
    CONSTRAINT pk_mid3 PRIMARY KEY (mid)
 ) engine='innodb';
 
@@ -64,7 +64,7 @@ CREATE TABLE dept_role(
 -- 仓储分类表
 CREATE TABLE witem (
    wiid                  bigint  AUTO_INCREMENT ,
-   title                varchar(50),
+   title                 varchar(50),
    CONSTRAINT pk_wiid PRIMARY KEY (wiid)
 ) engine='innodb';
 
@@ -113,7 +113,7 @@ CREATE TABLE subtype (
 -- 商品信息表
 CREATE TABLE goods(
 	gid		bigint auto_increment ,	
-	name		bigint ,
+	name		varchar(50) ,
 	wiid		bigint ,
 	stid		bigint ,
 	price		double ,
@@ -154,8 +154,8 @@ CREATE TABLE customer(
 	cuid	bigint auto_increment ,
 	name	varchar(50) ,
 	phone	varchar(50) ,
-	pid	bigint ,
-	cid	bigint ,
+	pid		bigint ,
+	cid		bigint ,
 	address	varchar(200) ,
 	indate	datetime ,
 	connum	int ,
@@ -180,10 +180,10 @@ CREATE TABLE customer_record(
 CREATE TABLE storage_apply (
 	said	bigint	auto_increment ,
 	title	varchar(50) ,
-	pid	bigint ,
-	cid	bigint ,
+	pid	    bigint ,
+	cid		bigint ,
 	wiid	bigint ,
-	wid	bigint ,
+	wid		bigint ,
 	note	text ,
 	status	int ,
 	appmid	varchar(50) ,
@@ -193,9 +193,9 @@ CREATE TABLE storage_apply (
 -- 定义入库申请单详情
 CREATE TABLE storage_apply_details (
 	sadid	bigint	auto_increment ,
-	gid	bigint	,
+	gid		bigint	,
 	name	varchar(50) ,
-	num	int ,
+	num		int ,
 	price	double ,
 	weight	double ,
 	constraint pk_sadid PRIMARY KEY(sadid)
@@ -205,9 +205,9 @@ CREATE TABLE storage_apply_details (
 CREATE TABLE storage_record(
 	srid	bigint	auto_increment ,
 	said	bigint ,
-	gid	bigint	,
+	gid		bigint	,
 	name	varchar(50) ,
-	num	int ,
+	num		int ,
 	price	double ,
 	weight	double ,
 	status	int ,
@@ -219,8 +219,8 @@ CREATE TABLE storage_record(
 CREATE TABLE distribution (
 	dsid	bigint	auto_increment ,
 	title	varchar(50) ,
-	pid	bigint ,
-	cid	bigint ,
+	pid		bigint ,
+	cid		bigint ,
 	gnum	int ,
 	price	double ,
 	status	int ,
@@ -231,12 +231,12 @@ CREATE TABLE distribution (
 -- 定义出库申请详情
 CREATE TABLE distribution_details (
 	dsdid	bigint	auto_increment ,
-	gid	bigint ,
+	gid		bigint ,
 	name	varchar(50) ,
-	num	int ,
+	num		int ,
 	price	double ,
 	status	int ,
-	wid	bigint ,
+	wid		bigint ,
 	outmid	varchar(50) ,
 	CONSTRAINT pk_dsdid PRIMARY KEY(dsdid)
 ) engine=innodb ;
