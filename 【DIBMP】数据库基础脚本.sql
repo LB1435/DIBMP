@@ -686,6 +686,17 @@ INSERT INTO dept_role(did,rid) VALUES (6,'distribution') ;
 INSERT INTO dept_role(did,rid) VALUES (8,'manage') ;
 INSERT INTO dept_role(did,rid) VALUES (8,'warehouse') ;
 
+INSERT INTO dept_role(did,rid) VALUES(1,'dept');
+INSERT INTO dept_role(did,rid) VALUES(1,'member');
+INSERT INTO dept_role(did,rid) VALUES(1,'storageaudit');
+INSERT INTO dept_role(did,rid) VALUES(1,'goods');
+INSERT INTO dept_role(did,rid) VALUES(1,'salegoods');
+INSERT INTO dept_role(did,rid) VALUES(1,'customer');
+INSERT INTO dept_role(did,rid) VALUES(1,'storage');
+INSERT INTO dept_role(did,rid) VALUES(1,'distribution');
+INSERT INTO dept_role(did,rid) VALUES(1,'manage');
+INSERT INTO dept_role(did,rid) VALUES(1,'warehouse');
+
 
 
 COMMIT ;
