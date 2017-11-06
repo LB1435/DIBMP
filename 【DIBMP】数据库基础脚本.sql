@@ -1,6 +1,9 @@
 -- 根据自己的实际情况进行有效的分库设计（有效与没效用过才知道）
 -- 本次设计的数据库脚本只是在单数据库节点上的执行处理，设计的约束只有主键
 
+
+
+
 DROP DATABASE mldn ;
 CREATE DATABASE mldn CHARACTER SET UTF8 ;
 USE mldn ;
