@@ -18,6 +18,11 @@ public class TestWarehouseService extends TestCase {
 	@Resource
 	private IWarehouseService whService;
 
+	@Test
+	public void test() {
+		System.out.println("*********************");
+	}
+	
 	
 	@Test
 	public void testWarehouseGetById() {
@@ -34,7 +39,7 @@ public class TestWarehouseService extends TestCase {
 	@Test
 	public void testAdd() {
 		Warehouse wh = new Warehouse();
-		wh.setName("北京三号仓库");
+		wh.setName("北京六号仓库");
 		wh.setPid(1L);
 		wh.setCid(2L);
 		wh.setWiid(10L);

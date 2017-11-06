@@ -1570,3 +1570,489 @@ Caused by: com.mysql.jdbc.exceptions.MySQLSyntaxErrorException: Unknown column '
 2017-11-06 16:06:35,409 INFO [com.alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol] -  [DUBBO] disconected from /192.168.10.1:52267,url:dubbo://192.168.10.1:9327/cn.mldn.dibmp.service.IWarehouseService?anyhost=true&application=mldn-service-member&channel.readonly.sent=true&codec=dubbo&default.timeout=10000000&dubbo=2.5.6&generic=false&heartbeat=60000&interface=cn.mldn.dibmp.service.IWarehouseService&methods=add,getAll,getById,getByName&pid=4352&revision=dev&side=provider&timestamp=1509954546583&version=dev, dubbo version: 2.5.6, current host: 127.0.0.1
 2017-11-06 16:07:13,649 WARN [com.alibaba.dubbo.remoting.transport.AbstractServer] -  [DUBBO] All clients has discontected from /192.168.10.1:9327. You can graceful shutdown now., dubbo version: 2.5.6, current host: 127.0.0.1
 2017-11-06 16:07:13,649 INFO [com.alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol] -  [DUBBO] disconected from /192.168.10.1:52402,url:dubbo://192.168.10.1:9327/cn.mldn.dibmp.service.IWarehouseService?anyhost=true&application=mldn-service-member&channel.readonly.sent=true&codec=dubbo&default.timeout=10000000&dubbo=2.5.6&generic=false&heartbeat=60000&interface=cn.mldn.dibmp.service.IWarehouseService&methods=add,getAll,getById,getByName&pid=4352&revision=dev&side=provider&timestamp=1509954546583&version=dev, dubbo version: 2.5.6, current host: 127.0.0.1
+2017-11-06 16:13:19,544 WARN [com.alibaba.dubbo.remoting.transport.AbstractServer] -  [DUBBO] All clients has discontected from /192.168.10.1:9327. You can graceful shutdown now., dubbo version: 2.5.6, current host: 127.0.0.1
+2017-11-06 16:13:19,545 INFO [com.alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol] -  [DUBBO] disconected from /192.168.10.1:54378,url:dubbo://192.168.10.1:9327/cn.mldn.dibmp.service.IWarehouseService?anyhost=true&application=mldn-service-member&channel.readonly.sent=true&codec=dubbo&default.timeout=10000000&dubbo=2.5.6&generic=false&heartbeat=60000&interface=cn.mldn.dibmp.service.IWarehouseService&methods=add,getAll,getById,getByName&pid=4352&revision=dev&side=provider&timestamp=1509954546583&version=dev, dubbo version: 2.5.6, current host: 127.0.0.1
+2017-11-06 16:13:34,033 WARN [com.alibaba.dubbo.remoting.transport.AbstractServer] -  [DUBBO] All clients has discontected from /192.168.10.1:9327. You can graceful shutdown now., dubbo version: 2.5.6, current host: 127.0.0.1
+2017-11-06 16:13:34,034 INFO [com.alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol] -  [DUBBO] disconected from /192.168.10.1:54498,url:dubbo://192.168.10.1:9327/cn.mldn.dibmp.service.IWarehouseService?anyhost=true&application=mldn-service-member&channel.readonly.sent=true&codec=dubbo&default.timeout=10000000&dubbo=2.5.6&generic=false&heartbeat=60000&interface=cn.mldn.dibmp.service.IWarehouseService&methods=add,getAll,getById,getByName&pid=4352&revision=dev&side=provider&timestamp=1509954546583&version=dev, dubbo version: 2.5.6, current host: 127.0.0.1
+2017-11-06 16:45:24,013 INFO [com.alibaba.dubbo.common.logger.LoggerFactory] - using logger: com.alibaba.dubbo.common.logger.log4j.Log4jLoggerAdapter
+2017-11-06 16:45:24,130 INFO [com.alibaba.dubbo.container.Main] -  [DUBBO] Use container type([spring]) to run dubbo serivce., dubbo version: 2.5.6, current host: 127.0.0.1
+2017-11-06 16:45:28,124 INFO [com.alibaba.dubbo.config.AbstractConfig] -  [DUBBO] The service ready on spring started. service: cn.mldn.dibmp.service.IWarehouseService, dubbo version: 2.5.6, current host: 127.0.0.1
+2017-11-06 16:45:28,353 INFO [com.alibaba.dubbo.config.AbstractConfig] -  [DUBBO] Export dubbo service cn.mldn.dibmp.service.IWarehouseService to local registry, dubbo version: 2.5.6, current host: 127.0.0.1
+2017-11-06 16:45:28,353 INFO [com.alibaba.dubbo.config.AbstractConfig] -  [DUBBO] Export dubbo service cn.mldn.dibmp.service.IWarehouseService to url dubbo://192.168.10.1:9327/cn.mldn.dibmp.service.IWarehouseService?anyhost=true&application=mldn-service-member&default.timeout=10000000&dubbo=2.5.6&generic=false&interface=cn.mldn.dibmp.service.IWarehouseService&methods=add,getAll,getById,getByName&pid=5928&revision=dev&side=provider&timestamp=1509957928153&version=dev, dubbo version: 2.5.6, current host: 127.0.0.1
+2017-11-06 16:45:28,354 INFO [com.alibaba.dubbo.config.AbstractConfig] -  [DUBBO] Register dubbo service cn.mldn.dibmp.service.IWarehouseService url dubbo://192.168.10.1:9327/cn.mldn.dibmp.service.IWarehouseService?anyhost=true&application=mldn-service-member&default.timeout=10000000&dubbo=2.5.6&generic=false&interface=cn.mldn.dibmp.service.IWarehouseService&methods=add,getAll,getById,getByName&pid=5928&revision=dev&side=provider&timestamp=1509957928153&version=dev to registry registry://192.168.184.128:2181/com.alibaba.dubbo.registry.RegistryService?application=mldn-service-member&dubbo=2.5.6&pid=5928&registry=zookeeper&timestamp=1509957928134, dubbo version: 2.5.6, current host: 127.0.0.1
+2017-11-06 16:45:28,837 ERROR [com.alibaba.dubbo.container.Main] -  [DUBBO] Fail to start server(url: dubbo://192.168.10.1:9327/cn.mldn.dibmp.service.IWarehouseService?anyhost=true&application=mldn-service-member&channel.readonly.sent=true&codec=dubbo&default.timeout=10000000&dubbo=2.5.6&generic=false&heartbeat=60000&interface=cn.mldn.dibmp.service.IWarehouseService&methods=add,getAll,getById,getByName&pid=5928&revision=dev&side=provider&timestamp=1509957928153&version=dev) Failed to bind NettyServer on /192.168.10.1:9327, cause: Failed to bind to: /0.0.0.0:9327, dubbo version: 2.5.6, current host: 127.0.0.1
+com.alibaba.dubbo.rpc.RpcException: Fail to start server(url: dubbo://192.168.10.1:9327/cn.mldn.dibmp.service.IWarehouseService?anyhost=true&application=mldn-service-member&channel.readonly.sent=true&codec=dubbo&default.timeout=10000000&dubbo=2.5.6&generic=false&heartbeat=60000&interface=cn.mldn.dibmp.service.IWarehouseService&methods=add,getAll,getById,getByName&pid=5928&revision=dev&side=provider&timestamp=1509957928153&version=dev) Failed to bind NettyServer on /192.168.10.1:9327, cause: Failed to bind to: /0.0.0.0:9327
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol.createServer(DubboProtocol.java:279)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol.openServer(DubboProtocol.java:256)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol.export(DubboProtocol.java:243)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper.export(ProtocolFilterWrapper.java:94)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolListenerWrapper.export(ProtocolListenerWrapper.java:56)
+	at com.alibaba.dubbo.rpc.Protocol$Adaptive.export(Protocol$Adaptive.java)
+	at com.alibaba.dubbo.registry.integration.RegistryProtocol.doLocalExport(RegistryProtocol.java:163)
+	at com.alibaba.dubbo.registry.integration.RegistryProtocol.export(RegistryProtocol.java:116)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper.export(ProtocolFilterWrapper.java:92)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolListenerWrapper.export(ProtocolListenerWrapper.java:54)
+	at com.alibaba.dubbo.rpc.Protocol$Adaptive.export(Protocol$Adaptive.java)
+	at com.alibaba.dubbo.config.ServiceConfig.doExportUrlsFor1Protocol(ServiceConfig.java:550)
+	at com.alibaba.dubbo.config.ServiceConfig.doExportUrls(ServiceConfig.java:346)
+	at com.alibaba.dubbo.config.ServiceConfig.doExport(ServiceConfig.java:307)
+	at com.alibaba.dubbo.config.ServiceConfig.export(ServiceConfig.java:206)
+	at com.alibaba.dubbo.config.spring.ServiceBean.onApplicationEvent(ServiceBean.java:109)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:399)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:353)
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:887)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:552)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:144)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:95)
+	at com.alibaba.dubbo.container.spring.SpringContainer.start(SpringContainer.java:46)
+	at com.alibaba.dubbo.container.Main.main(Main.java:86)
+	at cn.mldn.dibmp.service.main.ProviderStartupMemberService.main(ProviderStartupMemberService.java:7)
+Caused by: com.alibaba.dubbo.remoting.RemotingException: Failed to bind NettyServer on /192.168.10.1:9327, cause: Failed to bind to: /0.0.0.0:9327
+	at com.alibaba.dubbo.remoting.transport.AbstractServer.<init>(AbstractServer.java:67)
+	at com.alibaba.dubbo.remoting.transport.netty.NettyServer.<init>(NettyServer.java:63)
+	at com.alibaba.dubbo.remoting.transport.netty.NettyTransporter.bind(NettyTransporter.java:33)
+	at com.alibaba.dubbo.remoting.Transporter$Adaptive.bind(Transporter$Adaptive.java)
+	at com.alibaba.dubbo.remoting.Transporters.bind(Transporters.java:57)
+	at com.alibaba.dubbo.remoting.exchange.support.header.HeaderExchanger.bind(HeaderExchanger.java:41)
+	at com.alibaba.dubbo.remoting.exchange.Exchangers.bind(Exchangers.java:71)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol.createServer(DubboProtocol.java:277)
+	... 27 more
+Caused by: org.jboss.netty.channel.ChannelException: Failed to bind to: /0.0.0.0:9327
+	at org.jboss.netty.bootstrap.ServerBootstrap.bind(ServerBootstrap.java:303)
+	at com.alibaba.dubbo.remoting.transport.netty.NettyServer.doOpen(NettyServer.java:94)
+	at com.alibaba.dubbo.remoting.transport.AbstractServer.<init>(AbstractServer.java:62)
+	... 34 more
+Caused by: java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Unknown Source)
+	at sun.nio.ch.Net.bind(Unknown Source)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(Unknown Source)
+	at sun.nio.ch.ServerSocketAdaptor.bind(Unknown Source)
+	at org.jboss.netty.channel.socket.nio.NioServerSocketPipelineSink.bind(NioServerSocketPipelineSink.java:148)
+	at org.jboss.netty.channel.socket.nio.NioServerSocketPipelineSink.handleServerSocket(NioServerSocketPipelineSink.java:100)
+	at org.jboss.netty.channel.socket.nio.NioServerSocketPipelineSink.eventSunk(NioServerSocketPipelineSink.java:74)
+	at org.jboss.netty.channel.Channels.bind(Channels.java:468)
+	at org.jboss.netty.channel.AbstractChannel.bind(AbstractChannel.java:192)
+	at org.jboss.netty.bootstrap.ServerBootstrap$Binder.channelOpen(ServerBootstrap.java:348)
+	at org.jboss.netty.channel.Channels.fireChannelOpen(Channels.java:176)
+	at org.jboss.netty.channel.socket.nio.NioServerSocketChannel.<init>(NioServerSocketChannel.java:85)
+	at org.jboss.netty.channel.socket.nio.NioServerSocketChannelFactory.newChannel(NioServerSocketChannelFactory.java:142)
+	at org.jboss.netty.channel.socket.nio.NioServerSocketChannelFactory.newChannel(NioServerSocketChannelFactory.java:90)
+	at org.jboss.netty.bootstrap.ServerBootstrap.bind(ServerBootstrap.java:282)
+	... 36 more
+2017-11-06 16:45:28,843 INFO [com.alibaba.dubbo.config.AbstractConfig] -  [DUBBO] Run shutdown hook now., dubbo version: 2.5.6, current host: 127.0.0.1
+2017-11-06 16:45:28,849 INFO [com.alibaba.dubbo.registry.support.AbstractRegistryFactory] -  [DUBBO] Close all registries [], dubbo version: 2.5.6, current host: 127.0.0.1
+2017-11-06 16:45:28,849 INFO [com.alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol] -  [DUBBO] Unexport service: dubbo://192.168.10.1:9327/cn.mldn.dibmp.service.IWarehouseService?anyhost=true&application=mldn-service-member&default.timeout=10000000&dubbo=2.5.6&generic=false&interface=cn.mldn.dibmp.service.IWarehouseService&methods=add,getAll,getById,getByName&pid=5928&revision=dev&side=provider&timestamp=1509957928153&version=dev, dubbo version: 2.5.6, current host: 127.0.0.1
+2017-11-06 16:45:28,850 INFO [com.alibaba.dubbo.rpc.protocol.injvm.InjvmProtocol] -  [DUBBO] Unexport service: injvm://127.0.0.1/cn.mldn.dibmp.service.IWarehouseService?anyhost=true&application=mldn-service-member&default.timeout=10000000&dubbo=2.5.6&generic=false&interface=cn.mldn.dibmp.service.IWarehouseService&methods=add,getAll,getById,getByName&pid=5928&revision=dev&side=provider&timestamp=1509957928153&version=dev, dubbo version: 2.5.6, current host: 127.0.0.1
+2017-11-06 16:46:14,672 INFO [com.alibaba.dubbo.common.logger.LoggerFactory] - using logger: com.alibaba.dubbo.common.logger.log4j.Log4jLoggerAdapter
+2017-11-06 16:46:14,761 INFO [com.alibaba.dubbo.container.Main] -  [DUBBO] Use container type([spring]) to run dubbo serivce., dubbo version: 2.5.6, current host: 127.0.0.1
+2017-11-06 16:46:18,172 INFO [com.alibaba.dubbo.config.AbstractConfig] -  [DUBBO] The service ready on spring started. service: cn.mldn.dibmp.service.IWarehouseService, dubbo version: 2.5.6, current host: 127.0.0.1
+2017-11-06 16:46:18,348 INFO [com.alibaba.dubbo.config.AbstractConfig] -  [DUBBO] Export dubbo service cn.mldn.dibmp.service.IWarehouseService to local registry, dubbo version: 2.5.6, current host: 127.0.0.1
+2017-11-06 16:46:18,348 INFO [com.alibaba.dubbo.config.AbstractConfig] -  [DUBBO] Export dubbo service cn.mldn.dibmp.service.IWarehouseService to url dubbo://192.168.10.1:9327/cn.mldn.dibmp.service.IWarehouseService?anyhost=true&application=mldn-service-member&default.timeout=10000000&dubbo=2.5.6&generic=false&interface=cn.mldn.dibmp.service.IWarehouseService&methods=add,getAll,getById,getByName&pid=7016&revision=dev&side=provider&timestamp=1509957978193&version=dev, dubbo version: 2.5.6, current host: 127.0.0.1
+2017-11-06 16:46:18,349 INFO [com.alibaba.dubbo.config.AbstractConfig] -  [DUBBO] Register dubbo service cn.mldn.dibmp.service.IWarehouseService url dubbo://192.168.10.1:9327/cn.mldn.dibmp.service.IWarehouseService?anyhost=true&application=mldn-service-member&default.timeout=10000000&dubbo=2.5.6&generic=false&interface=cn.mldn.dibmp.service.IWarehouseService&methods=add,getAll,getById,getByName&pid=7016&revision=dev&side=provider&timestamp=1509957978193&version=dev to registry registry://192.168.184.128:2181/com.alibaba.dubbo.registry.RegistryService?application=mldn-service-member&dubbo=2.5.6&pid=7016&registry=zookeeper&timestamp=1509957978182, dubbo version: 2.5.6, current host: 127.0.0.1
+2017-11-06 16:46:18,556 ERROR [com.alibaba.dubbo.container.Main] -  [DUBBO] Fail to start server(url: dubbo://192.168.10.1:9327/cn.mldn.dibmp.service.IWarehouseService?anyhost=true&application=mldn-service-member&channel.readonly.sent=true&codec=dubbo&default.timeout=10000000&dubbo=2.5.6&generic=false&heartbeat=60000&interface=cn.mldn.dibmp.service.IWarehouseService&methods=add,getAll,getById,getByName&pid=7016&revision=dev&side=provider&timestamp=1509957978193&version=dev) Failed to bind NettyServer on /192.168.10.1:9327, cause: Failed to bind to: /0.0.0.0:9327, dubbo version: 2.5.6, current host: 127.0.0.1
+com.alibaba.dubbo.rpc.RpcException: Fail to start server(url: dubbo://192.168.10.1:9327/cn.mldn.dibmp.service.IWarehouseService?anyhost=true&application=mldn-service-member&channel.readonly.sent=true&codec=dubbo&default.timeout=10000000&dubbo=2.5.6&generic=false&heartbeat=60000&interface=cn.mldn.dibmp.service.IWarehouseService&methods=add,getAll,getById,getByName&pid=7016&revision=dev&side=provider&timestamp=1509957978193&version=dev) Failed to bind NettyServer on /192.168.10.1:9327, cause: Failed to bind to: /0.0.0.0:9327
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol.createServer(DubboProtocol.java:279)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol.openServer(DubboProtocol.java:256)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol.export(DubboProtocol.java:243)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper.export(ProtocolFilterWrapper.java:94)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolListenerWrapper.export(ProtocolListenerWrapper.java:56)
+	at com.alibaba.dubbo.rpc.Protocol$Adaptive.export(Protocol$Adaptive.java)
+	at com.alibaba.dubbo.registry.integration.RegistryProtocol.doLocalExport(RegistryProtocol.java:163)
+	at com.alibaba.dubbo.registry.integration.RegistryProtocol.export(RegistryProtocol.java:116)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper.export(ProtocolFilterWrapper.java:92)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolListenerWrapper.export(ProtocolListenerWrapper.java:54)
+	at com.alibaba.dubbo.rpc.Protocol$Adaptive.export(Protocol$Adaptive.java)
+	at com.alibaba.dubbo.config.ServiceConfig.doExportUrlsFor1Protocol(ServiceConfig.java:550)
+	at com.alibaba.dubbo.config.ServiceConfig.doExportUrls(ServiceConfig.java:346)
+	at com.alibaba.dubbo.config.ServiceConfig.doExport(ServiceConfig.java:307)
+	at com.alibaba.dubbo.config.ServiceConfig.export(ServiceConfig.java:206)
+	at com.alibaba.dubbo.config.spring.ServiceBean.onApplicationEvent(ServiceBean.java:109)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:399)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:353)
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:887)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:552)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:144)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:95)
+	at com.alibaba.dubbo.container.spring.SpringContainer.start(SpringContainer.java:46)
+	at com.alibaba.dubbo.container.Main.main(Main.java:86)
+	at cn.mldn.dibmp.service.main.ProviderStartupMemberService.main(ProviderStartupMemberService.java:7)
+Caused by: com.alibaba.dubbo.remoting.RemotingException: Failed to bind NettyServer on /192.168.10.1:9327, cause: Failed to bind to: /0.0.0.0:9327
+	at com.alibaba.dubbo.remoting.transport.AbstractServer.<init>(AbstractServer.java:67)
+	at com.alibaba.dubbo.remoting.transport.netty.NettyServer.<init>(NettyServer.java:63)
+	at com.alibaba.dubbo.remoting.transport.netty.NettyTransporter.bind(NettyTransporter.java:33)
+	at com.alibaba.dubbo.remoting.Transporter$Adaptive.bind(Transporter$Adaptive.java)
+	at com.alibaba.dubbo.remoting.Transporters.bind(Transporters.java:57)
+	at com.alibaba.dubbo.remoting.exchange.support.header.HeaderExchanger.bind(HeaderExchanger.java:41)
+	at com.alibaba.dubbo.remoting.exchange.Exchangers.bind(Exchangers.java:71)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol.createServer(DubboProtocol.java:277)
+	... 27 more
+Caused by: org.jboss.netty.channel.ChannelException: Failed to bind to: /0.0.0.0:9327
+	at org.jboss.netty.bootstrap.ServerBootstrap.bind(ServerBootstrap.java:303)
+	at com.alibaba.dubbo.remoting.transport.netty.NettyServer.doOpen(NettyServer.java:94)
+	at com.alibaba.dubbo.remoting.transport.AbstractServer.<init>(AbstractServer.java:62)
+	... 34 more
+Caused by: java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Unknown Source)
+	at sun.nio.ch.Net.bind(Unknown Source)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(Unknown Source)
+	at sun.nio.ch.ServerSocketAdaptor.bind(Unknown Source)
+	at org.jboss.netty.channel.socket.nio.NioServerSocketPipelineSink.bind(NioServerSocketPipelineSink.java:148)
+	at org.jboss.netty.channel.socket.nio.NioServerSocketPipelineSink.handleServerSocket(NioServerSocketPipelineSink.java:100)
+	at org.jboss.netty.channel.socket.nio.NioServerSocketPipelineSink.eventSunk(NioServerSocketPipelineSink.java:74)
+	at org.jboss.netty.channel.Channels.bind(Channels.java:468)
+	at org.jboss.netty.channel.AbstractChannel.bind(AbstractChannel.java:192)
+	at org.jboss.netty.bootstrap.ServerBootstrap$Binder.channelOpen(ServerBootstrap.java:348)
+	at org.jboss.netty.channel.Channels.fireChannelOpen(Channels.java:176)
+	at org.jboss.netty.channel.socket.nio.NioServerSocketChannel.<init>(NioServerSocketChannel.java:85)
+	at org.jboss.netty.channel.socket.nio.NioServerSocketChannelFactory.newChannel(NioServerSocketChannelFactory.java:142)
+	at org.jboss.netty.channel.socket.nio.NioServerSocketChannelFactory.newChannel(NioServerSocketChannelFactory.java:90)
+	at org.jboss.netty.bootstrap.ServerBootstrap.bind(ServerBootstrap.java:282)
+	... 36 more
+2017-11-06 16:46:18,561 INFO [com.alibaba.dubbo.config.AbstractConfig] -  [DUBBO] Run shutdown hook now., dubbo version: 2.5.6, current host: 127.0.0.1
+2017-11-06 16:46:18,561 INFO [com.alibaba.dubbo.registry.support.AbstractRegistryFactory] -  [DUBBO] Close all registries [], dubbo version: 2.5.6, current host: 127.0.0.1
+2017-11-06 16:46:18,562 INFO [com.alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol] -  [DUBBO] Unexport service: dubbo://192.168.10.1:9327/cn.mldn.dibmp.service.IWarehouseService?anyhost=true&application=mldn-service-member&default.timeout=10000000&dubbo=2.5.6&generic=false&interface=cn.mldn.dibmp.service.IWarehouseService&methods=add,getAll,getById,getByName&pid=7016&revision=dev&side=provider&timestamp=1509957978193&version=dev, dubbo version: 2.5.6, current host: 127.0.0.1
+2017-11-06 16:46:18,562 INFO [com.alibaba.dubbo.rpc.protocol.injvm.InjvmProtocol] -  [DUBBO] Unexport service: injvm://127.0.0.1/cn.mldn.dibmp.service.IWarehouseService?anyhost=true&application=mldn-service-member&default.timeout=10000000&dubbo=2.5.6&generic=false&interface=cn.mldn.dibmp.service.IWarehouseService&methods=add,getAll,getById,getByName&pid=7016&revision=dev&side=provider&timestamp=1509957978193&version=dev, dubbo version: 2.5.6, current host: 127.0.0.1
+2017-11-06 16:46:34,929 INFO [com.alibaba.dubbo.common.logger.LoggerFactory] - using logger: com.alibaba.dubbo.common.logger.log4j.Log4jLoggerAdapter
+2017-11-06 16:46:35,024 INFO [com.alibaba.dubbo.container.Main] -  [DUBBO] Use container type([spring]) to run dubbo serivce., dubbo version: 2.5.6, current host: 127.0.0.1
+2017-11-06 16:46:38,478 INFO [com.alibaba.dubbo.config.AbstractConfig] -  [DUBBO] The service ready on spring started. service: cn.mldn.dibmp.service.IWarehouseService, dubbo version: 2.5.6, current host: 127.0.0.1
+2017-11-06 16:46:38,672 INFO [com.alibaba.dubbo.config.AbstractConfig] -  [DUBBO] Export dubbo service cn.mldn.dibmp.service.IWarehouseService to local registry, dubbo version: 2.5.6, current host: 127.0.0.1
+2017-11-06 16:46:38,673 INFO [com.alibaba.dubbo.config.AbstractConfig] -  [DUBBO] Export dubbo service cn.mldn.dibmp.service.IWarehouseService to url dubbo://192.168.10.1:9327/cn.mldn.dibmp.service.IWarehouseService?anyhost=true&application=mldn-service-member&default.timeout=10000000&dubbo=2.5.6&generic=false&interface=cn.mldn.dibmp.service.IWarehouseService&methods=add,getAll,getById,getByName&pid=6788&revision=dev&side=provider&timestamp=1509957998515&version=dev, dubbo version: 2.5.6, current host: 127.0.0.1
+2017-11-06 16:46:38,673 INFO [com.alibaba.dubbo.config.AbstractConfig] -  [DUBBO] Register dubbo service cn.mldn.dibmp.service.IWarehouseService url dubbo://192.168.10.1:9327/cn.mldn.dibmp.service.IWarehouseService?anyhost=true&application=mldn-service-member&default.timeout=10000000&dubbo=2.5.6&generic=false&interface=cn.mldn.dibmp.service.IWarehouseService&methods=add,getAll,getById,getByName&pid=6788&revision=dev&side=provider&timestamp=1509957998515&version=dev to registry registry://192.168.184.128:2181/com.alibaba.dubbo.registry.RegistryService?application=mldn-service-member&dubbo=2.5.6&pid=6788&registry=zookeeper&timestamp=1509957998489, dubbo version: 2.5.6, current host: 127.0.0.1
+2017-11-06 16:46:38,989 ERROR [com.alibaba.dubbo.container.Main] -  [DUBBO] Fail to start server(url: dubbo://192.168.10.1:9327/cn.mldn.dibmp.service.IWarehouseService?anyhost=true&application=mldn-service-member&channel.readonly.sent=true&codec=dubbo&default.timeout=10000000&dubbo=2.5.6&generic=false&heartbeat=60000&interface=cn.mldn.dibmp.service.IWarehouseService&methods=add,getAll,getById,getByName&pid=6788&revision=dev&side=provider&timestamp=1509957998515&version=dev) Failed to bind NettyServer on /192.168.10.1:9327, cause: Failed to bind to: /0.0.0.0:9327, dubbo version: 2.5.6, current host: 127.0.0.1
+com.alibaba.dubbo.rpc.RpcException: Fail to start server(url: dubbo://192.168.10.1:9327/cn.mldn.dibmp.service.IWarehouseService?anyhost=true&application=mldn-service-member&channel.readonly.sent=true&codec=dubbo&default.timeout=10000000&dubbo=2.5.6&generic=false&heartbeat=60000&interface=cn.mldn.dibmp.service.IWarehouseService&methods=add,getAll,getById,getByName&pid=6788&revision=dev&side=provider&timestamp=1509957998515&version=dev) Failed to bind NettyServer on /192.168.10.1:9327, cause: Failed to bind to: /0.0.0.0:9327
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol.createServer(DubboProtocol.java:279)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol.openServer(DubboProtocol.java:256)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol.export(DubboProtocol.java:243)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper.export(ProtocolFilterWrapper.java:94)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolListenerWrapper.export(ProtocolListenerWrapper.java:56)
+	at com.alibaba.dubbo.rpc.Protocol$Adaptive.export(Protocol$Adaptive.java)
+	at com.alibaba.dubbo.registry.integration.RegistryProtocol.doLocalExport(RegistryProtocol.java:163)
+	at com.alibaba.dubbo.registry.integration.RegistryProtocol.export(RegistryProtocol.java:116)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper.export(ProtocolFilterWrapper.java:92)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolListenerWrapper.export(ProtocolListenerWrapper.java:54)
+	at com.alibaba.dubbo.rpc.Protocol$Adaptive.export(Protocol$Adaptive.java)
+	at com.alibaba.dubbo.config.ServiceConfig.doExportUrlsFor1Protocol(ServiceConfig.java:550)
+	at com.alibaba.dubbo.config.ServiceConfig.doExportUrls(ServiceConfig.java:346)
+	at com.alibaba.dubbo.config.ServiceConfig.doExport(ServiceConfig.java:307)
+	at com.alibaba.dubbo.config.ServiceConfig.export(ServiceConfig.java:206)
+	at com.alibaba.dubbo.config.spring.ServiceBean.onApplicationEvent(ServiceBean.java:109)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:399)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:353)
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:887)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:552)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:144)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:95)
+	at com.alibaba.dubbo.container.spring.SpringContainer.start(SpringContainer.java:46)
+	at com.alibaba.dubbo.container.Main.main(Main.java:86)
+	at cn.mldn.dibmp.service.main.ProviderStartupMemberService.main(ProviderStartupMemberService.java:7)
+Caused by: com.alibaba.dubbo.remoting.RemotingException: Failed to bind NettyServer on /192.168.10.1:9327, cause: Failed to bind to: /0.0.0.0:9327
+	at com.alibaba.dubbo.remoting.transport.AbstractServer.<init>(AbstractServer.java:67)
+	at com.alibaba.dubbo.remoting.transport.netty.NettyServer.<init>(NettyServer.java:63)
+	at com.alibaba.dubbo.remoting.transport.netty.NettyTransporter.bind(NettyTransporter.java:33)
+	at com.alibaba.dubbo.remoting.Transporter$Adaptive.bind(Transporter$Adaptive.java)
+	at com.alibaba.dubbo.remoting.Transporters.bind(Transporters.java:57)
+	at com.alibaba.dubbo.remoting.exchange.support.header.HeaderExchanger.bind(HeaderExchanger.java:41)
+	at com.alibaba.dubbo.remoting.exchange.Exchangers.bind(Exchangers.java:71)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol.createServer(DubboProtocol.java:277)
+	... 27 more
+Caused by: org.jboss.netty.channel.ChannelException: Failed to bind to: /0.0.0.0:9327
+	at org.jboss.netty.bootstrap.ServerBootstrap.bind(ServerBootstrap.java:303)
+	at com.alibaba.dubbo.remoting.transport.netty.NettyServer.doOpen(NettyServer.java:94)
+	at com.alibaba.dubbo.remoting.transport.AbstractServer.<init>(AbstractServer.java:62)
+	... 34 more
+Caused by: java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Unknown Source)
+	at sun.nio.ch.Net.bind(Unknown Source)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(Unknown Source)
+	at sun.nio.ch.ServerSocketAdaptor.bind(Unknown Source)
+	at org.jboss.netty.channel.socket.nio.NioServerSocketPipelineSink.bind(NioServerSocketPipelineSink.java:148)
+	at org.jboss.netty.channel.socket.nio.NioServerSocketPipelineSink.handleServerSocket(NioServerSocketPipelineSink.java:100)
+	at org.jboss.netty.channel.socket.nio.NioServerSocketPipelineSink.eventSunk(NioServerSocketPipelineSink.java:74)
+	at org.jboss.netty.channel.Channels.bind(Channels.java:468)
+	at org.jboss.netty.channel.AbstractChannel.bind(AbstractChannel.java:192)
+	at org.jboss.netty.bootstrap.ServerBootstrap$Binder.channelOpen(ServerBootstrap.java:348)
+	at org.jboss.netty.channel.Channels.fireChannelOpen(Channels.java:176)
+	at org.jboss.netty.channel.socket.nio.NioServerSocketChannel.<init>(NioServerSocketChannel.java:85)
+	at org.jboss.netty.channel.socket.nio.NioServerSocketChannelFactory.newChannel(NioServerSocketChannelFactory.java:142)
+	at org.jboss.netty.channel.socket.nio.NioServerSocketChannelFactory.newChannel(NioServerSocketChannelFactory.java:90)
+	at org.jboss.netty.bootstrap.ServerBootstrap.bind(ServerBootstrap.java:282)
+	... 36 more
+2017-11-06 16:46:38,993 INFO [com.alibaba.dubbo.config.AbstractConfig] -  [DUBBO] Run shutdown hook now., dubbo version: 2.5.6, current host: 127.0.0.1
+2017-11-06 16:46:38,994 INFO [com.alibaba.dubbo.registry.support.AbstractRegistryFactory] -  [DUBBO] Close all registries [], dubbo version: 2.5.6, current host: 127.0.0.1
+2017-11-06 16:46:38,994 INFO [com.alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol] -  [DUBBO] Unexport service: dubbo://192.168.10.1:9327/cn.mldn.dibmp.service.IWarehouseService?anyhost=true&application=mldn-service-member&default.timeout=10000000&dubbo=2.5.6&generic=false&interface=cn.mldn.dibmp.service.IWarehouseService&methods=add,getAll,getById,getByName&pid=6788&revision=dev&side=provider&timestamp=1509957998515&version=dev, dubbo version: 2.5.6, current host: 127.0.0.1
+2017-11-06 16:46:38,995 INFO [com.alibaba.dubbo.rpc.protocol.injvm.InjvmProtocol] -  [DUBBO] Unexport service: injvm://127.0.0.1/cn.mldn.dibmp.service.IWarehouseService?anyhost=true&application=mldn-service-member&default.timeout=10000000&dubbo=2.5.6&generic=false&interface=cn.mldn.dibmp.service.IWarehouseService&methods=add,getAll,getById,getByName&pid=6788&revision=dev&side=provider&timestamp=1509957998515&version=dev, dubbo version: 2.5.6, current host: 127.0.0.1
+2017-11-06 16:51:52,939 WARN [com.alibaba.dubbo.remoting.transport.AbstractServer] -  [DUBBO] All clients has discontected from /192.168.10.1:9327. You can graceful shutdown now., dubbo version: 2.5.6, current host: 127.0.0.1
+2017-11-06 16:51:52,939 INFO [com.alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol] -  [DUBBO] disconected from /192.168.10.1:55874,url:dubbo://192.168.10.1:9327/cn.mldn.dibmp.service.IWarehouseService?anyhost=true&application=mldn-service-member&channel.readonly.sent=true&codec=dubbo&default.timeout=10000000&dubbo=2.5.6&generic=false&heartbeat=60000&interface=cn.mldn.dibmp.service.IWarehouseService&methods=add,getAll,getById,getByName&pid=4352&revision=dev&side=provider&timestamp=1509954546583&version=dev, dubbo version: 2.5.6, current host: 127.0.0.1
+2017-11-06 17:29:37,237 INFO [com.alibaba.dubbo.common.logger.LoggerFactory] - using logger: com.alibaba.dubbo.common.logger.log4j.Log4jLoggerAdapter
+2017-11-06 17:29:37,330 INFO [com.alibaba.dubbo.container.Main] -  [DUBBO] Use container type([spring]) to run dubbo serivce., dubbo version: 2.5.6, current host: 127.0.0.1
+2017-11-06 17:29:40,996 INFO [com.alibaba.dubbo.config.AbstractConfig] -  [DUBBO] The service ready on spring started. service: cn.mldn.dibmp.service.IWarehouseService, dubbo version: 2.5.6, current host: 127.0.0.1
+2017-11-06 17:29:41,191 INFO [com.alibaba.dubbo.config.AbstractConfig] -  [DUBBO] Export dubbo service cn.mldn.dibmp.service.IWarehouseService to local registry, dubbo version: 2.5.6, current host: 127.0.0.1
+2017-11-06 17:29:41,192 INFO [com.alibaba.dubbo.config.AbstractConfig] -  [DUBBO] Export dubbo service cn.mldn.dibmp.service.IWarehouseService to url dubbo://192.168.10.1:9327/cn.mldn.dibmp.service.IWarehouseService?anyhost=true&application=mldn-service-member&default.timeout=10000000&dubbo=2.5.6&generic=false&interface=cn.mldn.dibmp.service.IWarehouseService&methods=add,getAll,getById,getByName&pid=3472&revision=dev&side=provider&timestamp=1509960581025&version=dev, dubbo version: 2.5.6, current host: 127.0.0.1
+2017-11-06 17:29:41,192 INFO [com.alibaba.dubbo.config.AbstractConfig] -  [DUBBO] Register dubbo service cn.mldn.dibmp.service.IWarehouseService url dubbo://192.168.10.1:9327/cn.mldn.dibmp.service.IWarehouseService?anyhost=true&application=mldn-service-member&default.timeout=10000000&dubbo=2.5.6&generic=false&interface=cn.mldn.dibmp.service.IWarehouseService&methods=add,getAll,getById,getByName&pid=3472&revision=dev&side=provider&timestamp=1509960581025&version=dev to registry registry://192.168.184.128:2181/com.alibaba.dubbo.registry.RegistryService?application=mldn-service-member&dubbo=2.5.6&pid=3472&registry=zookeeper&timestamp=1509960581012, dubbo version: 2.5.6, current host: 127.0.0.1
+2017-11-06 17:29:41,406 ERROR [com.alibaba.dubbo.container.Main] -  [DUBBO] Fail to start server(url: dubbo://192.168.10.1:9327/cn.mldn.dibmp.service.IWarehouseService?anyhost=true&application=mldn-service-member&channel.readonly.sent=true&codec=dubbo&default.timeout=10000000&dubbo=2.5.6&generic=false&heartbeat=60000&interface=cn.mldn.dibmp.service.IWarehouseService&methods=add,getAll,getById,getByName&pid=3472&revision=dev&side=provider&timestamp=1509960581025&version=dev) Failed to bind NettyServer on /192.168.10.1:9327, cause: Failed to bind to: /0.0.0.0:9327, dubbo version: 2.5.6, current host: 127.0.0.1
+com.alibaba.dubbo.rpc.RpcException: Fail to start server(url: dubbo://192.168.10.1:9327/cn.mldn.dibmp.service.IWarehouseService?anyhost=true&application=mldn-service-member&channel.readonly.sent=true&codec=dubbo&default.timeout=10000000&dubbo=2.5.6&generic=false&heartbeat=60000&interface=cn.mldn.dibmp.service.IWarehouseService&methods=add,getAll,getById,getByName&pid=3472&revision=dev&side=provider&timestamp=1509960581025&version=dev) Failed to bind NettyServer on /192.168.10.1:9327, cause: Failed to bind to: /0.0.0.0:9327
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol.createServer(DubboProtocol.java:279)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol.openServer(DubboProtocol.java:256)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol.export(DubboProtocol.java:243)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper.export(ProtocolFilterWrapper.java:94)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolListenerWrapper.export(ProtocolListenerWrapper.java:56)
+	at com.alibaba.dubbo.rpc.Protocol$Adaptive.export(Protocol$Adaptive.java)
+	at com.alibaba.dubbo.registry.integration.RegistryProtocol.doLocalExport(RegistryProtocol.java:163)
+	at com.alibaba.dubbo.registry.integration.RegistryProtocol.export(RegistryProtocol.java:116)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper.export(ProtocolFilterWrapper.java:92)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolListenerWrapper.export(ProtocolListenerWrapper.java:54)
+	at com.alibaba.dubbo.rpc.Protocol$Adaptive.export(Protocol$Adaptive.java)
+	at com.alibaba.dubbo.config.ServiceConfig.doExportUrlsFor1Protocol(ServiceConfig.java:550)
+	at com.alibaba.dubbo.config.ServiceConfig.doExportUrls(ServiceConfig.java:346)
+	at com.alibaba.dubbo.config.ServiceConfig.doExport(ServiceConfig.java:307)
+	at com.alibaba.dubbo.config.ServiceConfig.export(ServiceConfig.java:206)
+	at com.alibaba.dubbo.config.spring.ServiceBean.onApplicationEvent(ServiceBean.java:109)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:399)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:353)
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:887)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:552)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:144)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:95)
+	at com.alibaba.dubbo.container.spring.SpringContainer.start(SpringContainer.java:46)
+	at com.alibaba.dubbo.container.Main.main(Main.java:86)
+	at cn.mldn.dibmp.service.main.ProviderStartupMemberService.main(ProviderStartupMemberService.java:7)
+Caused by: com.alibaba.dubbo.remoting.RemotingException: Failed to bind NettyServer on /192.168.10.1:9327, cause: Failed to bind to: /0.0.0.0:9327
+	at com.alibaba.dubbo.remoting.transport.AbstractServer.<init>(AbstractServer.java:67)
+	at com.alibaba.dubbo.remoting.transport.netty.NettyServer.<init>(NettyServer.java:63)
+	at com.alibaba.dubbo.remoting.transport.netty.NettyTransporter.bind(NettyTransporter.java:33)
+	at com.alibaba.dubbo.remoting.Transporter$Adaptive.bind(Transporter$Adaptive.java)
+	at com.alibaba.dubbo.remoting.Transporters.bind(Transporters.java:57)
+	at com.alibaba.dubbo.remoting.exchange.support.header.HeaderExchanger.bind(HeaderExchanger.java:41)
+	at com.alibaba.dubbo.remoting.exchange.Exchangers.bind(Exchangers.java:71)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol.createServer(DubboProtocol.java:277)
+	... 27 more
+Caused by: org.jboss.netty.channel.ChannelException: Failed to bind to: /0.0.0.0:9327
+	at org.jboss.netty.bootstrap.ServerBootstrap.bind(ServerBootstrap.java:303)
+	at com.alibaba.dubbo.remoting.transport.netty.NettyServer.doOpen(NettyServer.java:94)
+	at com.alibaba.dubbo.remoting.transport.AbstractServer.<init>(AbstractServer.java:62)
+	... 34 more
+Caused by: java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Unknown Source)
+	at sun.nio.ch.Net.bind(Unknown Source)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(Unknown Source)
+	at sun.nio.ch.ServerSocketAdaptor.bind(Unknown Source)
+	at org.jboss.netty.channel.socket.nio.NioServerSocketPipelineSink.bind(NioServerSocketPipelineSink.java:148)
+	at org.jboss.netty.channel.socket.nio.NioServerSocketPipelineSink.handleServerSocket(NioServerSocketPipelineSink.java:100)
+	at org.jboss.netty.channel.socket.nio.NioServerSocketPipelineSink.eventSunk(NioServerSocketPipelineSink.java:74)
+	at org.jboss.netty.channel.Channels.bind(Channels.java:468)
+	at org.jboss.netty.channel.AbstractChannel.bind(AbstractChannel.java:192)
+	at org.jboss.netty.bootstrap.ServerBootstrap$Binder.channelOpen(ServerBootstrap.java:348)
+	at org.jboss.netty.channel.Channels.fireChannelOpen(Channels.java:176)
+	at org.jboss.netty.channel.socket.nio.NioServerSocketChannel.<init>(NioServerSocketChannel.java:85)
+	at org.jboss.netty.channel.socket.nio.NioServerSocketChannelFactory.newChannel(NioServerSocketChannelFactory.java:142)
+	at org.jboss.netty.channel.socket.nio.NioServerSocketChannelFactory.newChannel(NioServerSocketChannelFactory.java:90)
+	at org.jboss.netty.bootstrap.ServerBootstrap.bind(ServerBootstrap.java:282)
+	... 36 more
+2017-11-06 17:29:41,410 INFO [com.alibaba.dubbo.config.AbstractConfig] -  [DUBBO] Run shutdown hook now., dubbo version: 2.5.6, current host: 127.0.0.1
+2017-11-06 17:29:41,411 INFO [com.alibaba.dubbo.registry.support.AbstractRegistryFactory] -  [DUBBO] Close all registries [], dubbo version: 2.5.6, current host: 127.0.0.1
+2017-11-06 17:29:41,411 INFO [com.alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol] -  [DUBBO] Unexport service: dubbo://192.168.10.1:9327/cn.mldn.dibmp.service.IWarehouseService?anyhost=true&application=mldn-service-member&default.timeout=10000000&dubbo=2.5.6&generic=false&interface=cn.mldn.dibmp.service.IWarehouseService&methods=add,getAll,getById,getByName&pid=3472&revision=dev&side=provider&timestamp=1509960581025&version=dev, dubbo version: 2.5.6, current host: 127.0.0.1
+2017-11-06 17:29:41,411 INFO [com.alibaba.dubbo.rpc.protocol.injvm.InjvmProtocol] -  [DUBBO] Unexport service: injvm://127.0.0.1/cn.mldn.dibmp.service.IWarehouseService?anyhost=true&application=mldn-service-member&default.timeout=10000000&dubbo=2.5.6&generic=false&interface=cn.mldn.dibmp.service.IWarehouseService&methods=add,getAll,getById,getByName&pid=3472&revision=dev&side=provider&timestamp=1509960581025&version=dev, dubbo version: 2.5.6, current host: 127.0.0.1
+2017-11-06 17:37:06,969 INFO [com.alibaba.dubbo.common.logger.LoggerFactory] - using logger: com.alibaba.dubbo.common.logger.log4j.Log4jLoggerAdapter
+2017-11-06 17:37:07,167 INFO [com.alibaba.dubbo.container.Main] -  [DUBBO] Use container type([spring]) to run dubbo serivce., dubbo version: 2.5.6, current host: 127.0.0.1
+2017-11-06 17:37:11,162 INFO [com.alibaba.dubbo.config.AbstractConfig] -  [DUBBO] The service ready on spring started. service: cn.mldn.dibmp.service.IWarehouseService, dubbo version: 2.5.6, current host: 127.0.0.1
+2017-11-06 17:37:11,336 INFO [com.alibaba.dubbo.config.AbstractConfig] -  [DUBBO] Export dubbo service cn.mldn.dibmp.service.IWarehouseService to local registry, dubbo version: 2.5.6, current host: 127.0.0.1
+2017-11-06 17:37:11,336 INFO [com.alibaba.dubbo.config.AbstractConfig] -  [DUBBO] Export dubbo service cn.mldn.dibmp.service.IWarehouseService to url dubbo://192.168.10.1:9327/cn.mldn.dibmp.service.IWarehouseService?anyhost=true&application=mldn-service-member&default.timeout=10000000&dubbo=2.5.6&generic=false&interface=cn.mldn.dibmp.service.IWarehouseService&methods=add,getAll,getById,getByName&pid=6640&revision=dev&side=provider&timestamp=1509961031188&version=dev, dubbo version: 2.5.6, current host: 127.0.0.1
+2017-11-06 17:37:11,337 INFO [com.alibaba.dubbo.config.AbstractConfig] -  [DUBBO] Register dubbo service cn.mldn.dibmp.service.IWarehouseService url dubbo://192.168.10.1:9327/cn.mldn.dibmp.service.IWarehouseService?anyhost=true&application=mldn-service-member&default.timeout=10000000&dubbo=2.5.6&generic=false&interface=cn.mldn.dibmp.service.IWarehouseService&methods=add,getAll,getById,getByName&pid=6640&revision=dev&side=provider&timestamp=1509961031188&version=dev to registry registry://192.168.184.128:2181/com.alibaba.dubbo.registry.RegistryService?application=mldn-service-member&dubbo=2.5.6&pid=6640&registry=zookeeper&timestamp=1509961031173, dubbo version: 2.5.6, current host: 127.0.0.1
+2017-11-06 17:37:11,735 INFO [com.alibaba.dubbo.remoting.transport.AbstractServer] -  [DUBBO] Start NettyServer bind /0.0.0.0:9327, export /192.168.10.1:9327, dubbo version: 2.5.6, current host: 127.0.0.1
+2017-11-06 17:37:11,754 INFO [com.alibaba.dubbo.registry.zookeeper.ZookeeperRegistry] -  [DUBBO] Load registry store file C:\Users\Administrator\.dubbo\dubbo-registry-192.168.184.128.cache, data: {cn.mldn.dibmp.service.IMemberService:dev=empty://192.168.10.1/cn.mldn.dibmp.service.IMemberService?application=mldn-service-test&category=configurators&dubbo=2.5.6&interface=cn.mldn.dibmp.service.IMemberService&methods=getRoleAndActionByMember,get&pid=7624&revision=dev&side=consumer&timestamp=1509960446802&version=dev empty://192.168.10.1/cn.mldn.dibmp.service.IMemberService?application=mldn-service-test&category=routers&dubbo=2.5.6&interface=cn.mldn.dibmp.service.IMemberService&methods=getRoleAndActionByMember,get&pid=7624&revision=dev&side=consumer&timestamp=1509960446802&version=dev dubbo://192.168.10.1:9327/cn.mldn.dibmp.service.IMemberService?anyhost=true&application=mldn-service-member&default.timeout=10000000&dubbo=2.5.6&generic=false&interface=cn.mldn.dibmp.service.IMemberService&methods=getRoleAndActionByMember,get&pid=6808&revision=dev&side=provider&timestamp=1509960415074&version=dev, cn.mldn.dibmp.service.IWarehouseService:dev=empty://192.168.10.1/cn.mldn.dibmp.service.IWarehouseService?application=mldn-service-test&category=configurators&dubbo=2.5.6&interface=cn.mldn.dibmp.service.IWarehouseService&methods=add,getAll,getById,getByName&pid=4524&revision=dev&side=consumer&timestamp=1509960846398&version=dev empty://192.168.10.1/cn.mldn.dibmp.service.IWarehouseService?application=mldn-service-test&category=routers&dubbo=2.5.6&interface=cn.mldn.dibmp.service.IWarehouseService&methods=add,getAll,getById,getByName&pid=4524&revision=dev&side=consumer&timestamp=1509960846398&version=dev empty://192.168.10.1/cn.mldn.dibmp.service.IWarehouseService?application=mldn-service-test&category=providers&dubbo=2.5.6&interface=cn.mldn.dibmp.service.IWarehouseService&methods=add,getAll,getById,getByName&pid=4524&revision=dev&side=consumer&timestamp=1509960846398&version=dev}, dubbo version: 2.5.6, current host: 127.0.0.1
+2017-11-06 17:37:11,991 INFO [com.alibaba.dubbo.registry.zookeeper.ZookeeperRegistry] -  [DUBBO] Register: dubbo://192.168.10.1:9327/cn.mldn.dibmp.service.IWarehouseService?anyhost=true&application=mldn-service-member&default.timeout=10000000&dubbo=2.5.6&generic=false&interface=cn.mldn.dibmp.service.IWarehouseService&methods=add,getAll,getById,getByName&pid=6640&revision=dev&side=provider&timestamp=1509961031188&version=dev, dubbo version: 2.5.6, current host: 127.0.0.1
+2017-11-06 17:37:12,770 INFO [com.alibaba.dubbo.registry.zookeeper.ZookeeperRegistry] -  [DUBBO] Subscribe: provider://192.168.10.1:9327/cn.mldn.dibmp.service.IWarehouseService?anyhost=true&application=mldn-service-member&category=configurators&check=false&default.timeout=10000000&dubbo=2.5.6&generic=false&interface=cn.mldn.dibmp.service.IWarehouseService&methods=add,getAll,getById,getByName&pid=6640&revision=dev&side=provider&timestamp=1509961031188&version=dev, dubbo version: 2.5.6, current host: 127.0.0.1
+2017-11-06 17:37:12,794 INFO [com.alibaba.dubbo.registry.zookeeper.ZookeeperRegistry] -  [DUBBO] Notify urls for subscribe url provider://192.168.10.1:9327/cn.mldn.dibmp.service.IWarehouseService?anyhost=true&application=mldn-service-member&category=configurators&check=false&default.timeout=10000000&dubbo=2.5.6&generic=false&interface=cn.mldn.dibmp.service.IWarehouseService&methods=add,getAll,getById,getByName&pid=6640&revision=dev&side=provider&timestamp=1509961031188&version=dev, urls: [empty://192.168.10.1:9327/cn.mldn.dibmp.service.IWarehouseService?anyhost=true&application=mldn-service-member&category=configurators&check=false&default.timeout=10000000&dubbo=2.5.6&generic=false&interface=cn.mldn.dibmp.service.IWarehouseService&methods=add,getAll,getById,getByName&pid=6640&revision=dev&side=provider&timestamp=1509961031188&version=dev], dubbo version: 2.5.6, current host: 127.0.0.1
+2017-11-06 17:37:12,824 INFO [com.alibaba.dubbo.container.Main] -  [DUBBO] Dubbo SpringContainer started!, dubbo version: 2.5.6, current host: 127.0.0.1
+2017-11-06 17:37:44,571 INFO [com.alibaba.dubbo.common.logger.LoggerFactory] - using logger: com.alibaba.dubbo.common.logger.log4j.Log4jLoggerAdapter
+2017-11-06 17:37:44,669 INFO [com.alibaba.dubbo.container.Main] -  [DUBBO] Use container type([spring]) to run dubbo serivce., dubbo version: 2.5.6, current host: 127.0.0.1
+2017-11-06 17:37:47,940 INFO [com.alibaba.dubbo.config.AbstractConfig] -  [DUBBO] The service ready on spring started. service: cn.mldn.dibmp.service.IWarehouseService, dubbo version: 2.5.6, current host: 127.0.0.1
+2017-11-06 17:37:48,102 INFO [com.alibaba.dubbo.config.AbstractConfig] -  [DUBBO] Export dubbo service cn.mldn.dibmp.service.IWarehouseService to local registry, dubbo version: 2.5.6, current host: 127.0.0.1
+2017-11-06 17:37:48,103 INFO [com.alibaba.dubbo.config.AbstractConfig] -  [DUBBO] Export dubbo service cn.mldn.dibmp.service.IWarehouseService to url dubbo://192.168.10.1:9327/cn.mldn.dibmp.service.IWarehouseService?anyhost=true&application=mldn-service-member&default.timeout=10000000&dubbo=2.5.6&generic=false&interface=cn.mldn.dibmp.service.IWarehouseService&methods=add,getAll,getById,getByName&pid=6340&revision=dev&side=provider&timestamp=1509961067960&version=dev, dubbo version: 2.5.6, current host: 127.0.0.1
+2017-11-06 17:37:48,103 INFO [com.alibaba.dubbo.config.AbstractConfig] -  [DUBBO] Register dubbo service cn.mldn.dibmp.service.IWarehouseService url dubbo://192.168.10.1:9327/cn.mldn.dibmp.service.IWarehouseService?anyhost=true&application=mldn-service-member&default.timeout=10000000&dubbo=2.5.6&generic=false&interface=cn.mldn.dibmp.service.IWarehouseService&methods=add,getAll,getById,getByName&pid=6340&revision=dev&side=provider&timestamp=1509961067960&version=dev to registry registry://192.168.184.128:2181/com.alibaba.dubbo.registry.RegistryService?application=mldn-service-member&dubbo=2.5.6&pid=6340&registry=zookeeper&timestamp=1509961067949, dubbo version: 2.5.6, current host: 127.0.0.1
+2017-11-06 17:37:48,326 ERROR [com.alibaba.dubbo.container.Main] -  [DUBBO] Fail to start server(url: dubbo://192.168.10.1:9327/cn.mldn.dibmp.service.IWarehouseService?anyhost=true&application=mldn-service-member&channel.readonly.sent=true&codec=dubbo&default.timeout=10000000&dubbo=2.5.6&generic=false&heartbeat=60000&interface=cn.mldn.dibmp.service.IWarehouseService&methods=add,getAll,getById,getByName&pid=6340&revision=dev&side=provider&timestamp=1509961067960&version=dev) Failed to bind NettyServer on /192.168.10.1:9327, cause: Failed to bind to: /0.0.0.0:9327, dubbo version: 2.5.6, current host: 127.0.0.1
+com.alibaba.dubbo.rpc.RpcException: Fail to start server(url: dubbo://192.168.10.1:9327/cn.mldn.dibmp.service.IWarehouseService?anyhost=true&application=mldn-service-member&channel.readonly.sent=true&codec=dubbo&default.timeout=10000000&dubbo=2.5.6&generic=false&heartbeat=60000&interface=cn.mldn.dibmp.service.IWarehouseService&methods=add,getAll,getById,getByName&pid=6340&revision=dev&side=provider&timestamp=1509961067960&version=dev) Failed to bind NettyServer on /192.168.10.1:9327, cause: Failed to bind to: /0.0.0.0:9327
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol.createServer(DubboProtocol.java:279)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol.openServer(DubboProtocol.java:256)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol.export(DubboProtocol.java:243)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper.export(ProtocolFilterWrapper.java:94)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolListenerWrapper.export(ProtocolListenerWrapper.java:56)
+	at com.alibaba.dubbo.rpc.Protocol$Adaptive.export(Protocol$Adaptive.java)
+	at com.alibaba.dubbo.registry.integration.RegistryProtocol.doLocalExport(RegistryProtocol.java:163)
+	at com.alibaba.dubbo.registry.integration.RegistryProtocol.export(RegistryProtocol.java:116)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper.export(ProtocolFilterWrapper.java:92)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolListenerWrapper.export(ProtocolListenerWrapper.java:54)
+	at com.alibaba.dubbo.rpc.Protocol$Adaptive.export(Protocol$Adaptive.java)
+	at com.alibaba.dubbo.config.ServiceConfig.doExportUrlsFor1Protocol(ServiceConfig.java:550)
+	at com.alibaba.dubbo.config.ServiceConfig.doExportUrls(ServiceConfig.java:346)
+	at com.alibaba.dubbo.config.ServiceConfig.doExport(ServiceConfig.java:307)
+	at com.alibaba.dubbo.config.ServiceConfig.export(ServiceConfig.java:206)
+	at com.alibaba.dubbo.config.spring.ServiceBean.onApplicationEvent(ServiceBean.java:109)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:399)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:353)
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:887)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:552)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:144)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:95)
+	at com.alibaba.dubbo.container.spring.SpringContainer.start(SpringContainer.java:46)
+	at com.alibaba.dubbo.container.Main.main(Main.java:86)
+	at cn.mldn.dibmp.service.main.ProviderStartupMemberService.main(ProviderStartupMemberService.java:7)
+Caused by: com.alibaba.dubbo.remoting.RemotingException: Failed to bind NettyServer on /192.168.10.1:9327, cause: Failed to bind to: /0.0.0.0:9327
+	at com.alibaba.dubbo.remoting.transport.AbstractServer.<init>(AbstractServer.java:67)
+	at com.alibaba.dubbo.remoting.transport.netty.NettyServer.<init>(NettyServer.java:63)
+	at com.alibaba.dubbo.remoting.transport.netty.NettyTransporter.bind(NettyTransporter.java:33)
+	at com.alibaba.dubbo.remoting.Transporter$Adaptive.bind(Transporter$Adaptive.java)
+	at com.alibaba.dubbo.remoting.Transporters.bind(Transporters.java:57)
+	at com.alibaba.dubbo.remoting.exchange.support.header.HeaderExchanger.bind(HeaderExchanger.java:41)
+	at com.alibaba.dubbo.remoting.exchange.Exchangers.bind(Exchangers.java:71)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol.createServer(DubboProtocol.java:277)
+	... 27 more
+Caused by: org.jboss.netty.channel.ChannelException: Failed to bind to: /0.0.0.0:9327
+	at org.jboss.netty.bootstrap.ServerBootstrap.bind(ServerBootstrap.java:303)
+	at com.alibaba.dubbo.remoting.transport.netty.NettyServer.doOpen(NettyServer.java:94)
+	at com.alibaba.dubbo.remoting.transport.AbstractServer.<init>(AbstractServer.java:62)
+	... 34 more
+Caused by: java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Unknown Source)
+	at sun.nio.ch.Net.bind(Unknown Source)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(Unknown Source)
+	at sun.nio.ch.ServerSocketAdaptor.bind(Unknown Source)
+	at org.jboss.netty.channel.socket.nio.NioServerSocketPipelineSink.bind(NioServerSocketPipelineSink.java:148)
+	at org.jboss.netty.channel.socket.nio.NioServerSocketPipelineSink.handleServerSocket(NioServerSocketPipelineSink.java:100)
+	at org.jboss.netty.channel.socket.nio.NioServerSocketPipelineSink.eventSunk(NioServerSocketPipelineSink.java:74)
+	at org.jboss.netty.channel.Channels.bind(Channels.java:468)
+	at org.jboss.netty.channel.AbstractChannel.bind(AbstractChannel.java:192)
+	at org.jboss.netty.bootstrap.ServerBootstrap$Binder.channelOpen(ServerBootstrap.java:348)
+	at org.jboss.netty.channel.Channels.fireChannelOpen(Channels.java:176)
+	at org.jboss.netty.channel.socket.nio.NioServerSocketChannel.<init>(NioServerSocketChannel.java:85)
+	at org.jboss.netty.channel.socket.nio.NioServerSocketChannelFactory.newChannel(NioServerSocketChannelFactory.java:142)
+	at org.jboss.netty.channel.socket.nio.NioServerSocketChannelFactory.newChannel(NioServerSocketChannelFactory.java:90)
+	at org.jboss.netty.bootstrap.ServerBootstrap.bind(ServerBootstrap.java:282)
+	... 36 more
+2017-11-06 17:37:48,331 INFO [com.alibaba.dubbo.config.AbstractConfig] -  [DUBBO] Run shutdown hook now., dubbo version: 2.5.6, current host: 127.0.0.1
+2017-11-06 17:37:48,332 INFO [com.alibaba.dubbo.registry.support.AbstractRegistryFactory] -  [DUBBO] Close all registries [], dubbo version: 2.5.6, current host: 127.0.0.1
+2017-11-06 17:37:48,332 INFO [com.alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol] -  [DUBBO] Unexport service: dubbo://192.168.10.1:9327/cn.mldn.dibmp.service.IWarehouseService?anyhost=true&application=mldn-service-member&default.timeout=10000000&dubbo=2.5.6&generic=false&interface=cn.mldn.dibmp.service.IWarehouseService&methods=add,getAll,getById,getByName&pid=6340&revision=dev&side=provider&timestamp=1509961067960&version=dev, dubbo version: 2.5.6, current host: 127.0.0.1
+2017-11-06 17:37:48,333 INFO [com.alibaba.dubbo.rpc.protocol.injvm.InjvmProtocol] -  [DUBBO] Unexport service: injvm://127.0.0.1/cn.mldn.dibmp.service.IWarehouseService?anyhost=true&application=mldn-service-member&default.timeout=10000000&dubbo=2.5.6&generic=false&interface=cn.mldn.dibmp.service.IWarehouseService&methods=add,getAll,getById,getByName&pid=6340&revision=dev&side=provider&timestamp=1509961067960&version=dev, dubbo version: 2.5.6, current host: 127.0.0.1
+2017-11-06 17:38:34,574 INFO [com.alibaba.dubbo.common.logger.LoggerFactory] - using logger: com.alibaba.dubbo.common.logger.log4j.Log4jLoggerAdapter
+2017-11-06 17:38:34,670 INFO [com.alibaba.dubbo.container.Main] -  [DUBBO] Use container type([spring]) to run dubbo serivce., dubbo version: 2.5.6, current host: 127.0.0.1
+2017-11-06 17:38:38,034 INFO [com.alibaba.dubbo.config.AbstractConfig] -  [DUBBO] The service ready on spring started. service: cn.mldn.dibmp.service.IWarehouseService, dubbo version: 2.5.6, current host: 127.0.0.1
+2017-11-06 17:38:38,215 INFO [com.alibaba.dubbo.config.AbstractConfig] -  [DUBBO] Export dubbo service cn.mldn.dibmp.service.IWarehouseService to local registry, dubbo version: 2.5.6, current host: 127.0.0.1
+2017-11-06 17:38:38,216 INFO [com.alibaba.dubbo.config.AbstractConfig] -  [DUBBO] Export dubbo service cn.mldn.dibmp.service.IWarehouseService to url dubbo://192.168.10.1:9327/cn.mldn.dibmp.service.IWarehouseService?anyhost=true&application=mldn-service-member&default.timeout=10000000&dubbo=2.5.6&generic=false&interface=cn.mldn.dibmp.service.IWarehouseService&methods=add,getAll,getById,getByName&pid=5888&revision=dev&side=provider&timestamp=1509961118054&version=dev, dubbo version: 2.5.6, current host: 127.0.0.1
+2017-11-06 17:38:38,216 INFO [com.alibaba.dubbo.config.AbstractConfig] -  [DUBBO] Register dubbo service cn.mldn.dibmp.service.IWarehouseService url dubbo://192.168.10.1:9327/cn.mldn.dibmp.service.IWarehouseService?anyhost=true&application=mldn-service-member&default.timeout=10000000&dubbo=2.5.6&generic=false&interface=cn.mldn.dibmp.service.IWarehouseService&methods=add,getAll,getById,getByName&pid=5888&revision=dev&side=provider&timestamp=1509961118054&version=dev to registry registry://192.168.184.128:2181/com.alibaba.dubbo.registry.RegistryService?application=mldn-service-member&dubbo=2.5.6&pid=5888&registry=zookeeper&timestamp=1509961118044, dubbo version: 2.5.6, current host: 127.0.0.1
+2017-11-06 17:38:38,427 ERROR [com.alibaba.dubbo.container.Main] -  [DUBBO] Fail to start server(url: dubbo://192.168.10.1:9327/cn.mldn.dibmp.service.IWarehouseService?anyhost=true&application=mldn-service-member&channel.readonly.sent=true&codec=dubbo&default.timeout=10000000&dubbo=2.5.6&generic=false&heartbeat=60000&interface=cn.mldn.dibmp.service.IWarehouseService&methods=add,getAll,getById,getByName&pid=5888&revision=dev&side=provider&timestamp=1509961118054&version=dev) Failed to bind NettyServer on /192.168.10.1:9327, cause: Failed to bind to: /0.0.0.0:9327, dubbo version: 2.5.6, current host: 127.0.0.1
+com.alibaba.dubbo.rpc.RpcException: Fail to start server(url: dubbo://192.168.10.1:9327/cn.mldn.dibmp.service.IWarehouseService?anyhost=true&application=mldn-service-member&channel.readonly.sent=true&codec=dubbo&default.timeout=10000000&dubbo=2.5.6&generic=false&heartbeat=60000&interface=cn.mldn.dibmp.service.IWarehouseService&methods=add,getAll,getById,getByName&pid=5888&revision=dev&side=provider&timestamp=1509961118054&version=dev) Failed to bind NettyServer on /192.168.10.1:9327, cause: Failed to bind to: /0.0.0.0:9327
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol.createServer(DubboProtocol.java:279)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol.openServer(DubboProtocol.java:256)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol.export(DubboProtocol.java:243)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper.export(ProtocolFilterWrapper.java:94)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolListenerWrapper.export(ProtocolListenerWrapper.java:56)
+	at com.alibaba.dubbo.rpc.Protocol$Adaptive.export(Protocol$Adaptive.java)
+	at com.alibaba.dubbo.registry.integration.RegistryProtocol.doLocalExport(RegistryProtocol.java:163)
+	at com.alibaba.dubbo.registry.integration.RegistryProtocol.export(RegistryProtocol.java:116)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper.export(ProtocolFilterWrapper.java:92)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolListenerWrapper.export(ProtocolListenerWrapper.java:54)
+	at com.alibaba.dubbo.rpc.Protocol$Adaptive.export(Protocol$Adaptive.java)
+	at com.alibaba.dubbo.config.ServiceConfig.doExportUrlsFor1Protocol(ServiceConfig.java:550)
+	at com.alibaba.dubbo.config.ServiceConfig.doExportUrls(ServiceConfig.java:346)
+	at com.alibaba.dubbo.config.ServiceConfig.doExport(ServiceConfig.java:307)
+	at com.alibaba.dubbo.config.ServiceConfig.export(ServiceConfig.java:206)
+	at com.alibaba.dubbo.config.spring.ServiceBean.onApplicationEvent(ServiceBean.java:109)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:399)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:353)
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:887)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:552)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:144)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:95)
+	at com.alibaba.dubbo.container.spring.SpringContainer.start(SpringContainer.java:46)
+	at com.alibaba.dubbo.container.Main.main(Main.java:86)
+	at cn.mldn.dibmp.service.main.ProviderStartupMemberService.main(ProviderStartupMemberService.java:7)
+Caused by: com.alibaba.dubbo.remoting.RemotingException: Failed to bind NettyServer on /192.168.10.1:9327, cause: Failed to bind to: /0.0.0.0:9327
+	at com.alibaba.dubbo.remoting.transport.AbstractServer.<init>(AbstractServer.java:67)
+	at com.alibaba.dubbo.remoting.transport.netty.NettyServer.<init>(NettyServer.java:63)
+	at com.alibaba.dubbo.remoting.transport.netty.NettyTransporter.bind(NettyTransporter.java:33)
+	at com.alibaba.dubbo.remoting.Transporter$Adaptive.bind(Transporter$Adaptive.java)
+	at com.alibaba.dubbo.remoting.Transporters.bind(Transporters.java:57)
+	at com.alibaba.dubbo.remoting.exchange.support.header.HeaderExchanger.bind(HeaderExchanger.java:41)
+	at com.alibaba.dubbo.remoting.exchange.Exchangers.bind(Exchangers.java:71)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol.createServer(DubboProtocol.java:277)
+	... 27 more
+Caused by: org.jboss.netty.channel.ChannelException: Failed to bind to: /0.0.0.0:9327
+	at org.jboss.netty.bootstrap.ServerBootstrap.bind(ServerBootstrap.java:303)
+	at com.alibaba.dubbo.remoting.transport.netty.NettyServer.doOpen(NettyServer.java:94)
+	at com.alibaba.dubbo.remoting.transport.AbstractServer.<init>(AbstractServer.java:62)
+	... 34 more
+Caused by: java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Unknown Source)
+	at sun.nio.ch.Net.bind(Unknown Source)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(Unknown Source)
+	at sun.nio.ch.ServerSocketAdaptor.bind(Unknown Source)
+	at org.jboss.netty.channel.socket.nio.NioServerSocketPipelineSink.bind(NioServerSocketPipelineSink.java:148)
+	at org.jboss.netty.channel.socket.nio.NioServerSocketPipelineSink.handleServerSocket(NioServerSocketPipelineSink.java:100)
+	at org.jboss.netty.channel.socket.nio.NioServerSocketPipelineSink.eventSunk(NioServerSocketPipelineSink.java:74)
+	at org.jboss.netty.channel.Channels.bind(Channels.java:468)
+	at org.jboss.netty.channel.AbstractChannel.bind(AbstractChannel.java:192)
+	at org.jboss.netty.bootstrap.ServerBootstrap$Binder.channelOpen(ServerBootstrap.java:348)
+	at org.jboss.netty.channel.Channels.fireChannelOpen(Channels.java:176)
+	at org.jboss.netty.channel.socket.nio.NioServerSocketChannel.<init>(NioServerSocketChannel.java:85)
+	at org.jboss.netty.channel.socket.nio.NioServerSocketChannelFactory.newChannel(NioServerSocketChannelFactory.java:142)
+	at org.jboss.netty.channel.socket.nio.NioServerSocketChannelFactory.newChannel(NioServerSocketChannelFactory.java:90)
+	at org.jboss.netty.bootstrap.ServerBootstrap.bind(ServerBootstrap.java:282)
+	... 36 more
+2017-11-06 17:38:38,433 INFO [com.alibaba.dubbo.config.AbstractConfig] -  [DUBBO] Run shutdown hook now., dubbo version: 2.5.6, current host: 127.0.0.1
+2017-11-06 17:38:38,433 INFO [com.alibaba.dubbo.registry.support.AbstractRegistryFactory] -  [DUBBO] Close all registries [], dubbo version: 2.5.6, current host: 127.0.0.1
+2017-11-06 17:38:38,434 INFO [com.alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol] -  [DUBBO] Unexport service: dubbo://192.168.10.1:9327/cn.mldn.dibmp.service.IWarehouseService?anyhost=true&application=mldn-service-member&default.timeout=10000000&dubbo=2.5.6&generic=false&interface=cn.mldn.dibmp.service.IWarehouseService&methods=add,getAll,getById,getByName&pid=5888&revision=dev&side=provider&timestamp=1509961118054&version=dev, dubbo version: 2.5.6, current host: 127.0.0.1
+2017-11-06 17:38:38,434 INFO [com.alibaba.dubbo.rpc.protocol.injvm.InjvmProtocol] -  [DUBBO] Unexport service: injvm://127.0.0.1/cn.mldn.dibmp.service.IWarehouseService?anyhost=true&application=mldn-service-member&default.timeout=10000000&dubbo=2.5.6&generic=false&interface=cn.mldn.dibmp.service.IWarehouseService&methods=add,getAll,getById,getByName&pid=5888&revision=dev&side=provider&timestamp=1509961118054&version=dev, dubbo version: 2.5.6, current host: 127.0.0.1
+2017-11-06 21:46:26,705 INFO [com.alibaba.dubbo.common.logger.LoggerFactory] - using logger: com.alibaba.dubbo.common.logger.log4j.Log4jLoggerAdapter
+2017-11-06 21:46:26,804 INFO [com.alibaba.dubbo.container.Main] -  [DUBBO] Use container type([spring]) to run dubbo serivce., dubbo version: 2.5.6, current host: 127.0.0.1
+2017-11-06 21:46:30,736 INFO [com.alibaba.dubbo.config.AbstractConfig] -  [DUBBO] The service ready on spring started. service: cn.mldn.dibmp.service.IWarehouseService, dubbo version: 2.5.6, current host: 127.0.0.1
+2017-11-06 21:46:30,943 INFO [com.alibaba.dubbo.config.AbstractConfig] -  [DUBBO] Export dubbo service cn.mldn.dibmp.service.IWarehouseService to local registry, dubbo version: 2.5.6, current host: 127.0.0.1
+2017-11-06 21:46:30,943 INFO [com.alibaba.dubbo.config.AbstractConfig] -  [DUBBO] Export dubbo service cn.mldn.dibmp.service.IWarehouseService to url dubbo://192.168.10.1:9327/cn.mldn.dibmp.service.IWarehouseService?anyhost=true&application=mldn-service-member&default.timeout=10000000&dubbo=2.5.6&generic=false&interface=cn.mldn.dibmp.service.IWarehouseService&methods=add,getAll,getById,getByName&pid=4188&revision=dev&side=provider&timestamp=1509975990775&version=dev, dubbo version: 2.5.6, current host: 127.0.0.1
+2017-11-06 21:46:30,943 INFO [com.alibaba.dubbo.config.AbstractConfig] -  [DUBBO] Register dubbo service cn.mldn.dibmp.service.IWarehouseService url dubbo://192.168.10.1:9327/cn.mldn.dibmp.service.IWarehouseService?anyhost=true&application=mldn-service-member&default.timeout=10000000&dubbo=2.5.6&generic=false&interface=cn.mldn.dibmp.service.IWarehouseService&methods=add,getAll,getById,getByName&pid=4188&revision=dev&side=provider&timestamp=1509975990775&version=dev to registry registry://192.168.184.128:2181/com.alibaba.dubbo.registry.RegistryService?application=mldn-service-member&dubbo=2.5.6&pid=4188&registry=zookeeper&timestamp=1509975990755, dubbo version: 2.5.6, current host: 127.0.0.1
+2017-11-06 21:46:31,384 INFO [com.alibaba.dubbo.remoting.transport.AbstractServer] -  [DUBBO] Start NettyServer bind /0.0.0.0:9327, export /192.168.10.1:9327, dubbo version: 2.5.6, current host: 127.0.0.1
+2017-11-06 21:46:31,418 INFO [com.alibaba.dubbo.registry.zookeeper.ZookeeperRegistry] -  [DUBBO] Load registry store file C:\Users\Administrator\.dubbo\dubbo-registry-192.168.184.128.cache, data: {cn.mldn.dibmp.service.IMemberService:dev=empty://192.168.10.1/cn.mldn.dibmp.service.IMemberService?application=mldn-service-test&category=configurators&dubbo=2.5.6&interface=cn.mldn.dibmp.service.IMemberService&methods=getRoleAndActionByMember,get&pid=5428&revision=dev&side=consumer&timestamp=1509974974963&version=dev empty://192.168.10.1/cn.mldn.dibmp.service.IMemberService?application=mldn-service-test&category=routers&dubbo=2.5.6&interface=cn.mldn.dibmp.service.IMemberService&methods=getRoleAndActionByMember,get&pid=5428&revision=dev&side=consumer&timestamp=1509974974963&version=dev dubbo://192.168.10.1:9327/cn.mldn.dibmp.service.IMemberService?anyhost=true&application=mldn-service-member&default.timeout=10000000&dubbo=2.5.6&generic=false&interface=cn.mldn.dibmp.service.IMemberService&methods=getRoleAndActionByMember,get&pid=7816&revision=dev&side=provider&timestamp=1509973496767&version=dev, cn.mldn.dibmp.service.IWarehouseService:dev=empty://192.168.10.1/cn.mldn.dibmp.service.IWarehouseService?application=mldn-service-test&category=configurators&dubbo=2.5.6&interface=cn.mldn.dibmp.service.IWarehouseService&methods=add,getAll,getById,getByName&pid=7316&revision=dev&side=consumer&timestamp=1509975907844&version=dev empty://192.168.10.1/cn.mldn.dibmp.service.IWarehouseService?application=mldn-service-test&category=routers&dubbo=2.5.6&interface=cn.mldn.dibmp.service.IWarehouseService&methods=add,getAll,getById,getByName&pid=7316&revision=dev&side=consumer&timestamp=1509975907844&version=dev empty://192.168.10.1/cn.mldn.dibmp.service.IWarehouseService?application=mldn-service-test&category=providers&dubbo=2.5.6&interface=cn.mldn.dibmp.service.IWarehouseService&methods=add,getAll,getById,getByName&pid=7316&revision=dev&side=consumer&timestamp=1509975907844&version=dev}, dubbo version: 2.5.6, current host: 127.0.0.1
+2017-11-06 21:46:31,812 INFO [com.alibaba.dubbo.registry.zookeeper.ZookeeperRegistry] -  [DUBBO] Register: dubbo://192.168.10.1:9327/cn.mldn.dibmp.service.IWarehouseService?anyhost=true&application=mldn-service-member&default.timeout=10000000&dubbo=2.5.6&generic=false&interface=cn.mldn.dibmp.service.IWarehouseService&methods=add,getAll,getById,getByName&pid=4188&revision=dev&side=provider&timestamp=1509975990775&version=dev, dubbo version: 2.5.6, current host: 127.0.0.1
+2017-11-06 21:46:32,496 INFO [com.alibaba.dubbo.registry.zookeeper.ZookeeperRegistry] -  [DUBBO] Subscribe: provider://192.168.10.1:9327/cn.mldn.dibmp.service.IWarehouseService?anyhost=true&application=mldn-service-member&category=configurators&check=false&default.timeout=10000000&dubbo=2.5.6&generic=false&interface=cn.mldn.dibmp.service.IWarehouseService&methods=add,getAll,getById,getByName&pid=4188&revision=dev&side=provider&timestamp=1509975990775&version=dev, dubbo version: 2.5.6, current host: 127.0.0.1
+2017-11-06 21:46:32,520 INFO [com.alibaba.dubbo.registry.zookeeper.ZookeeperRegistry] -  [DUBBO] Notify urls for subscribe url provider://192.168.10.1:9327/cn.mldn.dibmp.service.IWarehouseService?anyhost=true&application=mldn-service-member&category=configurators&check=false&default.timeout=10000000&dubbo=2.5.6&generic=false&interface=cn.mldn.dibmp.service.IWarehouseService&methods=add,getAll,getById,getByName&pid=4188&revision=dev&side=provider&timestamp=1509975990775&version=dev, urls: [empty://192.168.10.1:9327/cn.mldn.dibmp.service.IWarehouseService?anyhost=true&application=mldn-service-member&category=configurators&check=false&default.timeout=10000000&dubbo=2.5.6&generic=false&interface=cn.mldn.dibmp.service.IWarehouseService&methods=add,getAll,getById,getByName&pid=4188&revision=dev&side=provider&timestamp=1509975990775&version=dev], dubbo version: 2.5.6, current host: 127.0.0.1
+2017-11-06 21:46:32,685 INFO [com.alibaba.dubbo.container.Main] -  [DUBBO] Dubbo SpringContainer started!, dubbo version: 2.5.6, current host: 127.0.0.1
+2017-11-06 21:47:23,118 WARN [com.alibaba.dubbo.remoting.transport.AbstractServer] -  [DUBBO] All clients has discontected from /192.168.10.1:9327. You can graceful shutdown now., dubbo version: 2.5.6, current host: 127.0.0.1
+2017-11-06 21:47:23,119 INFO [com.alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol] -  [DUBBO] disconected from /192.168.10.1:63186,url:dubbo://192.168.10.1:9327/cn.mldn.dibmp.service.IWarehouseService?anyhost=true&application=mldn-service-member&channel.readonly.sent=true&codec=dubbo&default.timeout=10000000&dubbo=2.5.6&generic=false&heartbeat=60000&interface=cn.mldn.dibmp.service.IWarehouseService&methods=add,getAll,getById,getByName&pid=4188&revision=dev&side=provider&timestamp=1509975990775&version=dev, dubbo version: 2.5.6, current host: 127.0.0.1
+2017-11-06 22:07:23,448 INFO [com.alibaba.dubbo.common.logger.LoggerFactory] - using logger: com.alibaba.dubbo.common.logger.log4j.Log4jLoggerAdapter
+2017-11-06 22:07:23,561 INFO [com.alibaba.dubbo.container.Main] -  [DUBBO] Use container type([spring]) to run dubbo serivce., dubbo version: 2.5.6, current host: 127.0.0.1
+2017-11-06 22:07:27,075 INFO [com.alibaba.dubbo.config.AbstractConfig] -  [DUBBO] The service ready on spring started. service: cn.mldn.dibmp.service.IWarehouseService, dubbo version: 2.5.6, current host: 127.0.0.1
+2017-11-06 22:07:27,262 INFO [com.alibaba.dubbo.config.AbstractConfig] -  [DUBBO] Export dubbo service cn.mldn.dibmp.service.IWarehouseService to local registry, dubbo version: 2.5.6, current host: 127.0.0.1
+2017-11-06 22:07:27,262 INFO [com.alibaba.dubbo.config.AbstractConfig] -  [DUBBO] Export dubbo service cn.mldn.dibmp.service.IWarehouseService to url dubbo://192.168.10.1:9328/cn.mldn.dibmp.service.IWarehouseService?anyhost=true&application=mldn-service-warehouse&default.timeout=10000000&dubbo=2.5.6&generic=false&interface=cn.mldn.dibmp.service.IWarehouseService&methods=add,getAll,getById,getByName&pid=4892&revision=dev&side=provider&timestamp=1509977247094&version=dev, dubbo version: 2.5.6, current host: 127.0.0.1
+2017-11-06 22:07:27,262 INFO [com.alibaba.dubbo.config.AbstractConfig] -  [DUBBO] Register dubbo service cn.mldn.dibmp.service.IWarehouseService url dubbo://192.168.10.1:9328/cn.mldn.dibmp.service.IWarehouseService?anyhost=true&application=mldn-service-warehouse&default.timeout=10000000&dubbo=2.5.6&generic=false&interface=cn.mldn.dibmp.service.IWarehouseService&methods=add,getAll,getById,getByName&pid=4892&revision=dev&side=provider&timestamp=1509977247094&version=dev to registry registry://192.168.184.128:2181/com.alibaba.dubbo.registry.RegistryService?application=mldn-service-warehouse&dubbo=2.5.6&pid=4892&registry=zookeeper&timestamp=1509977247085, dubbo version: 2.5.6, current host: 127.0.0.1
+2017-11-06 22:07:27,704 INFO [com.alibaba.dubbo.remoting.transport.AbstractServer] -  [DUBBO] Start NettyServer bind /0.0.0.0:9328, export /192.168.10.1:9328, dubbo version: 2.5.6, current host: 127.0.0.1
+2017-11-06 22:07:27,734 INFO [com.alibaba.dubbo.registry.zookeeper.ZookeeperRegistry] -  [DUBBO] Load registry store file C:\Users\Administrator\.dubbo\dubbo-registry-192.168.184.128.cache, data: {cn.mldn.dibmp.service.IMemberService:dev=empty://192.168.10.1:9327/cn.mldn.dibmp.service.IMemberService?anyhost=true&application=mldn-service-member&category=configurators&check=false&default.timeout=10000000&dubbo=2.5.6&generic=false&interface=cn.mldn.dibmp.service.IMemberService&methods=getRoleAndActionByMember,get&pid=7468&revision=dev&side=provider&timestamp=1509977228182&version=dev, cn.mldn.dibmp.service.IWarehouseService:dev=empty://192.168.10.1/cn.mldn.dibmp.service.IWarehouseService?application=mldn-service-test&category=configurators&dubbo=2.5.6&interface=cn.mldn.dibmp.service.IWarehouseService&methods=add,getAll,getById,getByName&pid=7784&revision=0.0.1&side=consumer&timestamp=1509976854181&version=dev empty://192.168.10.1/cn.mldn.dibmp.service.IWarehouseService?application=mldn-service-test&category=routers&dubbo=2.5.6&interface=cn.mldn.dibmp.service.IWarehouseService&methods=add,getAll,getById,getByName&pid=7784&revision=0.0.1&side=consumer&timestamp=1509976854181&version=dev dubbo://192.168.10.1:9327/cn.mldn.dibmp.service.IWarehouseService?anyhost=true&application=mldn-service-member&default.timeout=10000000&dubbo=2.5.6&generic=false&interface=cn.mldn.dibmp.service.IWarehouseService&methods=add,getAll,getById,getByName&pid=7404&revision=dev&side=provider&timestamp=1509976828669&version=dev}, dubbo version: 2.5.6, current host: 127.0.0.1
+2017-11-06 22:07:27,870 INFO [com.alibaba.dubbo.registry.zookeeper.ZookeeperRegistry] -  [DUBBO] Register: dubbo://192.168.10.1:9328/cn.mldn.dibmp.service.IWarehouseService?anyhost=true&application=mldn-service-warehouse&default.timeout=10000000&dubbo=2.5.6&generic=false&interface=cn.mldn.dibmp.service.IWarehouseService&methods=add,getAll,getById,getByName&pid=4892&revision=dev&side=provider&timestamp=1509977247094&version=dev, dubbo version: 2.5.6, current host: 127.0.0.1
+2017-11-06 22:07:28,458 INFO [com.alibaba.dubbo.registry.zookeeper.ZookeeperRegistry] -  [DUBBO] Subscribe: provider://192.168.10.1:9328/cn.mldn.dibmp.service.IWarehouseService?anyhost=true&application=mldn-service-warehouse&category=configurators&check=false&default.timeout=10000000&dubbo=2.5.6&generic=false&interface=cn.mldn.dibmp.service.IWarehouseService&methods=add,getAll,getById,getByName&pid=4892&revision=dev&side=provider&timestamp=1509977247094&version=dev, dubbo version: 2.5.6, current host: 127.0.0.1
+2017-11-06 22:07:28,477 INFO [com.alibaba.dubbo.registry.zookeeper.ZookeeperRegistry] -  [DUBBO] Notify urls for subscribe url provider://192.168.10.1:9328/cn.mldn.dibmp.service.IWarehouseService?anyhost=true&application=mldn-service-warehouse&category=configurators&check=false&default.timeout=10000000&dubbo=2.5.6&generic=false&interface=cn.mldn.dibmp.service.IWarehouseService&methods=add,getAll,getById,getByName&pid=4892&revision=dev&side=provider&timestamp=1509977247094&version=dev, urls: [empty://192.168.10.1:9328/cn.mldn.dibmp.service.IWarehouseService?anyhost=true&application=mldn-service-warehouse&category=configurators&check=false&default.timeout=10000000&dubbo=2.5.6&generic=false&interface=cn.mldn.dibmp.service.IWarehouseService&methods=add,getAll,getById,getByName&pid=4892&revision=dev&side=provider&timestamp=1509977247094&version=dev], dubbo version: 2.5.6, current host: 127.0.0.1
+2017-11-06 22:07:28,527 INFO [com.alibaba.dubbo.container.Main] -  [DUBBO] Dubbo SpringContainer started!, dubbo version: 2.5.6, current host: 127.0.0.1
+2017-11-07 00:08:49,965 WARN [com.alibaba.dubbo.remoting.transport.AbstractServer] -  [DUBBO] All clients has discontected from /192.168.10.1:9328. You can graceful shutdown now., dubbo version: 2.5.6, current host: 127.0.0.1
+2017-11-07 00:08:49,981 INFO [com.alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol] -  [DUBBO] disconected from /192.168.10.1:53823,url:dubbo://192.168.10.1:9328/cn.mldn.dibmp.service.IWarehouseService?anyhost=true&application=mldn-service-warehouse&channel.readonly.sent=true&codec=dubbo&default.timeout=10000000&dubbo=2.5.6&generic=false&heartbeat=60000&interface=cn.mldn.dibmp.service.IWarehouseService&methods=add,getAll,getById,getByName&pid=4892&revision=dev&side=provider&timestamp=1509977247094&version=dev, dubbo version: 2.5.6, current host: 127.0.0.1
+2017-11-07 00:19:29,995 WARN [com.alibaba.dubbo.remoting.transport.AbstractServer] -  [DUBBO] All clients has discontected from /192.168.10.1:9328. You can graceful shutdown now., dubbo version: 2.5.6, current host: 127.0.0.1
+2017-11-07 00:19:29,998 INFO [com.alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol] -  [DUBBO] disconected from /192.168.10.1:53568,url:dubbo://192.168.10.1:9328/cn.mldn.dibmp.service.IWarehouseService?anyhost=true&application=mldn-service-warehouse&channel.readonly.sent=true&codec=dubbo&default.timeout=10000000&dubbo=2.5.6&generic=false&heartbeat=60000&interface=cn.mldn.dibmp.service.IWarehouseService&methods=add,getAll,getById,getByName&pid=4892&revision=dev&side=provider&timestamp=1509977247094&version=dev, dubbo version: 2.5.6, current host: 127.0.0.1

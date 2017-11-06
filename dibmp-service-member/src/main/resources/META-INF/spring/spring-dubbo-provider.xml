@@ -18,6 +18,7 @@
 	<!-- 声明需要暴露的服务接口 -->
 	<dubbo:service interface="cn.mldn.dibmp.service.IMemberService"
 		ref="memberServiceImpl" version="${dubbo.interface.version}" />
+		
 </beans>
 
 
