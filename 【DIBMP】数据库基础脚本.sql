@@ -4,6 +4,8 @@
 
 
 
+
+
 DROP DATABASE mldn ;
 CREATE DATABASE mldn CHARACTER SET UTF8 ;
 USE mldn ;
