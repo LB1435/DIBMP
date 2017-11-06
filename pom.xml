@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>cn.mldn</groupId>
@@ -30,6 +29,14 @@
 		<source.version>3.0.1</source.version>
 		<javadoc.version>2.10.4</javadoc.version>
 		<logback.version>1.2.3</logback.version>
+
+		<!--添加Springdata依赖包(主要是Redis用) start -->
+		<springdata.version>2.0.1.RELEASE</springdata.version>
+		<!--添加Springdata依赖包(主要是Redis用) end -->
+		<!--jedis数据连接依赖包 start -->
+		<jedis.version>2.9.0</jedis.version>
+		<!--jedis数据连接依赖包 end -->
+
 
 		<fileupload.version>1.3.3</fileupload.version>
 		<commons-io.version>2.5</commons-io.version>
@@ -389,6 +396,22 @@
 				<artifactId>spring-context-support</artifactId>
 				<version>${spring.version}</version>
 			</dependency>
+			<!--添加Springdata依赖包(主要是Redis用) start -->
+			<dependency>
+				<groupId>org.springframework.data</groupId>
+				<artifactId>spring-data-redis</artifactId>
+				<version>${springdata.version}</version>
+			</dependency>
+
+			<!--添加Springdata依赖包(主要是Redis用) end -->
+			<!-- redis通过jedis连接 start -->
+			<dependency>
+				<groupId>redis.clients</groupId>
+				<artifactId>jedis</artifactId>
+				<version>${jedis.version}</version>
+			</dependency>
+			<!-- redis通过jedis连接 end -->
+
 		</dependencies>
 	</dependencyManagement>
 	<profiles>	<!-- 明确的进行具体的资源名称的配置，这个名称是在maven打包的时候使用的名称 -->
@@ -485,5 +508,7 @@
 		<module>dibmp-api</module>
 		<module>dibmp-web</module>
 		<module>dibmp-test-service</module>
-	</modules>
+		<module>dibmp-service-sale</module>
+    <module>dibmp-service-sales</module>
+  </modules>
 </project>
