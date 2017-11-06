@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.mldn.dibmp.dao.IWarehouseDAO">
+	<select id="findById" parameterType="Long" resultType="Warehouse">
+		SELECT wid,name,pid,cid,wiid,address,area,maximum,currnum,photo,note,recorder,admin FROM warehouse WHERE wid=#{wid}
+	</select>
+	
+	<select id="findAll" parameterType="Map" resultType="Warehouse">
+		SELECT wid,name,pid,cid,wiid,address,area,maximum,currnum,photo,note,recorder,admin FROM warehouse 
+	</select>
+	
+	<select id="findByName" parameterType="String" resultType="Warehouse">
+		SELECT wid,name,pid,cid,wiid,address,area,maximum,currnum,photo,note,recorder,admin FROM warehouse WHERE name=#{name}
+	</select>
+	
+	<insert id="doCreate" parameterType="Warehouse" keyProperty="wid">
+		insert into warehouse(name,pid,cid,wiid,address,area,maximum,photo,note)
+		values(#{name},#{pid},#{cid},#{wiid},#{address},#{area},#{maximum},#{photo},#{note})
+	</insert>
+</mapper>
