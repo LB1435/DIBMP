@@ -485,5 +485,6 @@
 		<module>dibmp-api</module>
 		<module>dibmp-web</module>
 		<module>dibmp-test-service</module>
+		<module>dibmp-service-warehouse-peng</module>
 	</modules>
 </project>
