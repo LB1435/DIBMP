@@ -1,9 +1,13 @@
 package cn.mldn.dibmp.service ;
 
+import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
+import cn.mldn.dibmp.vo.City;
+import cn.mldn.dibmp.vo.Province;
 import cn.mldn.dibmp.vo.Warehouse;
+import cn.mldn.dibmp.vo.Witem;
 
 
 public interface IWarehouseService {
@@ -21,6 +25,7 @@ public interface IWarehouseService {
 	 */
 	public Warehouse getByName(String name);
 	
+	
 	/**
 	 * 增加仓库信息
 	 * @param wh 需要增加的信息
@@ -33,4 +38,21 @@ public interface IWarehouseService {
 	 * @return 仓库信息
 	 */
 	public Map<String,Set<Warehouse>> getAll() ;
+	/**
+	 * 查询所有的省份信息
+	 * @return 省份信息
+	 */
+	public Map<String,Set<Province>> getAllProvice();
+	/**
+	 * 通过pid 查询城市信息
+	 * @param pid 省份id
+	 * @return pid对应的城市信息
+	 */
+	public List<City> getCityByPid(Long pid);
+	
+	/**
+	 * 查询所有的分类信息
+	 * @return 分类信息
+	 */
+	public Map<String,Set<Witem>> getAllWitem();
 }

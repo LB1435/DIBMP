@@ -1,8 +1,12 @@
 package cn.mldn.dibmp.dao;
 
+import java.util.List;
 import java.util.Set;
 
+import cn.mldn.dibmp.vo.City;
+import cn.mldn.dibmp.vo.Province;
 import cn.mldn.dibmp.vo.Warehouse;
+import cn.mldn.dibmp.vo.Witem;
 
 public interface IWarehouseDAO {
 	//仓库增加
@@ -17,5 +21,12 @@ public interface IWarehouseDAO {
 	//分页模糊统计查询
 	public Set<Warehouse> findAll(); 
 	
+	//查找所有身份信息
+	public Set<Province> findAllProvice();
 	
+	//查找所有城市信息
+	public List<City> findByPid(Long pid);
+	
+	//查找所有分类信息
+	public Set<Witem> findAllWitem();
 }

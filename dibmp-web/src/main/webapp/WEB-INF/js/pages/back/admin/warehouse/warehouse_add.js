@@ -76,8 +76,48 @@ $(function(){
 		handleAddress() ;	// 处理地址 
 	}) ;
 	$(pid).on("change",function(){
+		
+		
+//		if (this.value != "") {	// 有内容，需要进行ajax异步加载
+//			//
+//			console.log($(pid));
+//			$.ajax({
+//				url : "/dibmp/pages/back/admin/warehouse/addCity.action",
+//				method : "post" , 
+//				data :{
+//					"pid":$(this).val()
+//				} ,
+//				dataType : "json",
+//				success : f0{
+//					console.log(data);
+//					$("#cid").empty() ;
+//					for(i = 0 ; i < data.length;i++){
+//						$("#cid").append("<option value='"+data[i].cid+"'>"+data[i].title+"</option>");
+//					}
+//				},
+//				error : function() {// 错误处理
+//					console.log("服务器处理错误。") ; 
+//				}
+//			});
+//			//
+//			handleAddress() ;	// 处理地址 
+		
+		
+		
+		
+		
 		if (this.value != "") {	// 有内容，需要进行ajax异步加载
-			handleAddress() ;	// 处理地址 
+			console.log("#################"+pid);
+			$.post("/dibmp/pages/back/admin/warehouse/addCity.action",{"pid":this.value},
+					function(data){
+				$("#cid option:gt(0)").remove();
+				handleAddress() ;	// 处理地址 
+				
+				for(x = 0 ; x < data.length ; x ++){
+					$("#cid").append("<option value='"+data[x].cid+"'>"+data[x].title+"</option>") ;
+				}
+			},"json");
+			
 		} else {
 			$("#cid option:gt(0)").remove() ;
 		}

@@ -23,6 +23,10 @@ public class TestWarehouseService extends TestCase {
 		System.out.println("*********************");
 	}
 	
+	@Test
+	public void testWarehouseGetAllWitem() {
+		System.err.println(this.whService.getAllWitem());
+	}
 	
 	@Test
 	public void testWarehouseGetById() {
@@ -33,13 +37,22 @@ public class TestWarehouseService extends TestCase {
 		System.err.println(this.whService.getAll());
 	}
 	@Test
+	public void testWarehouseGetAllProvince() {
+		System.err.println(this.whService.getAllProvice());
+	}
+	@Test
+	public void testWarehouseGetByPid() {
+		System.err.println(this.whService.getCityByPid(20L));
+	}
+	
+	@Test
 	public void testWarehouseGetByName() {
 		System.err.println(this.whService.getByName("北京一号仓库"));
 	}
 	@Test
 	public void testAdd() {
 		Warehouse wh = new Warehouse();
-		wh.setName("北京六号仓库");
+		wh.setName("北京3号仓库");
 		wh.setPid(1L);
 		wh.setCid(2L);
 		wh.setWiid(10L);
