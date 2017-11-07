@@ -66,6 +66,7 @@ CREATE TABLE witem (
    wiid                  bigint  AUTO_INCREMENT ,
    title                 varchar(50),
    CONSTRAINT pk_wiid PRIMARY KEY (wiid)
+   
 ) engine='innodb';
 
 -- 创建省份表
@@ -125,6 +126,7 @@ CREATE TABLE goods(
 	recorder	varchar(50) ,
 	delflag		int ,
 	CONSTRAINT pk_gid PRIMARY KEY(gid)
+	
 ) engine=innodb ;
 
 -- 定义客户等级表

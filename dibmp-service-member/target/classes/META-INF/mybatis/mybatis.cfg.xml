@@ -10,4 +10,7 @@
 <!-- 	<mappers>									映射文件信息
 		<package name="mybatis.mapper.cn.mldn.mldnmybatis.vo"/>
 	</mappers>  -->
+	<mappers>
+		<mapper  resource="META-INF/mapping/cn/mldn/Goods.xml"/>
+	</mappers>
 </configuration>

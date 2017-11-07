@@ -2,8 +2,10 @@ package cn.mldn.dibmp.web.action.back;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
 
+import cn.mldn.dibmp.vo.Goods;
 import cn.mldn.util.action.abs.AbstractAction;
 import cn.mldn.util.web.SplitPageUtil;
 
@@ -44,4 +46,5 @@ public class GoodsActionBack extends AbstractAction {
 		ModelAndView mav = new ModelAndView(super.getPage("goods.list.page"));
 		return mav;
 	}
+	
 }
