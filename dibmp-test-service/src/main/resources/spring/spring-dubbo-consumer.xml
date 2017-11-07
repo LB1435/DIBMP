@@ -21,4 +21,6 @@
 		interface="cn.mldn.dibmp.service.ICitemService" version="${dubbo.interface.version}" />
 	<dubbo:reference id="provinceInstance"
 		interface="cn.mldn.dibmp.service.IProvinceService" version="${dubbo.interface.version}" />
+	<dubbo:reference id="cityInstance"
+		interface="cn.mldn.dibmp.service.ICityService" version="${dubbo.interface.version}" />
 </beans>

@@ -24,6 +24,10 @@
 		ref="citemServiceImpl" version="${dubbo.interface.version}" />
 	<dubbo:service interface="cn.mldn.dibmp.service.IProvinceService"
 		ref="provinceServiceImpl" version="${dubbo.interface.version}" />
+	<dubbo:service interface="cn.mldn.dibmp.service.ICityService"
+		ref="cityServiceImpl" version="${dubbo.interface.version}" />
+	<dubbo:service interface="cn.mldn.dibmp.service.ICustomerService"
+		ref="customerServiceImpl" version="${dubbo.interface.version}" />
 </beans>
 
 

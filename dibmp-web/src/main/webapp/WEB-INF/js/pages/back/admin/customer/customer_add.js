@@ -74,11 +74,33 @@ $(function(){
 	}) ;
 	$(pid).on("change",function(){
 		if (this.value != "") {	// 有内容，需要进行ajax异步加载
+			//
+			console.log($(pid));
+			$.ajax({
+				url : "/dibmp/pages/back/admin/customer/cityShow.action",
+				method : "post" , 
+				data :{
+					"pid":$(this).val()
+				} ,
+				dataType : "json",
+				success : function(data){
+					console.log(data);
+					$("#cid").empty() ;
+					for(i = 0 ; i < data.length;i++){
+						$("#cid").append("<option value='"+data[i].cid+"'>"+data[i].title+"</option>");
+					}
+				},
+				error : function() {// 错误处理
+					console.log("服务器处理错误。") ; 
+				}
+			});
+			//
 			handleAddress() ;	// 处理地址 
 		} else {
 			$("#cid option:gt(0)").remove() ;
 		}
 	}) ;
+	
 })
 
 function handleAddress() {	// 实现地址处理过程

@@ -1,21 +1,23 @@
 package cn.mldn.dibmp.web.action.back;
 
-import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.request;
-
 import java.util.Date;
 import java.util.List;
 
 import javax.annotation.Resource;
 
+import org.apache.shiro.SecurityUtils;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
 
 import cn.mldn.dibmp.service.ICitemService;
+import cn.mldn.dibmp.service.ICityService;
 import cn.mldn.dibmp.service.ICsourceService;
+import cn.mldn.dibmp.service.ICustomerService;
 import cn.mldn.dibmp.service.IProvinceService;
 import cn.mldn.dibmp.vo.Citem;
+import cn.mldn.dibmp.vo.City;
 import cn.mldn.dibmp.vo.Csource;
 import cn.mldn.dibmp.vo.Customer;
 import cn.mldn.dibmp.vo.Province;
@@ -33,20 +35,31 @@ public class CustomerActionBack extends AbstractAction {
 	ICitemService citemService;
 	@Resource
 	IProvinceService provinceService;
-	
+	@Resource
+	ICityService cityService;
+
 	@RequestMapping("add_pre")
 	public ModelAndView addPre() {
 		ModelAndView mav = new ModelAndView(super.getPage("customer.add.page"));
 		List<Csource> findCsource = csourceService.find();
 		mav.addObject("csource", findCsource);
 		List<Citem> findCitem = citemService.find();
-		mav.addObject("citem",findCitem);
+		mav.addObject("citem", findCitem);
 		List<Province> findProvince = provinceService.find();
 		mav.addObject("province", findProvince);
 		return mav;
 	}
-//	@Resource
-//	ICustomerService customerService;
+
+	@RequestMapping("cityShow")
+	@ResponseBody
+	public Object cityShow(String pid) {
+		Long mypid = Long.parseLong(pid);
+		List<City> findCity = cityService.list(mypid);
+		return findCity;
+	}
+
+	@Resource
+	ICustomerService customerService;
 
 	@RequestMapping("add")
 	public ModelAndView add(Customer vo) {
@@ -54,7 +67,8 @@ public class CustomerActionBack extends AbstractAction {
 		super.setMsgAndUrl(mav, "customer.add.action", "vo.add.success", TITLE);
 		System.err.println(vo);
 		vo.setInDate(new Date());
-//		customerService.add(vo);
+		vo.setRecorder(SecurityUtils.getSubject().getPrincipal().toString());
+		customerService.add(vo);
 		return mav;
 	}
 
