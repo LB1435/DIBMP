@@ -27,27 +27,27 @@
 					<table class="table table-striped table-bordered table-hover">
 						<tr> 
 							<td style="width:150px;"><strong>入库标题：</strong></td>
-							<td>${storApp.title}</td>
+							<td>双13备货</td>
 						</tr>
 						<tr>
 							<td><strong>存入仓库名称：</strong></td>
-							<td><span id="showWarehouse" style="cursor:pointer;">${storApp.pid}、${storApp.cid}</span></td>
+							<td><span id="showWarehouse" style="cursor:pointer;">北京市 北京市 通州一号仓库</span></td>
 						</tr>
 						<tr>
 							<td><strong>仓库类型：</strong></td>
-							<td>${storApp.wiid}</td>
+							<td>衣帽服饰</td>
 						</tr>
 						<tr>
 							<td><strong>申请人：</strong></td>
-							<td><span id="showMember" style="cursor:pointer;">${storApp.appmid}</span></td>
+							<td><span id="showMember" style="cursor:pointer;">老李</span></td>
 						</tr>
 						<tr>
 							<td><strong>入库商品总价：</strong></td>
-							<td>dddd</td>
+							<td>￥20000</td>
 						</tr>
 						<tr>
 							<td><strong>入库单备注信息：</strong></td>
-							<td>${storApp.note}</td>
+							<td>我要上</td>
 						</tr>
 						<tr>
 							<td><strong>审核历史：</strong></td>
@@ -56,18 +56,18 @@
 					</table>
 				</div>
 				<div>
-					<form class="form-horizontal" action="<%=STORAGEAUDIT_EDIT_URL%>?said=${storApp.said}" id="myform" method="post">
+					<form class="form-horizontal" action="<%=STORAGEAUDIT_EDIT_URL%>" id="myform" method="post">
 						<fieldset>
 							<div class="form-group" id="auditDiv">
 								<!-- 定义表单提示文字 -->
 								<label class="col-md-3 control-label" for="destination">审核结论：</label>
 								<div class="col-md-5">
 									<div class="radio-inline">
-										<label><input type="radio" id="audit" name="audit" value="2" checked>
+										<label><input type="radio" id="audit" value="2" checked>
 											&nbsp;<span class="text-danger">拒绝</span></label>
 									</div> 
 									<div class="radio-inline">
-										<label><input type="radio" id="audit" name="audit" value="1">
+										<label><input type="radio" id="audit" value="1">
 											&nbsp;<span class="text-success">通过</span></label>
 									</div> 
 								</div>
@@ -88,7 +88,7 @@
 							</div> 
 							<div class="form-group">
 								<div class="col-md-5 col-md-offset-3">
-									<button type="submit" class="btn btn-primary">提交</button>
+									<button type="submit" class="btn btn-primary">增加</button>
 									<button type="reset" class="btn btn-warning">重置</button>
 								</div>
 							</div>
@@ -118,16 +118,14 @@
 										</tr>
 									</thead>
 									<tbody>
-									<c:forEach items="${storageDetails}" var="sd">
 										<tr class="text-primary">
-											<td class="text-center">${sd.gid}</td>
-											<td class="text-left">${sd.name}</td>
-											<td class="text-center">${sd.num}</td>
-											<td class="text-center">${sd.price}</td>
-											<td class="text-center">${sd.weight}</td>
-											<td class="text-center">${sd.num*sd.price}</td>
+											<td class="text-center">10001</td>
+											<td class="text-left">衣服</td>
+											<td class="text-center">50</td>
+											<td class="text-center">39.2</td>
+											<td class="text-center">200</td>
+											<td class="text-center">2000</td>
 										</tr>
-									</c:forEach>
 									</tbody>
 								</table>
 							</div>

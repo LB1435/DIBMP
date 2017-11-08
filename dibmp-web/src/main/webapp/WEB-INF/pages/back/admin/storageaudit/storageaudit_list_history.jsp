@@ -3,8 +3,7 @@
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 <%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions" %>
 <jsp:include page="/WEB-INF/pages/plugins/back/back_header.jsp"/>
-
-<script type="text/javascript" src="js/pages/back/admin/storageaudit/storageaudit_list_prepare.js"></script>
+<script type="text/javascript" src="js/pages/back/admin/storageaudit/storageaudit_list_history.js"></script>
 <script type="text/javascript" src="js/split_page.js"></script>
 <body class="hold-transition skin-blue sidebar-mini">
 	<div class="wrapper">
@@ -38,19 +37,16 @@
 						</tr>
 					</thead>
 					<tbody>
-					<c:forEach items="${allStorageRecord}" var="sr">
-					<fmt:formatDate value="${sr.redate}" pattern="yyyy-MM-dd" var="date"/>
 						<tr>
-							<th class="text-center" style="width:10%;">${sr.said }</th> 
-							<td class="text-left"><span id="sid-${sr.said}" style="cursor:pointer;">${sr.name }</span></td>
-							<td class="text-left"><span id="wid-${sr.wid}" style="cursor:pointer;">${sr.wid }</span></td>
-							<td class="text-center">${date}</td>
-							<td class="text-center"><span id="mid-${sr.appmid}" style="cursor:pointer;">${sr.appmid }</span></td>
-							<td class="text-center">${sr.num }</td>
-							<td class="text-center">${sr.price }</td>
-							<td class="text-center"><span id="mid-${sr.inmid}" style="cursor:pointer;">${sr.inmid }</span></td>
+							<th class="text-center" style="width:10%;">20001010</th> 
+							<td class="text-left"><span id="sid-1" style="cursor:pointer;">2017双十一衣帽入库</span></td>
+							<td class="text-left"><span id="wid-1" style="cursor:pointer;">北京通州仓库一号库</span></td>
+							<td class="text-center">2019-10-10</td>
+							<td class="text-center"><span id="mid-admin" style="cursor:pointer;">老李</span></td>
+							<td class="text-center">100</td>
+							<td class="text-center">10000</td>
+							<td class="text-center"><span id="mid-admin" style="cursor:pointer;">老张</span></td>
 						</tr>
-					</c:forEach>
 					</tbody>
 				</table>
 				<div id="splitBarDiv" style="float:right">

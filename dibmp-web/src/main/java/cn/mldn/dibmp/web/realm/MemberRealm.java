@@ -1,11 +1,11 @@
 package cn.mldn.dibmp.web.realm;
 
-
 import java.util.Map;
 import java.util.Set;
 
 import javax.annotation.Resource;
 
+import org.apache.shiro.SecurityUtils;
 import org.apache.shiro.authc.AuthenticationException;
 import org.apache.shiro.authc.AuthenticationInfo;
 import org.apache.shiro.authc.AuthenticationToken;
@@ -17,7 +17,6 @@ import org.apache.shiro.authz.AuthorizationInfo;
 import org.apache.shiro.authz.SimpleAuthorizationInfo;
 import org.apache.shiro.realm.AuthorizingRealm;
 import org.apache.shiro.subject.PrincipalCollection;
-
 
 import cn.mldn.dibmp.service.IMemberService;
 import cn.mldn.dibmp.vo.Member;
@@ -41,6 +40,7 @@ public class MemberRealm extends AuthorizingRealm {
 		if (member.getLocked().equals(1)) {	// 用户被锁定了
 			throw new LockedAccountException(mid + "账户信息已经被锁定，无法登录！") ;
 		}	// 要传递加密后的密码数据信息
+		SecurityUtils.getSubject().getSession().setAttribute("name", member.getName());
 		return new SimpleAuthenticationInfo(token.getPrincipal(), password.toCharArray(), "memberRealm");
 	}
 
@@ -55,5 +55,5 @@ public class MemberRealm extends AuthorizingRealm {
 		info.setStringPermissions(map.get("allActions")); // 保存所有的权限
 		return info ; 
 	}
-	
+ 
 }

@@ -15,10 +15,4 @@
 	<!-- 定义要引用的注册接口信息，一定要注意访问版本 -->
 	<dubbo:reference id="memberInstance"
 		interface="cn.mldn.dibmp.service.IMemberService" version="${dubbo.interface.version}" />
-	<dubbo:reference id="storageApplyInstance"
-		interface="cn.mldn.dibmp.service.IStorageApplyService" version="${dubbo.interface.version}"/>
-	<dubbo:reference id="storageApplyDetailsInstance" 
-		interface="cn.mldn.dibmp.service.IStorageApplyDetailsService" version="${dubbo.interface.version}"/>
-	<dubbo:reference id="storageRecordInstance" 
-		interface="cn.mldn.dibmp.service.IStorageRecordService" version="${dubbo.interface.version}"/>
 </beans>

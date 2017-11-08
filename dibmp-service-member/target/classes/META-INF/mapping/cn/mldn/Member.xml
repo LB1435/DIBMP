@@ -5,10 +5,4 @@
 	<select id="findById" parameterType="String" resultType="Member">
 		SELECT mid,lid,did,name,salary,phone,password,photo,note,hiredate,inmid,locked FROM member WHERE mid=#{mid}
 	</select>
-	<select id="findAllLevel" resultType="Level">
-		SELECT lid,title,losal,hisal FROM level 
-	</select>
-	<select id="findAllDept" resultType="Dept">
-		SELECT did,dname,mid,maxnum,currnum FROM dept
-	</select>
 </mapper>

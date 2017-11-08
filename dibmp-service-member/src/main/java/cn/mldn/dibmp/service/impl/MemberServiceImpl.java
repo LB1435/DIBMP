@@ -1,7 +1,6 @@
 package cn.mldn.dibmp.service.impl;
 
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
@@ -13,8 +12,6 @@ import cn.mldn.dibmp.dao.IActionDAO;
 import cn.mldn.dibmp.dao.IMemberDAO;
 import cn.mldn.dibmp.dao.IRoleDAO;
 import cn.mldn.dibmp.service.IMemberService;
-import cn.mldn.dibmp.vo.Dept;
-import cn.mldn.dibmp.vo.Level;
 import cn.mldn.dibmp.vo.Member;
 @Service
 public class MemberServiceImpl implements IMemberService {
@@ -35,16 +32,6 @@ public class MemberServiceImpl implements IMemberService {
 		map.put("allRoles", this.roleDAO.findAllByMember(mid)) ;
 		map.put("allActions", this.actionDAO.findAllByMember(mid)) ;
 		return map;
-	}
-
-	@Override
-	public List<Level> getAllLevel() {
-		return this.memberDAO.findAllLevel();
-	}
-
-	@Override
-	public List<Dept> getAllDept() {
-		return this.memberDAO.findAllDept();
 	}
 
 }
