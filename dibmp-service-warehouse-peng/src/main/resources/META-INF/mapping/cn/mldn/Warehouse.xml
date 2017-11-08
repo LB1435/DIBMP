@@ -29,7 +29,7 @@
 	</select>
 	
 	<insert id="doCreate" parameterType="Warehouse" keyProperty="wid">
-		insert into warehouse(name,pid,cid,wiid,address,area,maximum,photo,note)
-		values(#{name},#{pid},#{cid},#{wiid},#{address},#{area},#{maximum},#{photo},#{note})
+		insert into warehouse(name,pid,cid,wiid,address,area,maximum,currnum,photo,note)
+		values(#{name},#{pid},#{cid},#{wiid},#{address},#{area},#{maximum},#{currnum},#{photo},#{note})
 	</insert>
 </mapper>

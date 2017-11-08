@@ -18,7 +18,7 @@ public interface IWarehouseDAO {
 	//通过id查找仓库信息
 	public Warehouse findById(Long wid);
 	
-	//分页模糊统计查询
+	//查询 全部
 	public Set<Warehouse> findAll(); 
 	
 	//查找所有身份信息
@@ -29,4 +29,10 @@ public interface IWarehouseDAO {
 	
 	//查找所有分类信息
 	public Set<Witem> findAllWitem();
+	
+	//分页查询
+	public Set<Warehouse> findAll(Long currentPage,Integer lineSize);
+	
+	//分页模糊查询
+	public Set<Warehouse> findSlit(String column,String keyWord,Long currentPage,Integer lineSize);
 }

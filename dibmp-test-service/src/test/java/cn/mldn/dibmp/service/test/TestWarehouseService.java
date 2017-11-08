@@ -52,13 +52,14 @@ public class TestWarehouseService extends TestCase {
 	@Test
 	public void testAdd() {
 		Warehouse wh = new Warehouse();
-		wh.setName("北京3号仓库");
+		wh.setName("北京777号仓库");
 		wh.setPid(1L);
 		wh.setCid(2L);
 		wh.setWiid(10L);
 		wh.setAddress("北京朝阳区");
 		wh.setArea(100.0);
 		wh.setMaximum(250);
+		wh.setCurrnum(100);
 		wh.setPhoto("4868748678647");
 		wh.setNote("我是备注");
 		System.err.println(wh);

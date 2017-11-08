@@ -2,6 +2,7 @@ package cn.mldn.dibmp.web.action.back;
 
 
 
+
 import java.util.List;
 
 import javax.annotation.Resource;
@@ -9,10 +10,13 @@ import javax.annotation.Resource;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.servlet.ModelAndView;
 
 import cn.mldn.dibmp.service.IWarehouseService;
 import cn.mldn.dibmp.vo.City;
+import cn.mldn.dibmp.vo.Warehouse;
+import cn.mldn.util.fastDFSUtil;
 import cn.mldn.util.action.abs.AbstractAction;
 import cn.mldn.util.web.SplitPageUtil;
 
@@ -40,9 +44,16 @@ public class WarehouseActionBack extends AbstractAction {
 		return mav;
 	}
 	@RequestMapping("add")
-	public ModelAndView add() {
+	public ModelAndView add(Warehouse wh,MultipartFile pic) {
 		ModelAndView mav = new ModelAndView(super.getPage("forward.page"));
-		super.setMsgAndUrl(mav, "warehouse.add.action", "vo.add.success", TITLE);
+		String photo = fastDFSUtil.upload(pic);
+		wh.setPhoto(photo);
+		wh.setCurrnum(0);
+		if (whService.add(wh)) {
+			super.setMsgAndUrl(mav, "warehouse.add.action", "vo.add.success", TITLE);
+		}else {
+			super.setMsgAndUrl(mav, "warehouse.add.action", "vo.add.failure", TITLE);
+		}
 		return mav;
 	}
 	@RequestMapping("edit_pre")

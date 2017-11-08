@@ -15,6 +15,13 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
 	<dependencies>
+	
+		<!-- 配置fastDFS相关依赖包，用作图片上传 -->
+		<dependency>
+			<groupId>com.github.kischang</groupId>
+			<artifactId>fastdfs-client</artifactId>
+		</dependency>
+		
 		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
