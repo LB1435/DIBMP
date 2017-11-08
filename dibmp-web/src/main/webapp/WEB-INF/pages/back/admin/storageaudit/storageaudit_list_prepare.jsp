@@ -40,19 +40,26 @@
 						</tr>
 					</thead>
 					<tbody>
+					<c:forEach items="${allApplys}" var="app">
+					<c:forEach items="${NumAndPrice}" var="np">
+					<c:if test="${app.said==np.said}">
+					<fmt:formatDate value="${app.appdate}" pattern="yyyy-MM-dd" var="date"/>
 						<tr>
-							<th class="text-center" style="width:10%;">20001010</th> 
-							<td class="text-left"><span id="sid-1" style="cursor:pointer;">2017双十一衣帽入库</span></td>
-							<td class="text-left"><span id="wid-1" style="cursor:pointer;">北京通州仓库一号库</span></td>
-							<td class="text-center">2019-10-09</td>
-							<td class="text-center"><span id="mid-admin" style="cursor:pointer;">老李</span></td>
-							<td class="text-center">100</td>
-							<td class="text-center">10000</td>
+							<th class="text-center" style="width:10%;">${app.said}</th> 
+							<td class="text-left"><span id="sid-${app.said}" style="cursor:pointer;">${app.title}</span></td>
+							<td class="text-left"><span id="wid-${app.wid}" style="cursor:pointer;">${app.pid}、${app.cid}</span></td>
+							<td class="text-center">${date}</td>
+							<td class="text-center"><span id="mid-${app.appmid}" style="cursor:pointer;">${app.appmid}</span></td>
+							<td class="text-center">${np.num}</td>
+							<td class="text-center">${np.price}</td>
 							<td class="text-left">
-								<a href="<%=STORAGEAUDIT_EDIT_URL%>?sid=1" class="btn btn-primary btn-xs">
+								<a href="<%=STORAGEAUDIT_EDIT_URL%>?said=${app.said}" class="btn btn-primary btn-xs">
 									<span class="glyphicon glyphicon-edit"></span>&nbsp;处理申请</a>
 							</td>
 						</tr>
+						</c:if>
+					</c:forEach>
+					</c:forEach>
 					</tbody>
 				</table>
 				<div id="splitBarDiv" style="float:right">

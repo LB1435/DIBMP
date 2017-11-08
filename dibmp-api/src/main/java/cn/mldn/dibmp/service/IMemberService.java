@@ -1,8 +1,11 @@
 package cn.mldn.dibmp.service ;
 
+import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
+import cn.mldn.dibmp.vo.Dept;
+import cn.mldn.dibmp.vo.Level;
 import cn.mldn.dibmp.vo.Member;
 
 
@@ -21,4 +24,8 @@ public interface IMemberService {
 	 * 2、key = allActions、value = 该用户具备的所有权限
 	 */
 	public Map<String,Set<String>> getRoleAndActionByMember(String mid) ;
+	
+	public List<Level> getAllLevel() ; 
+	
+	public List<Dept> getAllDept() ; 
 }

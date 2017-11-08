@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.mldn.dibmp.dao.IStorageApplyDAO">
+	<select id="findAllApp" resultType="StorageApply">
+		SELECT said,title,pid,cid,wiid,wid,note,status,appmid,appdate FROM storage_apply WHERE status=1
+	</select>
+	<select id="findById" parameterType="Long" resultType="StorageApply">
+		SELECT said,title,pid,cid,wiid,wid,note,status,appmid,appdate FROM storage_apply WHERE status=1 AND said=#{said}
+	</select>
+	<update id="deleteStorageApply" parameterType="Long" >
+		UPDATE storage_apply SET status=0 WHERE said=#{said}
+	</update>
+</mapper>
