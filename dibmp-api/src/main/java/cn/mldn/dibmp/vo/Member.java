@@ -66,63 +66,48 @@ public class Member implements Serializable {
 	public void setDid(Long did) {
 		this.did = did;
 	}
-
 	public Long getLid() {
 		return lid;
 	}
-
 	public void setLid(Long lid) {
 		this.lid = lid;
 	}
-
 	public Double getSalary() {
 		return salary;
 	}
-
 	public void setSalary(Double salary) {
 		this.salary = salary;
 	}
-
 	public String getPhone() {
 		return phone;
 	}
-
 	public void setPhone(String phone) {
 		this.phone = phone;
 	}
-
 	public String getPhoto() {
 		return photo;
 	}
-
 	public void setPhoto(String photo) {
 		this.photo = photo;
 	}
-
 	public String getNote() {
 		return note;
 	}
-
 	public void setNote(String note) {
 		this.note = note;
 	}
-
 	public Date getHiredate() {
 		return hiredate;
 	}
-
 	public void setHiredate(Date hiredate) {
 		this.hiredate = hiredate;
 	}
-
 	public String getInmid() {
 		return inmid;
 	}
-
 	public void setInmid(String inmid) {
 		this.inmid = inmid;
 	}
-
 	@Override
 	public String toString() {
 		return "Member [mid=" + mid + ", did=" + did + ", lid=" + lid + ", name=" + name + ", password=" + password
