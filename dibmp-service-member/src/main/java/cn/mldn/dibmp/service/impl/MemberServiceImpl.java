@@ -34,4 +34,9 @@ public class MemberServiceImpl implements IMemberService {
 		return map;
 	}
 
+	@Override
+	public boolean lockMember(Map<String, Object> map) {
+		return memberDAO.lockMember(map);
+	}
+
 }

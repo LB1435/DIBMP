@@ -21,4 +21,11 @@ public interface IMemberService {
 	 * 2、key = allActions、value = 该用户具备的所有权限
 	 */
 	public Map<String,Set<String>> getRoleAndActionByMember(String mid) ;
+	
+	/**
+	 * 锁定当前登录的员工,一个员工一次只能服务一个客户
+	 * @param mid 员工ID
+	 * @return 更新是否成功
+	 */
+	public boolean lockMember(Map<String, Object> map);
 }

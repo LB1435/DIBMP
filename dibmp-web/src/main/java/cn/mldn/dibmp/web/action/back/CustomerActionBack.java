@@ -1,6 +1,7 @@
 package cn.mldn.dibmp.web.action.back;
 
 import java.util.Date;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
@@ -123,14 +124,22 @@ public class CustomerActionBack extends AbstractAction {
 	public boolean getSingalVO(Long cid) {
 		boolean isCheck = true;//用于判断是否点击过,true代表没有点击过,false代表有
 		String cuidString =cid.toString();
-		Customer customer2 = this.redisTemplate.opsForValue().get(cuidString);
-		System.err.println(customer2);
 		//一次只服务一个人所以
-		if (isCheck == true) {
-			isCheck = false;
+		String mid = SecurityUtils.getSubject().getPrincipal().toString();
+		if (mid==null) {
+			return false;
+		}
+		Member member = memberService.get(mid);
+		System.err.println(member);
+		if (member.getIscheck()==0) {
+			Map<String,Object> map = new HashMap<>();
+			map.put("ischeck", 1);
+			map.put("mid", mid);
+			boolean lockMember = memberService.lockMember(map);
 			Customer customer = customerService.findSingal(cid);
 			this.redisTemplate.opsForValue().set(cuidString, customer);
+			return true;
 		}
-		return isCheck;
+		return false;
 	}
 }
