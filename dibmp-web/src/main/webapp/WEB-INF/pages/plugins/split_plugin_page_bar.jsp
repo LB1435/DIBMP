@@ -13,7 +13,7 @@
 	request.setCharacterEncoding("UTF-8") ;
 %>
 <%
-	String handleUrl = null ; 
+	String handleUrl = (String) request.getAttribute("handleUrl") ; 
 	String column = (String) request.getAttribute("column") ;
 	String keyWord = (String) request.getAttribute("keyWord") ;
 	long allRecorders = 0 ;

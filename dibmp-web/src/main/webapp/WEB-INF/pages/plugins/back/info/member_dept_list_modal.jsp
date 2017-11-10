@@ -29,21 +29,126 @@
 								<th class="text-center"><strong>操作</strong></th>
 							</tr>
 						</thead>
-						<tbody>
-							<tr id="travel-1">
-								<td class="text-center">
+						<tbody id="member">
+							<!-- <tr id="travel-1">
+							<td class="text-center">
 									<img src="upload/member/nophoto.png" style="width:20px;"/> 
 								</td>
 								<td class="text-center" id="memberName">老李</td>
-								<td class="text-center">部门员工</td>
-								<td class="text-center">232902309230</td>
+								<td class="text-center" id="memberLevel">部门员工</td>
+								<td class="text-center" id="memberLevel">232902309230</td>
 								<td class="text-center">
 									<button class="btn btn-danger btn-xs" id="addadmin-mldn">
 										<span class="glyphicon glyphicon-plus-sign"></span>&nbsp;设置为库管</button>
 								</td>
-							</tr> 
+							</tr> -->
 						</tbody>
 					</table>
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
 				</div>
 				<div id="pageDiv" class="text-right">
 					<ul class="pagination pagination-sm" id="pagecontrol"></ul>

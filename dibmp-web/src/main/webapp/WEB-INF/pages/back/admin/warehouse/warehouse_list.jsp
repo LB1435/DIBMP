@@ -47,9 +47,9 @@
 							<td class="text-center">${wh.wiid}</td>
 							<td class="text-center">${wh.maximum}</td>
 							<td class="text-center">${wh.currnum}</td>
-							<td class="text-center" id="admin-1"><span id="mid-admin" style="cursor:pointer;">${wh.admin}</span></td> 
+							<td class="text-center" id="admin-${wh.wid}"><span id="mid-admin" style="cursor:pointer;">${wh.admin}</span></td> 
 							<td class="text-left">
-								<button id="editadmin-1" class="btn btn-primary btn-xs">
+								<button id="editadmin-${wh.wid}" class="btn btn-primary btn-xs">
 										<span class="glyphicon glyphicon-plus-sign"></span>&nbsp;编辑库管</button>
 										
 								<a href="<%=WAREHOUSE_EDIT_URL%>?wid=1" id="editinfo-1" class="btn btn-warning btn-xs">

@@ -75,6 +75,7 @@ $(function(){
 	$(cid).on("change",function() {
 		handleAddress() ;	// 处理地址 
 	}) ;
+	
 	$(pid).on("change",function(){
 		
 		

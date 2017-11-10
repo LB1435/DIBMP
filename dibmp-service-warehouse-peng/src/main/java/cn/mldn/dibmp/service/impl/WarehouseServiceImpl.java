@@ -12,6 +12,8 @@ import org.springframework.stereotype.Service;
 import cn.mldn.dibmp.dao.IWarehouseDAO;
 import cn.mldn.dibmp.service.IWarehouseService;
 import cn.mldn.dibmp.vo.City;
+import cn.mldn.dibmp.vo.Dept;
+import cn.mldn.dibmp.vo.Member;
 import cn.mldn.dibmp.vo.Province;
 import cn.mldn.dibmp.vo.Warehouse;
 import cn.mldn.dibmp.vo.Witem;
@@ -40,10 +42,15 @@ public class WarehouseServiceImpl implements IWarehouseService {
 	}
 	
 	@Override
-	public Map<String, Set<Warehouse>> getAll() {
-		Map<String,Set<Warehouse>> map = new HashMap<>();
-		map.put("AllWarehouse", this.whDAO.findAll());
-		System.err.println(map);
+	public Map<String, Object> list(Long currentPage,Integer lineSize,String column,String keyWord) {
+		Map<String,Object> map = new HashMap<>();
+		Map<String,Object> mapa = new HashMap<>() ; 
+		mapa.put("column", column) ; 
+		mapa.put("keyWord", "%"+"keyWord"+"%") ; 
+		mapa.put("start", (currentPage - 1) * lineSize) ; 
+		mapa.put("lineSize", lineSize) ; 
+			map.put("AllWarehouse", whDAO.findSplit(mapa));
+			map.put("allRecorders", whDAO.getSplitCount(mapa));
 		return map;
 	}
 
@@ -67,6 +74,21 @@ public class WarehouseServiceImpl implements IWarehouseService {
 		return this.whDAO.findByPid(pid);
 	}
 
+	@Override
+	public List<Dept> getAllDept() {
+		return this.whDAO.findAllDept();
+	}
 
-	
+	@Override
+	public List<Member> getMemberByDid(Long did) {
+		return this.whDAO.findByDid(did);
+	}
+
+	@Override
+	public boolean EditByWid(long wid,String admin) {
+		Map<String,Object> map = new HashMap<>() ;
+		map.put("wid", wid) ; 
+		map.put("admin", admin) ; 
+		return this.whDAO.doEditByWid(map) ; 
+	}
 }

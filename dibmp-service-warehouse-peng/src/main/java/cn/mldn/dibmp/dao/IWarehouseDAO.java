@@ -1,14 +1,28 @@
 package cn.mldn.dibmp.dao;
 
 import java.util.List;
+import java.util.Map;
 import java.util.Set;
 
 import cn.mldn.dibmp.vo.City;
+import cn.mldn.dibmp.vo.Dept;
+import cn.mldn.dibmp.vo.Member;
 import cn.mldn.dibmp.vo.Province;
 import cn.mldn.dibmp.vo.Warehouse;
 import cn.mldn.dibmp.vo.Witem;
 
 public interface IWarehouseDAO {
+	
+	//通过仓库编号修改仓库管理人员
+	public boolean doEditByWid(Map<String,Object> map);
+	
+	//根据pid 查询 Member信息
+	public List<Member> findByDid(Long did) ; 
+	
+	//查询所有部门信息
+	public List<Dept> findAllDept();
+	
+	
 	//仓库增加
 	public boolean doCreate(Warehouse wh);
 	
@@ -19,7 +33,7 @@ public interface IWarehouseDAO {
 	public Warehouse findById(Long wid);
 	
 	//查询 全部
-	public Set<Warehouse> findAll(); 
+	//public Set<Warehouse> findAll(); 
 	
 	//查找所有身份信息
 	public Set<Province> findAllProvice();
@@ -30,9 +44,12 @@ public interface IWarehouseDAO {
 	//查找所有分类信息
 	public Set<Witem> findAllWitem();
 	
-	//分页查询
-	public Set<Warehouse> findAll(Long currentPage,Integer lineSize);
-	
 	//分页模糊查询
-	public Set<Warehouse> findSlit(String column,String keyWord,Long currentPage,Integer lineSize);
+	public List<Warehouse> findSplit(Map<String,Object> map);
+	
+	//模糊统计查询
+	public Long getSplitCount(Map<String,Object> map);
+	
+	
+	
 }

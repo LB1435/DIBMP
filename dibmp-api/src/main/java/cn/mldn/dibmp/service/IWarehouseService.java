@@ -5,12 +5,26 @@ import java.util.Map;
 import java.util.Set;
 
 import cn.mldn.dibmp.vo.City;
+import cn.mldn.dibmp.vo.Dept;
+import cn.mldn.dibmp.vo.Member;
 import cn.mldn.dibmp.vo.Province;
 import cn.mldn.dibmp.vo.Warehouse;
 import cn.mldn.dibmp.vo.Witem;
 
 
 public interface IWarehouseService {
+	/**
+	 * 修改仓库管理员
+	 * @return 失败返回false
+	 */
+	public boolean EditByWid(long wid,String admin);
+	
+	/**
+	 * 获取部门信息，用户部门下拉框显示
+	 * @return
+	 */
+	public List<Dept> getAllDept();
+	
 	/**
 	 * 根据仓库WID获得一个仓库的完整对象信息
 	 * @param mid 要查询的仓库的WID
@@ -33,11 +47,7 @@ public interface IWarehouseService {
 	 */
 	public boolean add(Warehouse wh);
 	
-	/**
-	 * 查询仓库所有信息，作为列表显示
-	 * @return 仓库信息
-	 */
-	public Map<String,Set<Warehouse>> getAll() ;
+	
 	/**
 	 * 查询所有的省份信息
 	 * @return 省份信息
@@ -55,4 +65,17 @@ public interface IWarehouseService {
 	 * @return 分类信息
 	 */
 	public Map<String,Set<Witem>> getAllWitem();
+	/**
+	 * 商品清单分页模糊显示
+	 * @param currentPage 当前页
+	 * @param lineSize 每页的行数
+	 * @param column 模糊查询的列
+	 * @param keyWord 模糊查询的关键字
+	 * @return 以map集合的形式返回
+	 * 1、key = "allWarehouse", value表示所有的商品
+	 * 2、key = "allRecorders", value表示所有的记录数
+	 */
+	public Map<String,Object> list(Long currentPage,Integer lineSize,String column,String keyWord) ;
+
+	public List<Member> getMemberByDid(Long did) ; 
 }

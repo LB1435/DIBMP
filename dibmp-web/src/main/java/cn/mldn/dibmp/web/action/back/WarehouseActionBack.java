@@ -36,6 +36,29 @@ public class WarehouseActionBack extends AbstractAction {
 		return mycity;
 	}
 	
+	@RequestMapping("getDept")
+	@ResponseBody
+	public Object getDept() {
+		return whService.getAllDept();
+	}
+	
+	@RequestMapping("editAdmin")
+	@ResponseBody
+	public boolean editAdmin(long wid,String admin) {
+		whService.EditByWid(wid, admin) ; 
+		System.out.println(whService.EditByWid(wid, admin));
+		return whService.EditByWid(wid, admin);
+	}
+	
+	@RequestMapping("getMember")
+	@ResponseBody
+	public Object getMember(Long did,Long wid) {
+		System.err.println("************");
+		System.err.println("did="+did+"、wid="+wid);
+		System.err.println(whService.getMemberByDid(did));
+		return whService.getMemberByDid(did);
+	}
+	
 	@RequestMapping("add_pre")
 	public ModelAndView addPre() {
 		ModelAndView mav = new ModelAndView(super.getPage("warehouse.add.page"));
@@ -69,10 +92,14 @@ public class WarehouseActionBack extends AbstractAction {
 	}
 	@RequestMapping("list")
 	public ModelAndView list() {
-		SplitPageUtil spu = new SplitPageUtil("仓库名称:name|仓库地址:address", "warehouse.list.action") ;
+		SplitPageUtil spu = new SplitPageUtil("仓库名称:name|仓库地址:address", super.getPage("warehouse.list.action")) ;
 		ModelAndView mav = new ModelAndView(super.getPage("warehouse.list.page"));
-		mav.addAllObjects(whService.getAll());
-//		System.err.println(whService.getAll());
+		mav.addAllObjects(whService.list(spu.getCurrentPage(), spu.getLineSize(),null, null));
+////		System.err.println(whService.getAll());
+//		System.err.println(spu.getCurrentPage());
+//		System.err.println(spu.getLineSize());
+//		System.err.println(spu.getColumn());
+//		System.err.println(spu.getKeyWord());
 		return mav;
 	}
 }

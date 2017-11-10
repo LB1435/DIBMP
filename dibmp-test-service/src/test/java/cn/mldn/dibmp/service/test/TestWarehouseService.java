@@ -1,5 +1,7 @@
 package cn.mldn.dibmp.service.test;
 
+import java.util.Map;
+
 import javax.annotation.Resource;
 
 import org.junit.Test;
@@ -24,6 +26,16 @@ public class TestWarehouseService extends TestCase {
 	}
 	
 	@Test
+	public void testEditBywid() {
+		System.err.println(this.whService.EditByWid(10L, "mldndfjdkf"));
+	}
+	
+	@Test
+	public void testWarehouseGetDept() {
+		System.err.println(this.whService.getAllDept());
+	}
+	
+	@Test
 	public void testWarehouseGetAllWitem() {
 		System.err.println(this.whService.getAllWitem());
 	}
@@ -34,7 +46,8 @@ public class TestWarehouseService extends TestCase {
 	}
 	@Test
 	public void testWarehouseGetAll() {
-		System.err.println(this.whService.getAll());
+		Map<String,Object> map = whService.list(1L, 5, null, null);
+		System.err.println(map);
 	}
 	@Test
 	public void testWarehouseGetAllProvince() {

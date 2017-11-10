@@ -2,8 +2,47 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
 "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="cn.mldn.dibmp.dao.IWarehouseDAO">
+	
+	<update id="doEditByWid" parameterType="Map">
+		update warehouse 
+			<set>
+				<if test="admin != null">
+					admin=#{admin}
+				</if>
+			</set>
+			<where>
+				wid=#{wid}
+			</where>
+	</update>
+	
+	<select id="findByDid" parameterType="Long" resultType="Member">
+		SELECT mid,lid,did,name,salary,phone,photo,note,hiredate FROM member WHERE did=#{did}
+	</select>
+	<select id="findAllDept" resultType="Dept" parameterType="List">
+		select did,dname,mid,maxnum,currnum from dept
+		where did=1 or did=7 or did=8
+	</select>
 
-
+	<select id="findSplit" resultType="Warehouse" parameterType="Map">
+		select wid,name,pid,cid,wiid,address,area,maximum,currnum,photo,note,recorder,admin 
+		from warehouse 
+		<where>
+			<if test="column != null and keyWord != null">
+				${column} LIKE #{keyWord}
+			</if>
+		</where>
+		LIMIT #{start},#{lineSize}
+	</select> 
+	
+	<select id="getSplitCount" parameterType="Map" resultType="Long">
+		select count(*) from warehouse 
+		<where>
+			<if test="column != null and keyWord != null">
+				${column} LIKE #{keyWord}
+			</if>
+		</where>
+	</select>
+	
 	<select id="findAllWitem" parameterType="Long" resultType="Witem">
 		SELECT wiid,title FROM witem
 	</select>
@@ -13,19 +52,19 @@
 	</select>
 
 	<select id="findByPid" parameterType="Long" resultType="City">
-		SELECT cid,pid,title FROM city where pid=#{pid}
+		SELECT cid,pid,title FROM city 
+		where pid=#{pid}
 	</select>
 	
 	<select id="findById" parameterType="Long" resultType="Warehouse">
-		SELECT wid,name,pid,cid,wiid,address,area,maximum,currnum,photo,note,recorder,admin FROM warehouse WHERE wid=#{wid}
+		SELECT wid,name,pid,cid,wiid,address,area,maximum,currnum,photo,note,recorder,admin FROM warehouse 
+		WHERE wid=#{wid}
 	</select>
 	
-	<select id="findAll" parameterType="Map" resultType="Warehouse">
-		SELECT wid,name,pid,cid,wiid,address,area,maximum,currnum,photo,note,recorder,admin FROM warehouse 
-	</select>
 	
 	<select id="findByName" parameterType="String" resultType="Warehouse">
-		SELECT wid,name,pid,cid,wiid,address,area,maximum,currnum,photo,note,recorder,admin FROM warehouse WHERE name=#{name}
+		SELECT wid,name,pid,cid,wiid,address,area,maximum,currnum,photo,note,recorder,admin FROM warehouse 
+		WHERE name=#{name}
 	</select>
 	
 	<insert id="doCreate" parameterType="Warehouse" keyProperty="wid">
