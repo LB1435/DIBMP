@@ -37,36 +37,23 @@
 						</tr>
 					</thead>
 					<tbody>
-						<tr>
-							<td class="text-center"><span id="cid-1" style="cursor:pointer;" title="查看联系记录">胡友</span></td>
-							<td class="text-left">1234456</td>
-							<td class="text-left"><span class="text-danger">重要客户</span></td>
-							<td class="text-left">北京中医院</td>
-							<td class="text-left">2018-10-13</td>
-							<td class="text-center">3</td>
-							<td class="text-center"><span id="mid-admin" style="cursor:pointer;">老李</span></td> 
+					<c:forEach items="${allcustomer }" var="allcustomer">
+						<tr name="vo" id="vo">
+							<td class="text-center"><span id="cid-${allcustomer.cuid }" style="cursor:pointer;" title="查看联系记录">${allcustomer.name }</span></td>
+							<td class="text-left">${allcustomer.phone }</td>
+							<td class="text-left"><span class="text-danger">${citems[allcustomer.ciid] }</span></td>
+							<td class="text-left">${allcustomer.address }</td>
+							<td class="text-left"><fmt:formatDate value="${allcustomer.inDate}" pattern="yyyy-MM-dd" type="date"  /></td>
+							<td class="text-center">${allcustomer.connum }</td>
+							<td class="text-center"><span id="mid-admin" style="cursor:pointer;">${allcustomer.recorder }</span></td> 
 							<td class="text-left">
 								<button class="btn btn-primary btn-xs" id="input-1">
 										<span class="glyphicon glyphicon-floppy-save"></span>&nbsp;追加记录</button>
-								<button class="btn btn-danger btn-xs" id="out-1">
+								<button class="btn btn-danger btn-xs" id="out-${allcustomer.cuid }">
 										<span class="glyphicon glyphicon-log-out"></span>&nbsp;商品出库</button>
 							</td>
 						</tr>
-						<tr>
-							<td class="text-center"><span id="cid-1" style="cursor:pointer;" title="查看联系记录">胡减</span></td>
-							<td class="text-left">1234456</td>
-							<td class="text-left"><span class="text-primary">大单客户</span></td>
-							<td class="text-left">北京中医院</td>
-							<td class="text-left">2018-10-13</td>
-							<td class="text-center">3</td>
-							<td class="text-center"><span id="mid-admin" style="cursor:pointer;">老李</span></td> 
-							<td class="text-left">
-								<button class="btn btn-primary btn-xs" id="input-2">
-										<span class="glyphicon glyphicon-floppy-save"></span>&nbsp;追加记录</button>
-								<button class="btn btn-danger btn-xs" id="out-2">
-										<span class="glyphicon glyphicon-log-out"></span>&nbsp;商品出库</button>
-							</td>
-						</tr>
+							</c:forEach>
 					</tbody>
 				</table>
 				<div id="splitBarDiv" style="float:right">

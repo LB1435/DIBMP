@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>cn.mldn</groupId>
@@ -451,14 +452,14 @@
 			</resource>
 		</resources>
 		<plugins>	<!-- 配置项目所需要的开发插件 -->
-			<plugin>
+		<!-- 	<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-javadoc-plugin</artifactId>
 				<version>${javadoc.version}</version>
 				<configuration>
 					<encode>${project.build.sourceEncoding}</encode>
 				</configuration>
-				<executions>	<!-- 进行执行配置 -->
+				<executions>	进行执行配置
 					<execution>
 						<id>javadocs</id>
 						<goals>
@@ -466,7 +467,7 @@
 						</goals>
 					</execution>
 				</executions>
-			</plugin>
+			</plugin> -->
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-compiler-plugin</artifactId>
@@ -508,7 +509,6 @@
 		<module>dibmp-api</module>
 		<module>dibmp-web</module>
 		<module>dibmp-test-service</module>
-		<module>dibmp-service-sale</module>
-    <module>dibmp-service-sales</module>
-  </modules>
+		<module>dibmp-service-sales</module>
+	</modules>
 </project>

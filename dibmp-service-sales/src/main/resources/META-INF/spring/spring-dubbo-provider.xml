@@ -6,8 +6,7 @@
 		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
 		http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-3.1.xsd
 		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.2.xsd">
-	<!-- 定义配置的Annotation扫描包 -->
-	<context:component-scan base-package="cn.mldn.dibmp" />
+	<context:property-placeholder location="classpath:dubbo.properties"/>
 	<!-- 应用信息配置 当前应用名称，用于注册中心计算应用间依赖关系，注意：消费者和提供者应用名不要一样，此参数不是匹配条件，你当前项目叫什么名字就填什么，和提供者消费者角色无关 -->
 	<dubbo:application name="${dubbo.application.name}" />
 	<!--注册中心配置 使用multicast广播注册中心暴露服务地址 --><!--说明：如果有多个不同的注册中心，可以声明多个<dubbo:registry> -->
@@ -28,6 +27,10 @@
 		ref="cityServiceImpl" version="${dubbo.interface.version}" />
 	<dubbo:service interface="cn.mldn.dibmp.service.ICustomerService"
 		ref="customerServiceImpl" version="${dubbo.interface.version}" />
+	<dubbo:service interface="cn.mldn.dibmp.service.ICustomerRecordService"
+		ref="customerRecordServiceImpl" version="${dubbo.interface.version}" />
+	<dubbo:service interface="cn.mldn.dibmp.service.ICritemService"
+		ref="critemServiceImpl" version="${dubbo.interface.version}" />
 </beans>
 
 

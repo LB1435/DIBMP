@@ -16,13 +16,27 @@ $(function(){
 	$("button[id^=out-]").each(function(){
 		$(this).on("click",function(){
 			cid = this.id.split("-")[1] ;
-			operateAlert(true,"出库客户追加成功！","出库客户追加失败！") ;
+			$.post("pages/back/admin/customer/getSingalVO",{"cid":cid},function(data){
+				console.log(data);
+				if(data != "false"){
+					operateAlert(data,"出库客户追加成功！","出库客户追加失败！") ;
+				}
+			},"json") ;
 		}) ;
 	}) ;
 	$("button[id^=input-]").each(function(){
 		$(this).on("click",function(){
 			cid = this.id.split("-")[1] ;
 			$("#customerRecordInputInfo").modal("toggle") ;
+			$.post("pages/back/admin/customer/critemShow.action",{},function(data){
+				if(data != "false"){
+					$("#criid option:gt(0)").remove();
+					for(x=0;x<data.length;x++){
+						row ="	<option value='"+data[x].criid+"'>"+data[x].title+"</option> ";
+						$("select[id=criid]").append(row) ;
+					}
+				}
+			},"json") ;
 		}) ;
 	}) ;
 	$("#myform").validate({

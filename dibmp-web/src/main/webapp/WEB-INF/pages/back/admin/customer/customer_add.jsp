@@ -4,7 +4,8 @@
 <%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions" %>
 <jsp:include page="/WEB-INF/pages/plugins/back/back_header.jsp"/>
 <%!
-	public static final String CUSTOMER_ADD_URL = "/pages/back/admin/customer/CustomerActionBack!add.action" ;
+	public static final String CUSTOMER_ADD_URL = "pages/back/admin/customer/add.action" ;
+												
 %>
 <script type="text/javascript" src="js/pages/back/admin/customer/customer_add.js"></script>
 <body class="hold-transition skin-blue sidebar-mini"> 
@@ -40,7 +41,7 @@
 								<!-- 定义表单提示文字 -->
 								<label class="col-md-3 control-label" for="tid">客户来源：</label>
 								<div class="col-md-5">
-									<select id="tid" name="tid" class="form-control">
+									<select id="csid" name="csid" class="form-control">
 									<option value="">====== 请选择客户信息来源 ======</option>
 									<c:forEach items="${csource }" var="csource">
 										<option value="${csource.csid}">${csource.title}</option>
@@ -104,7 +105,7 @@
 								<!-- 定义表单提示文字 -->
 								<label class="col-md-3 control-label" for="lev">客户重要性：</label>
 								<div class="col-md-5">
-									<select id="lev" name="lev" class="form-control">
+									<select id="ciid" name="ciid" class="form-control">
 										<option value="">====== 请选择客户重要性 ======</option>
 											<c:forEach items="${citem }" var="citem">
 										<option value="${citem.ciid}">${citem.title}</option>

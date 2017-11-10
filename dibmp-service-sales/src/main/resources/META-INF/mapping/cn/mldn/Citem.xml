@@ -2,7 +2,7 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
 "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="cn.mldn.dibmp.dao.ICitemDAO">
-	<select id="findCitem"  resultType="Citem">
-	SELECT ciid,title FROM citem 
+	<select id="findCitem" resultType="Citem">
+		SELECT ciid,title FROM citem
 	</select>
 </mapper>

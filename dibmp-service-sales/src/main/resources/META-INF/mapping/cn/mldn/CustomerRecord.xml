@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.mldn.dibmp.dao.ICustomerRecordDAO">
+	<insert id="doCreate" parameterType="CustomerRecord">
+		INSERT INTO
+		customer_record(crid,cmid,cdate,criid,note)
+		VALUES
+		(#{crid},#{cmid},#{cdate},#{criid},#{note})
+	</insert>
+	<select id="findSplit" parameterType="Map" resultType="CustomerRecord">
+		SELECT
+		crid,cmid,cdate,criid,note
+		FROM customer_record
+		<where>
+			<if test="column != null and keyWord != null">
+				${column} LIKE #{keyWord}
+			</if>
+		</where>
+		LIMIT #{start},#{lineSize}
+	</select>
+	<select id="getCount" resultType="Long" parameterType="Map">
+		SELECT COUNT(*) FROM customer_record
+		<where>
+			<if test="column != null and keyWord != null">
+				${column} LIKE #{keyWord}
+			</if>
+		</where>
+	</select>
+</mapper>

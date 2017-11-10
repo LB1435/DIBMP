@@ -59,3 +59,10 @@
 2017-10-28 11:14:58,960 INFO [com.alibaba.dubbo.registry.zookeeper.ZookeeperRegistry] -  [DUBBO] Destroy unregister url consumer://192.168.1.102/cn.mldn.dibmp.service.IMemberService?application=mldn-service-test&category=consumers&check=false&dubbo=2.5.6&interface=cn.mldn.dibmp.service.IMemberService&methods=getRoleAndActionByMember,get&pid=5616&revision=dev&side=consumer&timestamp=1509160496852&version=dev, dubbo version: 2.5.6, current host: 192.168.1.102
 2017-10-28 11:14:58,966 INFO [com.alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol] -  [DUBBO] Close dubbo connect: 192.168.1.102:0-->192.168.1.102:9327, dubbo version: 2.5.6, current host: 192.168.1.102
 2017-10-28 11:14:58,967 INFO [com.alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol] -  [DUBBO] Close dubbo connect: 192.168.1.102:0-->192.168.1.102:9327, dubbo version: 2.5.6, current host: 192.168.1.102
+2017-11-09 09:16:14,239 INFO [com.alibaba.dubbo.common.logger.LoggerFactory] - using logger: com.alibaba.dubbo.common.logger.log4j.Log4jLoggerAdapter
+2017-11-09 09:17:07,825 INFO [com.alibaba.dubbo.common.logger.LoggerFactory] - using logger: com.alibaba.dubbo.common.logger.log4j.Log4jLoggerAdapter
+2017-11-09 09:17:18,343 INFO [com.alibaba.dubbo.common.logger.LoggerFactory] - using logger: com.alibaba.dubbo.common.logger.log4j.Log4jLoggerAdapter
+2017-11-09 09:18:17,311 INFO [com.alibaba.dubbo.common.logger.LoggerFactory] - using logger: com.alibaba.dubbo.common.logger.log4j.Log4jLoggerAdapter
+2017-11-09 09:27:27,386 INFO [com.alibaba.dubbo.common.logger.LoggerFactory] - using logger: com.alibaba.dubbo.common.logger.log4j.Log4jLoggerAdapter
+2017-11-09 09:33:56,968 INFO [com.alibaba.dubbo.common.logger.LoggerFactory] - using logger: com.alibaba.dubbo.common.logger.log4j.Log4jLoggerAdapter
+2017-11-09 11:16:16,401 INFO [com.alibaba.dubbo.common.logger.LoggerFactory] - using logger: com.alibaba.dubbo.common.logger.log4j.Log4jLoggerAdapter

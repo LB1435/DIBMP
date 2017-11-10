@@ -8,5 +8,27 @@
 		VALUES
 		(#{name},#{phone},#{pid},#{cid},#{address},#{inDate},#{connum},#{ciid},#{csid},#{note},#{recorder})
 	</insert>
-	
+	<select id="findSplit" parameterType="Map" resultType="Customer">
+		SELECT
+		cuid,name,phone,pid,cid,address,inDate,connum,ciid,csid,note,recorder
+		FROM customer
+		<where>
+			<if test="column != null and keyWord != null">
+				${column} LIKE #{keyWord}
+			</if>
+		</where>
+		LIMIT #{start},#{lineSize}
+	</select>
+	<select id="getCount" resultType="Long" parameterType="Map">
+		SELECT COUNT(*) FROM customer
+		<where>
+			<if test="column != null and keyWord != null">
+				${column} LIKE #{keyWord}
+			</if>
+		</where>
+	</select>
+	<select id="findByID"  parameterType="Long" resultType="Customer">
+		SELECT cuid,name,phone,pid,cid,address,inDate,connum,ciid,csid,note,recorder 
+		FROM customer WHERE cuid = #{cuid}
+	</select>
 </mapper>

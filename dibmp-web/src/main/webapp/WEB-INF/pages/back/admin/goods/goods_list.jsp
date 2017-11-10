@@ -41,7 +41,7 @@
 						</tr>
 					</thead>
 					<tbody>
-						<tr>
+						<tr >
 							<td class="text-left">100001</td>
 							<td class="text-left"><a href="<%=GOODS_SHOW_URL%>" title="查看商品详情">胡友牌化粪池</a></td>
 							<td class="text-center">4456</td>

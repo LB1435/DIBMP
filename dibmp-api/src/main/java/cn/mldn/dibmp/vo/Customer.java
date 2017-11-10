@@ -4,7 +4,7 @@ import java.io.Serializable;
 import java.util.Date;
 
 public class Customer implements Serializable {
-	private String cuid;
+	private Long cuid;
 	private String name;
 	private String phone;
 	private Long pid;
@@ -24,11 +24,11 @@ public class Customer implements Serializable {
 				+ csid + ", note=" + note + ", recorder=" + recorder + "]";
 	}
 
-	public String getCuid() {
+	public Long getCuid() {
 		return cuid;
 	}
 
-	public void setCuid(String cuid) {
+	public void setCuid(Long cuid) {
 		this.cuid = cuid;
 	}
 
