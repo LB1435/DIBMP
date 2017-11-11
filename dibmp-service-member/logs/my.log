@@ -1981,3 +1981,726 @@ Last packet sent to the server was 24 ms ago.
 2017-11-10 16:17:57,755 INFO [com.alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol] -  [DUBBO] disconected from /192.168.10.1:60023,url:dubbo://192.168.10.1:9327/cn.mldn.dibmp.service.IMemberService?anyhost=true&application=mldn-service-member&channel.readonly.sent=true&codec=dubbo&default.timeout=10000000&dubbo=2.5.6&generic=false&heartbeat=60000&interface=cn.mldn.dibmp.service.IMemberService&methods=getRoleAndActionByMember,get&pid=6800&revision=dev&side=provider&timestamp=1510296907042&version=dev, dubbo version: 2.5.6, current host: 127.0.0.1
 2017-11-10 16:44:05,577 WARN [com.alibaba.dubbo.remoting.transport.AbstractServer] -  [DUBBO] All clients has discontected from /192.168.10.1:9327. You can graceful shutdown now., dubbo version: 2.5.6, current host: 127.0.0.1
 2017-11-10 16:44:05,597 INFO [com.alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol] -  [DUBBO] disconected from /192.168.10.1:63464,url:dubbo://192.168.10.1:9327/cn.mldn.dibmp.service.IMemberService?anyhost=true&application=mldn-service-member&channel.readonly.sent=true&codec=dubbo&default.timeout=10000000&dubbo=2.5.6&generic=false&heartbeat=60000&interface=cn.mldn.dibmp.service.IMemberService&methods=getRoleAndActionByMember,get&pid=6800&revision=dev&side=provider&timestamp=1510296907042&version=dev, dubbo version: 2.5.6, current host: 127.0.0.1
+2017-11-10 21:04:17,378 INFO [com.alibaba.dubbo.common.logger.LoggerFactory] - using logger: com.alibaba.dubbo.common.logger.log4j.Log4jLoggerAdapter
+2017-11-10 21:04:17,559 INFO [com.alibaba.dubbo.container.Main] -  [DUBBO] Use container type([spring]) to run dubbo serivce., dubbo version: 2.5.6, current host: 127.0.0.1
+2017-11-10 21:04:43,755 INFO [com.alibaba.dubbo.common.logger.LoggerFactory] - using logger: com.alibaba.dubbo.common.logger.log4j.Log4jLoggerAdapter
+2017-11-10 21:04:43,869 INFO [com.alibaba.dubbo.container.Main] -  [DUBBO] Use container type([spring]) to run dubbo serivce., dubbo version: 2.5.6, current host: 127.0.0.1
+2017-11-10 21:04:47,739 INFO [com.alibaba.dubbo.config.AbstractConfig] -  [DUBBO] The service ready on spring started. service: cn.mldn.dibmp.service.IMemberService, dubbo version: 2.5.6, current host: 127.0.0.1
+2017-11-10 21:04:47,917 INFO [com.alibaba.dubbo.config.AbstractConfig] -  [DUBBO] Export dubbo service cn.mldn.dibmp.service.IMemberService to local registry, dubbo version: 2.5.6, current host: 127.0.0.1
+2017-11-10 21:04:47,918 INFO [com.alibaba.dubbo.config.AbstractConfig] -  [DUBBO] Export dubbo service cn.mldn.dibmp.service.IMemberService to url dubbo://192.168.10.1:9327/cn.mldn.dibmp.service.IMemberService?anyhost=true&application=mldn-service-member&default.timeout=10000000&dubbo=2.5.6&generic=false&interface=cn.mldn.dibmp.service.IMemberService&methods=getRoleAndActionByMember,get&pid=8432&revision=dev&side=provider&timestamp=1510319087771&version=dev, dubbo version: 2.5.6, current host: 127.0.0.1
+2017-11-10 21:04:47,918 INFO [com.alibaba.dubbo.config.AbstractConfig] -  [DUBBO] Register dubbo service cn.mldn.dibmp.service.IMemberService url dubbo://192.168.10.1:9327/cn.mldn.dibmp.service.IMemberService?anyhost=true&application=mldn-service-member&default.timeout=10000000&dubbo=2.5.6&generic=false&interface=cn.mldn.dibmp.service.IMemberService&methods=getRoleAndActionByMember,get&pid=8432&revision=dev&side=provider&timestamp=1510319087771&version=dev to registry registry://192.168.28.95:2181/com.alibaba.dubbo.registry.RegistryService?application=mldn-service-member&dubbo=2.5.6&pid=8432&registry=zookeeper&timestamp=1510319087759, dubbo version: 2.5.6, current host: 127.0.0.1
+2017-11-10 21:04:48,289 INFO [com.alibaba.dubbo.remoting.transport.AbstractServer] -  [DUBBO] Start NettyServer bind /0.0.0.0:9327, export /192.168.10.1:9327, dubbo version: 2.5.6, current host: 127.0.0.1
+2017-11-10 21:04:48,307 INFO [com.alibaba.dubbo.registry.zookeeper.ZookeeperRegistry] -  [DUBBO] Load registry store file C:\Users\Administrator\.dubbo\dubbo-registry-192.168.28.95.cache, data: {cn.mldn.dibmp.service.IWarehouseService:dev=empty://192.168.10.1:9328/cn.mldn.dibmp.service.IWarehouseService?anyhost=true&application=mldn-service-warehouse&category=configurators&check=false&default.timeout=10000000&dubbo=2.5.6&generic=false&interface=cn.mldn.dibmp.service.IWarehouseService&methods=add,EditByWid,getCityByPid,getById,getMemberByDid,getAllProvice,getAllDept,getByName,getAllWitem,list&pid=2464&revision=dev&side=provider&timestamp=1510319050243&version=dev}, dubbo version: 2.5.6, current host: 127.0.0.1
+2017-11-10 21:04:48,379 INFO [com.alibaba.dubbo.registry.zookeeper.ZookeeperRegistry] -  [DUBBO] Register: dubbo://192.168.10.1:9327/cn.mldn.dibmp.service.IMemberService?anyhost=true&application=mldn-service-member&default.timeout=10000000&dubbo=2.5.6&generic=false&interface=cn.mldn.dibmp.service.IMemberService&methods=getRoleAndActionByMember,get&pid=8432&revision=dev&side=provider&timestamp=1510319087771&version=dev, dubbo version: 2.5.6, current host: 127.0.0.1
+2017-11-10 21:04:48,947 INFO [com.alibaba.dubbo.registry.zookeeper.ZookeeperRegistry] -  [DUBBO] Subscribe: provider://192.168.10.1:9327/cn.mldn.dibmp.service.IMemberService?anyhost=true&application=mldn-service-member&category=configurators&check=false&default.timeout=10000000&dubbo=2.5.6&generic=false&interface=cn.mldn.dibmp.service.IMemberService&methods=getRoleAndActionByMember,get&pid=8432&revision=dev&side=provider&timestamp=1510319087771&version=dev, dubbo version: 2.5.6, current host: 127.0.0.1
+2017-11-10 21:04:48,978 INFO [com.alibaba.dubbo.registry.zookeeper.ZookeeperRegistry] -  [DUBBO] Notify urls for subscribe url provider://192.168.10.1:9327/cn.mldn.dibmp.service.IMemberService?anyhost=true&application=mldn-service-member&category=configurators&check=false&default.timeout=10000000&dubbo=2.5.6&generic=false&interface=cn.mldn.dibmp.service.IMemberService&methods=getRoleAndActionByMember,get&pid=8432&revision=dev&side=provider&timestamp=1510319087771&version=dev, urls: [empty://192.168.10.1:9327/cn.mldn.dibmp.service.IMemberService?anyhost=true&application=mldn-service-member&category=configurators&check=false&default.timeout=10000000&dubbo=2.5.6&generic=false&interface=cn.mldn.dibmp.service.IMemberService&methods=getRoleAndActionByMember,get&pid=8432&revision=dev&side=provider&timestamp=1510319087771&version=dev], dubbo version: 2.5.6, current host: 127.0.0.1
+2017-11-10 21:04:49,018 INFO [com.alibaba.dubbo.container.Main] -  [DUBBO] Dubbo SpringContainer started!, dubbo version: 2.5.6, current host: 127.0.0.1
+2017-11-10 21:17:32,665 WARN [com.alibaba.dubbo.remoting.transport.AbstractServer] -  [DUBBO] All clients has discontected from /192.168.10.1:9327. You can graceful shutdown now., dubbo version: 2.5.6, current host: 127.0.0.1
+2017-11-10 21:17:32,678 INFO [com.alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol] -  [DUBBO] disconected from /192.168.10.1:59567,url:dubbo://192.168.10.1:9327/cn.mldn.dibmp.service.IMemberService?anyhost=true&application=mldn-service-member&channel.readonly.sent=true&codec=dubbo&default.timeout=10000000&dubbo=2.5.6&generic=false&heartbeat=60000&interface=cn.mldn.dibmp.service.IMemberService&methods=getRoleAndActionByMember,get&pid=8432&revision=dev&side=provider&timestamp=1510319087771&version=dev, dubbo version: 2.5.6, current host: 127.0.0.1
+2017-11-10 21:19:51,922 INFO [com.alibaba.dubbo.common.logger.LoggerFactory] - using logger: com.alibaba.dubbo.common.logger.log4j.Log4jLoggerAdapter
+2017-11-10 21:19:52,062 INFO [com.alibaba.dubbo.container.Main] -  [DUBBO] Use container type([spring]) to run dubbo serivce., dubbo version: 2.5.6, current host: 127.0.0.1
+2017-11-10 21:19:55,654 INFO [com.alibaba.dubbo.config.AbstractConfig] -  [DUBBO] The service ready on spring started. service: cn.mldn.dibmp.service.IMemberService, dubbo version: 2.5.6, current host: 127.0.0.1
+2017-11-10 21:19:55,822 INFO [com.alibaba.dubbo.config.AbstractConfig] -  [DUBBO] Export dubbo service cn.mldn.dibmp.service.IMemberService to local registry, dubbo version: 2.5.6, current host: 127.0.0.1
+2017-11-10 21:19:55,822 INFO [com.alibaba.dubbo.config.AbstractConfig] -  [DUBBO] Export dubbo service cn.mldn.dibmp.service.IMemberService to url dubbo://192.168.10.1:9327/cn.mldn.dibmp.service.IMemberService?anyhost=true&application=mldn-service-member&default.timeout=10000000&dubbo=2.5.6&generic=false&interface=cn.mldn.dibmp.service.IMemberService&methods=getRoleAndActionByMember,get&pid=7184&revision=dev&side=provider&timestamp=1510319995681&version=dev, dubbo version: 2.5.6, current host: 127.0.0.1
+2017-11-10 21:19:55,823 INFO [com.alibaba.dubbo.config.AbstractConfig] -  [DUBBO] Register dubbo service cn.mldn.dibmp.service.IMemberService url dubbo://192.168.10.1:9327/cn.mldn.dibmp.service.IMemberService?anyhost=true&application=mldn-service-member&default.timeout=10000000&dubbo=2.5.6&generic=false&interface=cn.mldn.dibmp.service.IMemberService&methods=getRoleAndActionByMember,get&pid=7184&revision=dev&side=provider&timestamp=1510319995681&version=dev to registry registry://192.168.28.95:2181/com.alibaba.dubbo.registry.RegistryService?application=mldn-service-member&dubbo=2.5.6&pid=7184&registry=zookeeper&timestamp=1510319995663, dubbo version: 2.5.6, current host: 127.0.0.1
+2017-11-10 21:19:56,201 INFO [com.alibaba.dubbo.remoting.transport.AbstractServer] -  [DUBBO] Start NettyServer bind /0.0.0.0:9327, export /192.168.10.1:9327, dubbo version: 2.5.6, current host: 127.0.0.1
+2017-11-10 21:19:56,225 INFO [com.alibaba.dubbo.registry.zookeeper.ZookeeperRegistry] -  [DUBBO] Load registry store file C:\Users\Administrator\.dubbo\dubbo-registry-192.168.28.95.cache, data: {cn.mldn.dibmp.service.IMemberService:dev=empty://192.168.10.1/cn.mldn.dibmp.service.IMemberService?application=mldn-service-test&category=configurators&dubbo=2.5.6&interface=cn.mldn.dibmp.service.IMemberService&methods=getRoleAndActionByMember,get&pid=6220&revision=0.0.1&side=consumer&timestamp=1510319368867&version=dev empty://192.168.10.1/cn.mldn.dibmp.service.IMemberService?application=mldn-service-test&category=routers&dubbo=2.5.6&interface=cn.mldn.dibmp.service.IMemberService&methods=getRoleAndActionByMember,get&pid=6220&revision=0.0.1&side=consumer&timestamp=1510319368867&version=dev dubbo://192.168.10.1:9327/cn.mldn.dibmp.service.IMemberService?anyhost=true&application=mldn-service-member&default.timeout=10000000&dubbo=2.5.6&generic=false&interface=cn.mldn.dibmp.service.IMemberService&methods=getRoleAndActionByMember,get&pid=8432&revision=dev&side=provider&timestamp=1510319087771&version=dev, cn.mldn.dibmp.service.IWarehouseService:dev=empty://192.168.10.1:9328/cn.mldn.dibmp.service.IWarehouseService?anyhost=true&application=mldn-service-warehouse&category=configurators&check=false&default.timeout=10000000&dubbo=2.5.6&generic=false&interface=cn.mldn.dibmp.service.IWarehouseService&methods=add,EditByWid,getCityByPid,getById,getMemberByDid,getAllProvice,getAllDept,getByName,getAllWitem,list&pid=4552&revision=dev&side=provider&timestamp=1510319933320&version=dev}, dubbo version: 2.5.6, current host: 127.0.0.1
+2017-11-10 21:19:56,290 INFO [com.alibaba.dubbo.registry.zookeeper.ZookeeperRegistry] -  [DUBBO] Register: dubbo://192.168.10.1:9327/cn.mldn.dibmp.service.IMemberService?anyhost=true&application=mldn-service-member&default.timeout=10000000&dubbo=2.5.6&generic=false&interface=cn.mldn.dibmp.service.IMemberService&methods=getRoleAndActionByMember,get&pid=7184&revision=dev&side=provider&timestamp=1510319995681&version=dev, dubbo version: 2.5.6, current host: 127.0.0.1
+2017-11-10 21:19:56,384 INFO [com.alibaba.dubbo.registry.zookeeper.ZookeeperRegistry] -  [DUBBO] Subscribe: provider://192.168.10.1:9327/cn.mldn.dibmp.service.IMemberService?anyhost=true&application=mldn-service-member&category=configurators&check=false&default.timeout=10000000&dubbo=2.5.6&generic=false&interface=cn.mldn.dibmp.service.IMemberService&methods=getRoleAndActionByMember,get&pid=7184&revision=dev&side=provider&timestamp=1510319995681&version=dev, dubbo version: 2.5.6, current host: 127.0.0.1
+2017-11-10 21:19:56,403 INFO [com.alibaba.dubbo.registry.zookeeper.ZookeeperRegistry] -  [DUBBO] Notify urls for subscribe url provider://192.168.10.1:9327/cn.mldn.dibmp.service.IMemberService?anyhost=true&application=mldn-service-member&category=configurators&check=false&default.timeout=10000000&dubbo=2.5.6&generic=false&interface=cn.mldn.dibmp.service.IMemberService&methods=getRoleAndActionByMember,get&pid=7184&revision=dev&side=provider&timestamp=1510319995681&version=dev, urls: [empty://192.168.10.1:9327/cn.mldn.dibmp.service.IMemberService?anyhost=true&application=mldn-service-member&category=configurators&check=false&default.timeout=10000000&dubbo=2.5.6&generic=false&interface=cn.mldn.dibmp.service.IMemberService&methods=getRoleAndActionByMember,get&pid=7184&revision=dev&side=provider&timestamp=1510319995681&version=dev], dubbo version: 2.5.6, current host: 127.0.0.1
+2017-11-10 21:19:56,443 INFO [com.alibaba.dubbo.container.Main] -  [DUBBO] Dubbo SpringContainer started!, dubbo version: 2.5.6, current host: 127.0.0.1
+2017-11-10 21:22:53,882 WARN [com.alibaba.dubbo.remoting.transport.AbstractServer] -  [DUBBO] All clients has discontected from /192.168.10.1:9327. You can graceful shutdown now., dubbo version: 2.5.6, current host: 127.0.0.1
+2017-11-10 21:22:53,884 INFO [com.alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol] -  [DUBBO] disconected from /192.168.10.1:50116,url:dubbo://192.168.10.1:9327/cn.mldn.dibmp.service.IMemberService?anyhost=true&application=mldn-service-member&channel.readonly.sent=true&codec=dubbo&default.timeout=10000000&dubbo=2.5.6&generic=false&heartbeat=60000&interface=cn.mldn.dibmp.service.IMemberService&methods=getRoleAndActionByMember,get&pid=7184&revision=dev&side=provider&timestamp=1510319995681&version=dev, dubbo version: 2.5.6, current host: 127.0.0.1
+2017-11-10 21:23:36,649 WARN [com.alibaba.dubbo.remoting.transport.AbstractServer] -  [DUBBO] All clients has discontected from /192.168.10.1:9327. You can graceful shutdown now., dubbo version: 2.5.6, current host: 127.0.0.1
+2017-11-10 21:23:36,650 INFO [com.alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol] -  [DUBBO] disconected from /192.168.10.1:51556,url:dubbo://192.168.10.1:9327/cn.mldn.dibmp.service.IMemberService?anyhost=true&application=mldn-service-member&channel.readonly.sent=true&codec=dubbo&default.timeout=10000000&dubbo=2.5.6&generic=false&heartbeat=60000&interface=cn.mldn.dibmp.service.IMemberService&methods=getRoleAndActionByMember,get&pid=7184&revision=dev&side=provider&timestamp=1510319995681&version=dev, dubbo version: 2.5.6, current host: 127.0.0.1
+2017-11-10 22:03:17,240 WARN [com.alibaba.dubbo.remoting.transport.AbstractServer] -  [DUBBO] All clients has discontected from /192.168.10.1:9327. You can graceful shutdown now., dubbo version: 2.5.6, current host: 127.0.0.1
+2017-11-10 22:03:17,240 INFO [com.alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol] -  [DUBBO] disconected from /192.168.10.1:51987,url:dubbo://192.168.10.1:9327/cn.mldn.dibmp.service.IMemberService?anyhost=true&application=mldn-service-member&channel.readonly.sent=true&codec=dubbo&default.timeout=10000000&dubbo=2.5.6&generic=false&heartbeat=60000&interface=cn.mldn.dibmp.service.IMemberService&methods=getRoleAndActionByMember,get&pid=7184&revision=dev&side=provider&timestamp=1510319995681&version=dev, dubbo version: 2.5.6, current host: 127.0.0.1
+2017-11-10 22:03:31,745 INFO [com.alibaba.dubbo.common.logger.LoggerFactory] - using logger: com.alibaba.dubbo.common.logger.log4j.Log4jLoggerAdapter
+2017-11-10 22:03:31,849 INFO [com.alibaba.dubbo.container.Main] -  [DUBBO] Use container type([spring]) to run dubbo serivce., dubbo version: 2.5.6, current host: 127.0.0.1
+2017-11-10 22:03:35,398 INFO [com.alibaba.dubbo.config.AbstractConfig] -  [DUBBO] The service ready on spring started. service: cn.mldn.dibmp.service.IMemberService, dubbo version: 2.5.6, current host: 127.0.0.1
+2017-11-10 22:03:35,581 INFO [com.alibaba.dubbo.config.AbstractConfig] -  [DUBBO] Export dubbo service cn.mldn.dibmp.service.IMemberService to local registry, dubbo version: 2.5.6, current host: 127.0.0.1
+2017-11-10 22:03:35,582 INFO [com.alibaba.dubbo.config.AbstractConfig] -  [DUBBO] Export dubbo service cn.mldn.dibmp.service.IMemberService to url dubbo://192.168.10.1:9327/cn.mldn.dibmp.service.IMemberService?anyhost=true&application=mldn-service-member&default.timeout=10000000&dubbo=2.5.6&generic=false&interface=cn.mldn.dibmp.service.IMemberService&methods=getRoleAndActionByMember,get&pid=3488&revision=dev&side=provider&timestamp=1510322615437&version=dev, dubbo version: 2.5.6, current host: 127.0.0.1
+2017-11-10 22:03:35,582 INFO [com.alibaba.dubbo.config.AbstractConfig] -  [DUBBO] Register dubbo service cn.mldn.dibmp.service.IMemberService url dubbo://192.168.10.1:9327/cn.mldn.dibmp.service.IMemberService?anyhost=true&application=mldn-service-member&default.timeout=10000000&dubbo=2.5.6&generic=false&interface=cn.mldn.dibmp.service.IMemberService&methods=getRoleAndActionByMember,get&pid=3488&revision=dev&side=provider&timestamp=1510322615437&version=dev to registry registry://192.168.28.95:2181/com.alibaba.dubbo.registry.RegistryService?application=mldn-service-member&dubbo=2.5.6&pid=3488&registry=zookeeper&timestamp=1510322615424, dubbo version: 2.5.6, current host: 127.0.0.1
+2017-11-10 22:03:35,943 INFO [com.alibaba.dubbo.remoting.transport.AbstractServer] -  [DUBBO] Start NettyServer bind /0.0.0.0:9327, export /192.168.10.1:9327, dubbo version: 2.5.6, current host: 127.0.0.1
+2017-11-10 22:03:35,976 INFO [com.alibaba.dubbo.registry.zookeeper.ZookeeperRegistry] -  [DUBBO] Load registry store file C:\Users\Administrator\.dubbo\dubbo-registry-192.168.28.95.cache, data: {cn.mldn.dibmp.service.IMemberService:dev=empty://192.168.10.1/cn.mldn.dibmp.service.IMemberService?application=mldn-service-test&category=configurators&dubbo=2.5.6&interface=cn.mldn.dibmp.service.IMemberService&methods=getRoleAndActionByMember,get&pid=8372&revision=0.0.1&side=consumer&timestamp=1510320220571&version=dev empty://192.168.10.1/cn.mldn.dibmp.service.IMemberService?application=mldn-service-test&category=routers&dubbo=2.5.6&interface=cn.mldn.dibmp.service.IMemberService&methods=getRoleAndActionByMember,get&pid=8372&revision=0.0.1&side=consumer&timestamp=1510320220571&version=dev dubbo://192.168.10.1:9327/cn.mldn.dibmp.service.IMemberService?anyhost=true&application=mldn-service-member&default.timeout=10000000&dubbo=2.5.6&generic=false&interface=cn.mldn.dibmp.service.IMemberService&methods=getRoleAndActionByMember,get&pid=7184&revision=dev&side=provider&timestamp=1510319995681&version=dev, cn.mldn.dibmp.service.IWarehouseService:dev=empty://192.168.10.1/cn.mldn.dibmp.service.IWarehouseService?application=mldn-service-test&category=configurators&dubbo=2.5.6&interface=cn.mldn.dibmp.service.IWarehouseService&methods=add,EditByWid,getCityByPid,getById,getMemberByDid,getAllDept,getAllProvice,getByName,getAllWitem,list&pid=8372&revision=0.0.1&side=consumer&timestamp=1510320222599&version=dev empty://192.168.10.1/cn.mldn.dibmp.service.IWarehouseService?application=mldn-service-test&category=routers&dubbo=2.5.6&interface=cn.mldn.dibmp.service.IWarehouseService&methods=add,EditByWid,getCityByPid,getById,getMemberByDid,getAllDept,getAllProvice,getByName,getAllWitem,list&pid=8372&revision=0.0.1&side=consumer&timestamp=1510320222599&version=dev dubbo://192.168.10.1:9328/cn.mldn.dibmp.service.IWarehouseService?anyhost=true&application=mldn-service-warehouse&default.timeout=10000000&dubbo=2.5.6&generic=false&interface=cn.mldn.dibmp.service.IWarehouseService&methods=add,EditByWid,getCityByPid,getById,getMemberByDid,getAllProvice,getAllDept,getByName,getAllWitem,list&pid=4552&revision=dev&side=provider&timestamp=1510319933320&version=dev}, dubbo version: 2.5.6, current host: 127.0.0.1
+2017-11-10 22:03:36,080 INFO [com.alibaba.dubbo.registry.zookeeper.ZookeeperRegistry] -  [DUBBO] Register: dubbo://192.168.10.1:9327/cn.mldn.dibmp.service.IMemberService?anyhost=true&application=mldn-service-member&default.timeout=10000000&dubbo=2.5.6&generic=false&interface=cn.mldn.dibmp.service.IMemberService&methods=getRoleAndActionByMember,get&pid=3488&revision=dev&side=provider&timestamp=1510322615437&version=dev, dubbo version: 2.5.6, current host: 127.0.0.1
+2017-11-10 22:03:36,177 INFO [com.alibaba.dubbo.registry.zookeeper.ZookeeperRegistry] -  [DUBBO] Subscribe: provider://192.168.10.1:9327/cn.mldn.dibmp.service.IMemberService?anyhost=true&application=mldn-service-member&category=configurators&check=false&default.timeout=10000000&dubbo=2.5.6&generic=false&interface=cn.mldn.dibmp.service.IMemberService&methods=getRoleAndActionByMember,get&pid=3488&revision=dev&side=provider&timestamp=1510322615437&version=dev, dubbo version: 2.5.6, current host: 127.0.0.1
+2017-11-10 22:03:36,210 INFO [com.alibaba.dubbo.registry.zookeeper.ZookeeperRegistry] -  [DUBBO] Notify urls for subscribe url provider://192.168.10.1:9327/cn.mldn.dibmp.service.IMemberService?anyhost=true&application=mldn-service-member&category=configurators&check=false&default.timeout=10000000&dubbo=2.5.6&generic=false&interface=cn.mldn.dibmp.service.IMemberService&methods=getRoleAndActionByMember,get&pid=3488&revision=dev&side=provider&timestamp=1510322615437&version=dev, urls: [empty://192.168.10.1:9327/cn.mldn.dibmp.service.IMemberService?anyhost=true&application=mldn-service-member&category=configurators&check=false&default.timeout=10000000&dubbo=2.5.6&generic=false&interface=cn.mldn.dibmp.service.IMemberService&methods=getRoleAndActionByMember,get&pid=3488&revision=dev&side=provider&timestamp=1510322615437&version=dev], dubbo version: 2.5.6, current host: 127.0.0.1
+2017-11-10 22:03:36,260 INFO [com.alibaba.dubbo.container.Main] -  [DUBBO] Dubbo SpringContainer started!, dubbo version: 2.5.6, current host: 127.0.0.1
+2017-11-10 22:06:15,664 WARN [com.alibaba.dubbo.remoting.transport.AbstractServer] -  [DUBBO] All clients has discontected from /192.168.10.1:9327. You can graceful shutdown now., dubbo version: 2.5.6, current host: 127.0.0.1
+2017-11-10 22:06:15,672 INFO [com.alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol] -  [DUBBO] disconected from /192.168.10.1:62841,url:dubbo://192.168.10.1:9327/cn.mldn.dibmp.service.IMemberService?anyhost=true&application=mldn-service-member&channel.readonly.sent=true&codec=dubbo&default.timeout=10000000&dubbo=2.5.6&generic=false&heartbeat=60000&interface=cn.mldn.dibmp.service.IMemberService&methods=getRoleAndActionByMember,get&pid=3488&revision=dev&side=provider&timestamp=1510322615437&version=dev, dubbo version: 2.5.6, current host: 127.0.0.1
+2017-11-10 22:08:55,983 INFO [com.alibaba.dubbo.common.logger.LoggerFactory] - using logger: com.alibaba.dubbo.common.logger.log4j.Log4jLoggerAdapter
+2017-11-10 22:08:56,074 INFO [com.alibaba.dubbo.container.Main] -  [DUBBO] Use container type([spring]) to run dubbo serivce., dubbo version: 2.5.6, current host: 127.0.0.1
+2017-11-10 22:08:59,417 INFO [com.alibaba.dubbo.config.AbstractConfig] -  [DUBBO] The service ready on spring started. service: cn.mldn.dibmp.service.IMemberService, dubbo version: 2.5.6, current host: 127.0.0.1
+2017-11-10 22:08:59,594 INFO [com.alibaba.dubbo.config.AbstractConfig] -  [DUBBO] Export dubbo service cn.mldn.dibmp.service.IMemberService to local registry, dubbo version: 2.5.6, current host: 127.0.0.1
+2017-11-10 22:08:59,595 INFO [com.alibaba.dubbo.config.AbstractConfig] -  [DUBBO] Export dubbo service cn.mldn.dibmp.service.IMemberService to url dubbo://192.168.184.1:9327/cn.mldn.dibmp.service.IMemberService?anyhost=true&application=mldn-service-member&default.timeout=10000000&dubbo=2.5.6&generic=false&interface=cn.mldn.dibmp.service.IMemberService&methods=getRoleAndActionByMember,get&pid=3500&revision=dev&side=provider&timestamp=1510322939445&version=dev, dubbo version: 2.5.6, current host: 127.0.0.1
+2017-11-10 22:08:59,595 INFO [com.alibaba.dubbo.config.AbstractConfig] -  [DUBBO] Register dubbo service cn.mldn.dibmp.service.IMemberService url dubbo://192.168.184.1:9327/cn.mldn.dibmp.service.IMemberService?anyhost=true&application=mldn-service-member&default.timeout=10000000&dubbo=2.5.6&generic=false&interface=cn.mldn.dibmp.service.IMemberService&methods=getRoleAndActionByMember,get&pid=3500&revision=dev&side=provider&timestamp=1510322939445&version=dev to registry registry://192.168.28.95:2181/com.alibaba.dubbo.registry.RegistryService?application=mldn-service-member&dubbo=2.5.6&pid=3500&registry=zookeeper&timestamp=1510322939431, dubbo version: 2.5.6, current host: 127.0.0.1
+2017-11-10 22:08:59,934 INFO [com.alibaba.dubbo.remoting.transport.AbstractServer] -  [DUBBO] Start NettyServer bind /0.0.0.0:9327, export /192.168.184.1:9327, dubbo version: 2.5.6, current host: 127.0.0.1
+2017-11-10 22:08:59,956 INFO [com.alibaba.dubbo.registry.zookeeper.ZookeeperRegistry] -  [DUBBO] Load registry store file C:\Users\Administrator\.dubbo\dubbo-registry-192.168.28.95.cache, data: {cn.mldn.dibmp.service.IMemberService:dev=empty://192.168.10.1/cn.mldn.dibmp.service.IMemberService?application=mldn-service-test&category=configurators&dubbo=2.5.6&interface=cn.mldn.dibmp.service.IMemberService&methods=getRoleAndActionByMember,get&pid=7752&revision=0.0.1&side=consumer&timestamp=1510322640600&version=dev empty://192.168.10.1/cn.mldn.dibmp.service.IMemberService?application=mldn-service-test&category=routers&dubbo=2.5.6&interface=cn.mldn.dibmp.service.IMemberService&methods=getRoleAndActionByMember,get&pid=7752&revision=0.0.1&side=consumer&timestamp=1510322640600&version=dev dubbo://192.168.10.1:9327/cn.mldn.dibmp.service.IMemberService?anyhost=true&application=mldn-service-member&default.timeout=10000000&dubbo=2.5.6&generic=false&interface=cn.mldn.dibmp.service.IMemberService&methods=getRoleAndActionByMember,get&pid=3488&revision=dev&side=provider&timestamp=1510322615437&version=dev, cn.mldn.dibmp.service.IWarehouseService:dev=empty://192.168.184.1:9328/cn.mldn.dibmp.service.IWarehouseService?anyhost=true&application=mldn-service-warehouse&category=configurators&check=false&default.timeout=10000000&dubbo=2.5.6&generic=false&interface=cn.mldn.dibmp.service.IWarehouseService&methods=add,EditByWid,getCityByPid,getById,getMemberByDid,getAllProvice,getAllDept,getByName,getAllWitem,list&pid=8532&revision=dev&side=provider&timestamp=1510322925257&version=dev}, dubbo version: 2.5.6, current host: 127.0.0.1
+2017-11-10 22:09:00,023 INFO [com.alibaba.dubbo.registry.zookeeper.ZookeeperRegistry] -  [DUBBO] Register: dubbo://192.168.184.1:9327/cn.mldn.dibmp.service.IMemberService?anyhost=true&application=mldn-service-member&default.timeout=10000000&dubbo=2.5.6&generic=false&interface=cn.mldn.dibmp.service.IMemberService&methods=getRoleAndActionByMember,get&pid=3500&revision=dev&side=provider&timestamp=1510322939445&version=dev, dubbo version: 2.5.6, current host: 127.0.0.1
+2017-11-10 22:09:00,052 INFO [com.alibaba.dubbo.registry.zookeeper.ZookeeperRegistry] -  [DUBBO] Subscribe: provider://192.168.184.1:9327/cn.mldn.dibmp.service.IMemberService?anyhost=true&application=mldn-service-member&category=configurators&check=false&default.timeout=10000000&dubbo=2.5.6&generic=false&interface=cn.mldn.dibmp.service.IMemberService&methods=getRoleAndActionByMember,get&pid=3500&revision=dev&side=provider&timestamp=1510322939445&version=dev, dubbo version: 2.5.6, current host: 127.0.0.1
+2017-11-10 22:09:00,071 INFO [com.alibaba.dubbo.registry.zookeeper.ZookeeperRegistry] -  [DUBBO] Notify urls for subscribe url provider://192.168.184.1:9327/cn.mldn.dibmp.service.IMemberService?anyhost=true&application=mldn-service-member&category=configurators&check=false&default.timeout=10000000&dubbo=2.5.6&generic=false&interface=cn.mldn.dibmp.service.IMemberService&methods=getRoleAndActionByMember,get&pid=3500&revision=dev&side=provider&timestamp=1510322939445&version=dev, urls: [empty://192.168.184.1:9327/cn.mldn.dibmp.service.IMemberService?anyhost=true&application=mldn-service-member&category=configurators&check=false&default.timeout=10000000&dubbo=2.5.6&generic=false&interface=cn.mldn.dibmp.service.IMemberService&methods=getRoleAndActionByMember,get&pid=3500&revision=dev&side=provider&timestamp=1510322939445&version=dev], dubbo version: 2.5.6, current host: 127.0.0.1
+2017-11-10 22:09:00,109 INFO [com.alibaba.dubbo.container.Main] -  [DUBBO] Dubbo SpringContainer started!, dubbo version: 2.5.6, current host: 127.0.0.1
+2017-11-10 22:09:48,631 WARN [com.alibaba.dubbo.remoting.transport.AbstractServer] -  [DUBBO] All clients has discontected from /192.168.184.1:9327. You can graceful shutdown now., dubbo version: 2.5.6, current host: 127.0.0.1
+2017-11-10 22:09:48,634 INFO [com.alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol] -  [DUBBO] disconected from /192.168.184.1:49177,url:dubbo://192.168.184.1:9327/cn.mldn.dibmp.service.IMemberService?anyhost=true&application=mldn-service-member&channel.readonly.sent=true&codec=dubbo&default.timeout=10000000&dubbo=2.5.6&generic=false&heartbeat=60000&interface=cn.mldn.dibmp.service.IMemberService&methods=getRoleAndActionByMember,get&pid=3500&revision=dev&side=provider&timestamp=1510322939445&version=dev, dubbo version: 2.5.6, current host: 127.0.0.1
+2017-11-10 22:10:30,010 INFO [com.alibaba.dubbo.common.logger.LoggerFactory] - using logger: com.alibaba.dubbo.common.logger.log4j.Log4jLoggerAdapter
+2017-11-10 22:10:30,098 INFO [com.alibaba.dubbo.container.Main] -  [DUBBO] Use container type([spring]) to run dubbo serivce., dubbo version: 2.5.6, current host: 127.0.0.1
+2017-11-10 22:10:33,857 INFO [com.alibaba.dubbo.config.AbstractConfig] -  [DUBBO] The service ready on spring started. service: cn.mldn.dibmp.service.IMemberService, dubbo version: 2.5.6, current host: 127.0.0.1
+2017-11-10 22:10:34,023 INFO [com.alibaba.dubbo.config.AbstractConfig] -  [DUBBO] Export dubbo service cn.mldn.dibmp.service.IMemberService to local registry, dubbo version: 2.5.6, current host: 127.0.0.1
+2017-11-10 22:10:34,023 INFO [com.alibaba.dubbo.config.AbstractConfig] -  [DUBBO] Export dubbo service cn.mldn.dibmp.service.IMemberService to url dubbo://192.168.28.123:9327/cn.mldn.dibmp.service.IMemberService?anyhost=true&application=mldn-service-member&default.timeout=10000000&dubbo=2.5.6&generic=false&interface=cn.mldn.dibmp.service.IMemberService&methods=getRoleAndActionByMember,get&pid=4380&revision=dev&side=provider&timestamp=1510323033882&version=dev, dubbo version: 2.5.6, current host: 127.0.0.1
+2017-11-10 22:10:34,023 INFO [com.alibaba.dubbo.config.AbstractConfig] -  [DUBBO] Register dubbo service cn.mldn.dibmp.service.IMemberService url dubbo://192.168.28.123:9327/cn.mldn.dibmp.service.IMemberService?anyhost=true&application=mldn-service-member&default.timeout=10000000&dubbo=2.5.6&generic=false&interface=cn.mldn.dibmp.service.IMemberService&methods=getRoleAndActionByMember,get&pid=4380&revision=dev&side=provider&timestamp=1510323033882&version=dev to registry registry://192.168.28.95:2181/com.alibaba.dubbo.registry.RegistryService?application=mldn-service-member&dubbo=2.5.6&pid=4380&registry=zookeeper&timestamp=1510323033872, dubbo version: 2.5.6, current host: 127.0.0.1
+2017-11-10 22:10:34,402 INFO [com.alibaba.dubbo.remoting.transport.AbstractServer] -  [DUBBO] Start NettyServer bind /0.0.0.0:9327, export /192.168.28.123:9327, dubbo version: 2.5.6, current host: 127.0.0.1
+2017-11-10 22:10:34,430 INFO [com.alibaba.dubbo.registry.zookeeper.ZookeeperRegistry] -  [DUBBO] Load registry store file C:\Users\Administrator\.dubbo\dubbo-registry-192.168.28.95.cache, data: {cn.mldn.dibmp.service.IMemberService:dev=empty://192.168.184.1/cn.mldn.dibmp.service.IMemberService?application=mldn-service-test&category=configurators&dubbo=2.5.6&interface=cn.mldn.dibmp.service.IMemberService&methods=getRoleAndActionByMember,get&pid=6920&revision=0.0.1&side=consumer&timestamp=1510322959830&version=dev empty://192.168.184.1/cn.mldn.dibmp.service.IMemberService?application=mldn-service-test&category=routers&dubbo=2.5.6&interface=cn.mldn.dibmp.service.IMemberService&methods=getRoleAndActionByMember,get&pid=6920&revision=0.0.1&side=consumer&timestamp=1510322959830&version=dev dubbo://192.168.184.1:9327/cn.mldn.dibmp.service.IMemberService?anyhost=true&application=mldn-service-member&default.timeout=10000000&dubbo=2.5.6&generic=false&interface=cn.mldn.dibmp.service.IMemberService&methods=getRoleAndActionByMember,get&pid=3500&revision=dev&side=provider&timestamp=1510322939445&version=dev, cn.mldn.dibmp.service.IWarehouseService:dev=empty://192.168.28.123:9328/cn.mldn.dibmp.service.IWarehouseService?anyhost=true&application=mldn-service-warehouse&category=configurators&check=false&default.timeout=10000000&dubbo=2.5.6&generic=false&interface=cn.mldn.dibmp.service.IWarehouseService&methods=add,EditByWid,getCityByPid,getById,getMemberByDid,getAllProvice,getAllDept,getByName,getAllWitem,list&pid=4292&revision=dev&side=provider&timestamp=1510323012010&version=dev}, dubbo version: 2.5.6, current host: 127.0.0.1
+2017-11-10 22:10:34,731 INFO [com.alibaba.dubbo.registry.zookeeper.ZookeeperRegistry] -  [DUBBO] Register: dubbo://192.168.28.123:9327/cn.mldn.dibmp.service.IMemberService?anyhost=true&application=mldn-service-member&default.timeout=10000000&dubbo=2.5.6&generic=false&interface=cn.mldn.dibmp.service.IMemberService&methods=getRoleAndActionByMember,get&pid=4380&revision=dev&side=provider&timestamp=1510323033882&version=dev, dubbo version: 2.5.6, current host: 127.0.0.1
+2017-11-10 22:10:35,515 INFO [com.alibaba.dubbo.registry.zookeeper.ZookeeperRegistry] -  [DUBBO] Subscribe: provider://192.168.28.123:9327/cn.mldn.dibmp.service.IMemberService?anyhost=true&application=mldn-service-member&category=configurators&check=false&default.timeout=10000000&dubbo=2.5.6&generic=false&interface=cn.mldn.dibmp.service.IMemberService&methods=getRoleAndActionByMember,get&pid=4380&revision=dev&side=provider&timestamp=1510323033882&version=dev, dubbo version: 2.5.6, current host: 127.0.0.1
+2017-11-10 22:10:35,545 INFO [com.alibaba.dubbo.registry.zookeeper.ZookeeperRegistry] -  [DUBBO] Notify urls for subscribe url provider://192.168.28.123:9327/cn.mldn.dibmp.service.IMemberService?anyhost=true&application=mldn-service-member&category=configurators&check=false&default.timeout=10000000&dubbo=2.5.6&generic=false&interface=cn.mldn.dibmp.service.IMemberService&methods=getRoleAndActionByMember,get&pid=4380&revision=dev&side=provider&timestamp=1510323033882&version=dev, urls: [empty://192.168.28.123:9327/cn.mldn.dibmp.service.IMemberService?anyhost=true&application=mldn-service-member&category=configurators&check=false&default.timeout=10000000&dubbo=2.5.6&generic=false&interface=cn.mldn.dibmp.service.IMemberService&methods=getRoleAndActionByMember,get&pid=4380&revision=dev&side=provider&timestamp=1510323033882&version=dev], dubbo version: 2.5.6, current host: 127.0.0.1
+2017-11-10 22:10:35,575 INFO [com.alibaba.dubbo.container.Main] -  [DUBBO] Dubbo SpringContainer started!, dubbo version: 2.5.6, current host: 127.0.0.1
+2017-11-10 22:51:03,396 WARN [com.alibaba.dubbo.remoting.transport.AbstractServer] -  [DUBBO] All clients has discontected from /192.168.28.123:9327. You can graceful shutdown now., dubbo version: 2.5.6, current host: 127.0.0.1
+2017-11-10 22:51:03,397 INFO [com.alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol] -  [DUBBO] disconected from /192.168.28.123:50478,url:dubbo://192.168.28.123:9327/cn.mldn.dibmp.service.IMemberService?anyhost=true&application=mldn-service-member&channel.readonly.sent=true&codec=dubbo&default.timeout=10000000&dubbo=2.5.6&generic=false&heartbeat=60000&interface=cn.mldn.dibmp.service.IMemberService&methods=getRoleAndActionByMember,get&pid=4380&revision=dev&side=provider&timestamp=1510323033882&version=dev, dubbo version: 2.5.6, current host: 127.0.0.1
+2017-11-10 22:52:21,068 WARN [com.alibaba.dubbo.remoting.transport.AbstractServer] -  [DUBBO] All clients has discontected from /192.168.28.123:9327. You can graceful shutdown now., dubbo version: 2.5.6, current host: 127.0.0.1
+2017-11-10 22:52:21,070 INFO [com.alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol] -  [DUBBO] disconected from /192.168.28.128:7353,url:dubbo://192.168.28.123:9327/cn.mldn.dibmp.service.IMemberService?anyhost=true&application=mldn-service-member&channel.readonly.sent=true&codec=dubbo&default.timeout=10000000&dubbo=2.5.6&generic=false&heartbeat=60000&interface=cn.mldn.dibmp.service.IMemberService&methods=getRoleAndActionByMember,get&pid=4380&revision=dev&side=provider&timestamp=1510323033882&version=dev, dubbo version: 2.5.6, current host: 127.0.0.1
+2017-11-10 23:12:17,294 INFO [com.alibaba.dubbo.common.logger.LoggerFactory] - using logger: com.alibaba.dubbo.common.logger.log4j.Log4jLoggerAdapter
+2017-11-10 23:12:17,389 INFO [com.alibaba.dubbo.container.Main] -  [DUBBO] Use container type([spring]) to run dubbo serivce., dubbo version: 2.5.6, current host: 127.0.0.1
+2017-11-10 23:12:21,067 INFO [com.alibaba.dubbo.config.AbstractConfig] -  [DUBBO] The service ready on spring started. service: cn.mldn.dibmp.service.IMemberService, dubbo version: 2.5.6, current host: 127.0.0.1
+2017-11-10 23:12:21,346 INFO [com.alibaba.dubbo.config.AbstractConfig] -  [DUBBO] Export dubbo service cn.mldn.dibmp.service.IMemberService to local registry, dubbo version: 2.5.6, current host: 127.0.0.1
+2017-11-10 23:12:21,346 INFO [com.alibaba.dubbo.config.AbstractConfig] -  [DUBBO] Export dubbo service cn.mldn.dibmp.service.IMemberService to url dubbo://192.168.28.123:9327/cn.mldn.dibmp.service.IMemberService?anyhost=true&application=mldn-service-member&default.timeout=10000000&dubbo=2.5.6&generic=false&interface=cn.mldn.dibmp.service.IMemberService&methods=getRoleAndActionByMember,get&pid=2784&revision=dev&side=provider&timestamp=1510326741111&version=dev, dubbo version: 2.5.6, current host: 127.0.0.1
+2017-11-10 23:12:21,347 INFO [com.alibaba.dubbo.config.AbstractConfig] -  [DUBBO] Register dubbo service cn.mldn.dibmp.service.IMemberService url dubbo://192.168.28.123:9327/cn.mldn.dibmp.service.IMemberService?anyhost=true&application=mldn-service-member&default.timeout=10000000&dubbo=2.5.6&generic=false&interface=cn.mldn.dibmp.service.IMemberService&methods=getRoleAndActionByMember,get&pid=2784&revision=dev&side=provider&timestamp=1510326741111&version=dev to registry registry://192.168.28.95:2181/com.alibaba.dubbo.registry.RegistryService?application=mldn-service-member&dubbo=2.5.6&pid=2784&registry=zookeeper&timestamp=1510326741087, dubbo version: 2.5.6, current host: 127.0.0.1
+2017-11-10 23:12:21,743 INFO [com.alibaba.dubbo.remoting.transport.AbstractServer] -  [DUBBO] Start NettyServer bind /0.0.0.0:9327, export /192.168.28.123:9327, dubbo version: 2.5.6, current host: 127.0.0.1
+2017-11-10 23:12:21,788 INFO [com.alibaba.dubbo.registry.zookeeper.ZookeeperRegistry] -  [DUBBO] Load registry store file C:\Users\Administrator\.dubbo\dubbo-registry-192.168.28.95.cache, data: {cn.mldn.dibmp.service.IMemberService:dev=empty://192.168.28.123/cn.mldn.dibmp.service.IMemberService?application=mldn-service-test&category=configurators&dubbo=2.5.6&interface=cn.mldn.dibmp.service.IMemberService&methods=getRoleAndActionByMember,get&pid=8464&revision=0.0.1&side=consumer&timestamp=1510323055009&version=dev empty://192.168.28.123/cn.mldn.dibmp.service.IMemberService?application=mldn-service-test&category=routers&dubbo=2.5.6&interface=cn.mldn.dibmp.service.IMemberService&methods=getRoleAndActionByMember,get&pid=8464&revision=0.0.1&side=consumer&timestamp=1510323055009&version=dev dubbo://192.168.28.123:9327/cn.mldn.dibmp.service.IMemberService?anyhost=true&application=mldn-service-member&default.timeout=10000000&dubbo=2.5.6&generic=false&interface=cn.mldn.dibmp.service.IMemberService&methods=getRoleAndActionByMember,get&pid=4380&revision=dev&side=provider&timestamp=1510323033882&version=dev, cn.mldn.dibmp.service.IWarehouseService:dev=empty://192.168.28.123/cn.mldn.dibmp.service.IWarehouseService?application=mldn-service-test&category=configurators&dubbo=2.5.6&interface=cn.mldn.dibmp.service.IWarehouseService&methods=add,EditByWid,getCityByPid,getById,getMemberByDid,getAllDept,getAllProvice,getByName,getAllWitem,list&pid=8464&revision=0.0.1&side=consumer&timestamp=1510323057528&version=dev empty://192.168.28.123/cn.mldn.dibmp.service.IWarehouseService?application=mldn-service-test&category=routers&dubbo=2.5.6&interface=cn.mldn.dibmp.service.IWarehouseService&methods=add,EditByWid,getCityByPid,getById,getMemberByDid,getAllDept,getAllProvice,getByName,getAllWitem,list&pid=8464&revision=0.0.1&side=consumer&timestamp=1510323057528&version=dev dubbo://192.168.28.123:9328/cn.mldn.dibmp.service.IWarehouseService?anyhost=true&application=mldn-service-warehouse&default.timeout=10000000&dubbo=2.5.6&generic=false&interface=cn.mldn.dibmp.service.IWarehouseService&methods=add,EditByWid,getCityByPid,getById,getMemberByDid,getAllProvice,getAllDept,getByName,getAllWitem,list&pid=4292&revision=dev&side=provider&timestamp=1510323012010&version=dev}, dubbo version: 2.5.6, current host: 127.0.0.1
+2017-11-10 23:12:21,906 INFO [com.alibaba.dubbo.registry.zookeeper.ZookeeperRegistry] -  [DUBBO] Register: dubbo://192.168.28.123:9327/cn.mldn.dibmp.service.IMemberService?anyhost=true&application=mldn-service-member&default.timeout=10000000&dubbo=2.5.6&generic=false&interface=cn.mldn.dibmp.service.IMemberService&methods=getRoleAndActionByMember,get&pid=2784&revision=dev&side=provider&timestamp=1510326741111&version=dev, dubbo version: 2.5.6, current host: 127.0.0.1
+2017-11-10 23:12:22,012 INFO [com.alibaba.dubbo.registry.zookeeper.ZookeeperRegistry] -  [DUBBO] Subscribe: provider://192.168.28.123:9327/cn.mldn.dibmp.service.IMemberService?anyhost=true&application=mldn-service-member&category=configurators&check=false&default.timeout=10000000&dubbo=2.5.6&generic=false&interface=cn.mldn.dibmp.service.IMemberService&methods=getRoleAndActionByMember,get&pid=2784&revision=dev&side=provider&timestamp=1510326741111&version=dev, dubbo version: 2.5.6, current host: 127.0.0.1
+2017-11-10 23:12:22,051 INFO [com.alibaba.dubbo.registry.zookeeper.ZookeeperRegistry] -  [DUBBO] Notify urls for subscribe url provider://192.168.28.123:9327/cn.mldn.dibmp.service.IMemberService?anyhost=true&application=mldn-service-member&category=configurators&check=false&default.timeout=10000000&dubbo=2.5.6&generic=false&interface=cn.mldn.dibmp.service.IMemberService&methods=getRoleAndActionByMember,get&pid=2784&revision=dev&side=provider&timestamp=1510326741111&version=dev, urls: [empty://192.168.28.123:9327/cn.mldn.dibmp.service.IMemberService?anyhost=true&application=mldn-service-member&category=configurators&check=false&default.timeout=10000000&dubbo=2.5.6&generic=false&interface=cn.mldn.dibmp.service.IMemberService&methods=getRoleAndActionByMember,get&pid=2784&revision=dev&side=provider&timestamp=1510326741111&version=dev], dubbo version: 2.5.6, current host: 127.0.0.1
+2017-11-10 23:12:22,092 INFO [com.alibaba.dubbo.container.Main] -  [DUBBO] Dubbo SpringContainer started!, dubbo version: 2.5.6, current host: 127.0.0.1
+2017-11-10 23:17:47,348 WARN [com.alibaba.dubbo.remoting.transport.AbstractServer] -  [DUBBO] All clients has discontected from /192.168.28.123:9327. You can graceful shutdown now., dubbo version: 2.5.6, current host: 127.0.0.1
+2017-11-10 23:17:47,350 INFO [com.alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol] -  [DUBBO] disconected from /192.168.28.128:7907,url:dubbo://192.168.28.123:9327/cn.mldn.dibmp.service.IMemberService?anyhost=true&application=mldn-service-member&channel.readonly.sent=true&codec=dubbo&default.timeout=10000000&dubbo=2.5.6&generic=false&heartbeat=60000&interface=cn.mldn.dibmp.service.IMemberService&methods=getRoleAndActionByMember,get&pid=2784&revision=dev&side=provider&timestamp=1510326741111&version=dev, dubbo version: 2.5.6, current host: 127.0.0.1
+2017-11-10 23:19:58,985 INFO [com.alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol] -  [DUBBO] disconected from /192.168.28.123:59545,url:dubbo://192.168.28.123:9327/cn.mldn.dibmp.service.IMemberService?anyhost=true&application=mldn-service-member&channel.readonly.sent=true&codec=dubbo&default.timeout=10000000&dubbo=2.5.6&generic=false&heartbeat=60000&interface=cn.mldn.dibmp.service.IMemberService&methods=getRoleAndActionByMember,get&pid=2784&revision=dev&side=provider&timestamp=1510326741111&version=dev, dubbo version: 2.5.6, current host: 127.0.0.1
+2017-11-10 23:31:45,371 INFO [com.alibaba.dubbo.common.logger.LoggerFactory] - using logger: com.alibaba.dubbo.common.logger.log4j.Log4jLoggerAdapter
+2017-11-10 23:31:45,503 INFO [com.alibaba.dubbo.container.Main] -  [DUBBO] Use container type([spring]) to run dubbo serivce., dubbo version: 2.5.6, current host: 127.0.0.1
+2017-11-10 23:31:49,748 INFO [com.alibaba.dubbo.config.AbstractConfig] -  [DUBBO] The service ready on spring started. service: cn.mldn.dibmp.service.IMemberService, dubbo version: 2.5.6, current host: 127.0.0.1
+2017-11-10 23:31:49,917 INFO [com.alibaba.dubbo.config.AbstractConfig] -  [DUBBO] Export dubbo service cn.mldn.dibmp.service.IMemberService to local registry, dubbo version: 2.5.6, current host: 127.0.0.1
+2017-11-10 23:31:49,917 INFO [com.alibaba.dubbo.config.AbstractConfig] -  [DUBBO] Export dubbo service cn.mldn.dibmp.service.IMemberService to url dubbo://192.168.28.123:9327/cn.mldn.dibmp.service.IMemberService?anyhost=true&application=mldn-service-member&default.timeout=10000000&dubbo=2.5.6&generic=false&interface=cn.mldn.dibmp.service.IMemberService&methods=getRoleAndActionByMember,get&pid=7064&revision=dev&side=provider&timestamp=1510327909770&version=dev, dubbo version: 2.5.6, current host: 127.0.0.1
+2017-11-10 23:31:49,917 INFO [com.alibaba.dubbo.config.AbstractConfig] -  [DUBBO] Register dubbo service cn.mldn.dibmp.service.IMemberService url dubbo://192.168.28.123:9327/cn.mldn.dibmp.service.IMemberService?anyhost=true&application=mldn-service-member&default.timeout=10000000&dubbo=2.5.6&generic=false&interface=cn.mldn.dibmp.service.IMemberService&methods=getRoleAndActionByMember,get&pid=7064&revision=dev&side=provider&timestamp=1510327909770&version=dev to registry registry://192.168.28.95:2181/com.alibaba.dubbo.registry.RegistryService?application=mldn-service-member&dubbo=2.5.6&pid=7064&registry=zookeeper&timestamp=1510327909758, dubbo version: 2.5.6, current host: 127.0.0.1
+2017-11-10 23:31:50,294 INFO [com.alibaba.dubbo.remoting.transport.AbstractServer] -  [DUBBO] Start NettyServer bind /0.0.0.0:9327, export /192.168.28.123:9327, dubbo version: 2.5.6, current host: 127.0.0.1
+2017-11-10 23:31:50,321 INFO [com.alibaba.dubbo.registry.zookeeper.ZookeeperRegistry] -  [DUBBO] Load registry store file C:\Users\Administrator\.dubbo\dubbo-registry-192.168.28.95.cache, data: {cn.mldn.dibmp.service.IMemberService:dev=empty://192.168.28.123/cn.mldn.dibmp.service.IMemberService?application=mldn-service-test&category=configurators&dubbo=2.5.6&interface=cn.mldn.dibmp.service.IMemberService&methods=getRoleAndActionByMember,get&pid=4196&revision=0.0.1&side=consumer&timestamp=1510327195688&version=dev empty://192.168.28.123/cn.mldn.dibmp.service.IMemberService?application=mldn-service-test&category=routers&dubbo=2.5.6&interface=cn.mldn.dibmp.service.IMemberService&methods=getRoleAndActionByMember,get&pid=4196&revision=0.0.1&side=consumer&timestamp=1510327195688&version=dev dubbo://192.168.28.123:9327/cn.mldn.dibmp.service.IMemberService?anyhost=true&application=mldn-service-member&default.timeout=10000000&dubbo=2.5.6&generic=false&interface=cn.mldn.dibmp.service.IMemberService&methods=getRoleAndActionByMember,get&pid=2784&revision=dev&side=provider&timestamp=1510326741111&version=dev, cn.mldn.dibmp.service.IWarehouseService:dev=empty://192.168.28.123:9328/cn.mldn.dibmp.service.IWarehouseService?anyhost=true&application=mldn-service-warehouse&category=configurators&check=false&default.timeout=10000000&dubbo=2.5.6&generic=false&interface=cn.mldn.dibmp.service.IWarehouseService&methods=add,EditByWid,getCityByPid,getById,edit,getMemberByDid,getAllProvice,getAllDept,getByName,getAllWitem,list&pid=5216&revision=dev&side=provider&timestamp=1510327835850&version=dev}, dubbo version: 2.5.6, current host: 127.0.0.1
+2017-11-10 23:31:50,475 INFO [com.alibaba.dubbo.registry.zookeeper.ZookeeperRegistry] -  [DUBBO] Register: dubbo://192.168.28.123:9327/cn.mldn.dibmp.service.IMemberService?anyhost=true&application=mldn-service-member&default.timeout=10000000&dubbo=2.5.6&generic=false&interface=cn.mldn.dibmp.service.IMemberService&methods=getRoleAndActionByMember,get&pid=7064&revision=dev&side=provider&timestamp=1510327909770&version=dev, dubbo version: 2.5.6, current host: 127.0.0.1
+2017-11-10 23:31:51,286 INFO [com.alibaba.dubbo.registry.zookeeper.ZookeeperRegistry] -  [DUBBO] Subscribe: provider://192.168.28.123:9327/cn.mldn.dibmp.service.IMemberService?anyhost=true&application=mldn-service-member&category=configurators&check=false&default.timeout=10000000&dubbo=2.5.6&generic=false&interface=cn.mldn.dibmp.service.IMemberService&methods=getRoleAndActionByMember,get&pid=7064&revision=dev&side=provider&timestamp=1510327909770&version=dev, dubbo version: 2.5.6, current host: 127.0.0.1
+2017-11-10 23:31:51,311 INFO [com.alibaba.dubbo.registry.zookeeper.ZookeeperRegistry] -  [DUBBO] Notify urls for subscribe url provider://192.168.28.123:9327/cn.mldn.dibmp.service.IMemberService?anyhost=true&application=mldn-service-member&category=configurators&check=false&default.timeout=10000000&dubbo=2.5.6&generic=false&interface=cn.mldn.dibmp.service.IMemberService&methods=getRoleAndActionByMember,get&pid=7064&revision=dev&side=provider&timestamp=1510327909770&version=dev, urls: [empty://192.168.28.123:9327/cn.mldn.dibmp.service.IMemberService?anyhost=true&application=mldn-service-member&category=configurators&check=false&default.timeout=10000000&dubbo=2.5.6&generic=false&interface=cn.mldn.dibmp.service.IMemberService&methods=getRoleAndActionByMember,get&pid=7064&revision=dev&side=provider&timestamp=1510327909770&version=dev], dubbo version: 2.5.6, current host: 127.0.0.1
+2017-11-10 23:31:51,409 INFO [com.alibaba.dubbo.container.Main] -  [DUBBO] Dubbo SpringContainer started!, dubbo version: 2.5.6, current host: 127.0.0.1
+2017-11-10 23:34:38,717 INFO [com.alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol] -  [DUBBO] disconected from /192.168.28.123:62601,url:dubbo://192.168.28.123:9327/cn.mldn.dibmp.service.IMemberService?anyhost=true&application=mldn-service-member&channel.readonly.sent=true&codec=dubbo&default.timeout=10000000&dubbo=2.5.6&generic=false&heartbeat=60000&interface=cn.mldn.dibmp.service.IMemberService&methods=getRoleAndActionByMember,get&pid=7064&revision=dev&side=provider&timestamp=1510327909770&version=dev, dubbo version: 2.5.6, current host: 127.0.0.1
+2017-11-11 00:07:53,369 INFO [com.alibaba.dubbo.common.logger.LoggerFactory] - using logger: com.alibaba.dubbo.common.logger.log4j.Log4jLoggerAdapter
+2017-11-11 00:07:53,495 INFO [com.alibaba.dubbo.container.Main] -  [DUBBO] Use container type([spring]) to run dubbo serivce., dubbo version: 2.5.6, current host: 127.0.0.1
+2017-11-11 00:07:57,254 INFO [com.alibaba.dubbo.config.AbstractConfig] -  [DUBBO] The service ready on spring started. service: cn.mldn.dibmp.service.IMemberService, dubbo version: 2.5.6, current host: 127.0.0.1
+2017-11-11 00:07:57,439 INFO [com.alibaba.dubbo.config.AbstractConfig] -  [DUBBO] Export dubbo service cn.mldn.dibmp.service.IMemberService to local registry, dubbo version: 2.5.6, current host: 127.0.0.1
+2017-11-11 00:07:57,439 INFO [com.alibaba.dubbo.config.AbstractConfig] -  [DUBBO] Export dubbo service cn.mldn.dibmp.service.IMemberService to url dubbo://192.168.28.123:9330/cn.mldn.dibmp.service.IMemberService?anyhost=true&application=mldn-service-member&default.timeout=10000000&dubbo=2.5.6&generic=false&interface=cn.mldn.dibmp.service.IMemberService&methods=getRoleAndActionByMember,get&pid=8900&revision=dev&side=provider&timestamp=1510330077287&version=dev, dubbo version: 2.5.6, current host: 127.0.0.1
+2017-11-11 00:07:57,440 INFO [com.alibaba.dubbo.config.AbstractConfig] -  [DUBBO] Register dubbo service cn.mldn.dibmp.service.IMemberService url dubbo://192.168.28.123:9330/cn.mldn.dibmp.service.IMemberService?anyhost=true&application=mldn-service-member&default.timeout=10000000&dubbo=2.5.6&generic=false&interface=cn.mldn.dibmp.service.IMemberService&methods=getRoleAndActionByMember,get&pid=8900&revision=dev&side=provider&timestamp=1510330077287&version=dev to registry registry://192.168.28.95:2181/com.alibaba.dubbo.registry.RegistryService?application=mldn-service-member&dubbo=2.5.6&pid=8900&registry=zookeeper&timestamp=1510330077272, dubbo version: 2.5.6, current host: 127.0.0.1
+2017-11-11 00:07:57,790 INFO [com.alibaba.dubbo.remoting.transport.AbstractServer] -  [DUBBO] Start NettyServer bind /0.0.0.0:9330, export /192.168.28.123:9330, dubbo version: 2.5.6, current host: 127.0.0.1
+2017-11-11 00:07:57,818 INFO [com.alibaba.dubbo.registry.zookeeper.ZookeeperRegistry] -  [DUBBO] Load registry store file C:\Users\Administrator\.dubbo\dubbo-registry-192.168.28.95.cache, data: {cn.mldn.dibmp.service.IMemberService:dev=empty://192.168.28.123/cn.mldn.dibmp.service.IMemberService?application=mldn-service-test&category=configurators&dubbo=2.5.6&interface=cn.mldn.dibmp.service.IMemberService&methods=getRoleAndActionByMember,get&pid=4700&revision=dev&side=consumer&timestamp=1510328076749&version=dev empty://192.168.28.123/cn.mldn.dibmp.service.IMemberService?application=mldn-service-test&category=routers&dubbo=2.5.6&interface=cn.mldn.dibmp.service.IMemberService&methods=getRoleAndActionByMember,get&pid=4700&revision=dev&side=consumer&timestamp=1510328076749&version=dev dubbo://192.168.28.123:9327/cn.mldn.dibmp.service.IMemberService?anyhost=true&application=mldn-service-member&default.timeout=10000000&dubbo=2.5.6&generic=false&interface=cn.mldn.dibmp.service.IMemberService&methods=getRoleAndActionByMember,get&pid=7064&revision=dev&side=provider&timestamp=1510327909770&version=dev, cn.mldn.dibmp.service.IWarehouseService:dev=empty://192.168.28.123:9329/cn.mldn.dibmp.service.IWarehouseService?anyhost=true&application=mldn-service-warehouse&category=configurators&check=false&default.timeout=10000000&dubbo=2.5.6&generic=false&interface=cn.mldn.dibmp.service.IWarehouseService&methods=add,EditByWid,getCityByPid,getById,edit,getMemberByDid,getAllProvice,getAllDept,getByName,getAllWitem,list&pid=9072&revision=dev&side=provider&timestamp=1510329149972&version=dev}, dubbo version: 2.5.6, current host: 127.0.0.1
+2017-11-11 00:07:58,003 INFO [com.alibaba.dubbo.registry.zookeeper.ZookeeperRegistry] -  [DUBBO] Register: dubbo://192.168.28.123:9330/cn.mldn.dibmp.service.IMemberService?anyhost=true&application=mldn-service-member&default.timeout=10000000&dubbo=2.5.6&generic=false&interface=cn.mldn.dibmp.service.IMemberService&methods=getRoleAndActionByMember,get&pid=8900&revision=dev&side=provider&timestamp=1510330077287&version=dev, dubbo version: 2.5.6, current host: 127.0.0.1
+2017-11-11 00:07:58,516 INFO [com.alibaba.dubbo.registry.zookeeper.ZookeeperRegistry] -  [DUBBO] Subscribe: provider://192.168.28.123:9330/cn.mldn.dibmp.service.IMemberService?anyhost=true&application=mldn-service-member&category=configurators&check=false&default.timeout=10000000&dubbo=2.5.6&generic=false&interface=cn.mldn.dibmp.service.IMemberService&methods=getRoleAndActionByMember,get&pid=8900&revision=dev&side=provider&timestamp=1510330077287&version=dev, dubbo version: 2.5.6, current host: 127.0.0.1
+2017-11-11 00:07:58,542 INFO [com.alibaba.dubbo.registry.zookeeper.ZookeeperRegistry] -  [DUBBO] Notify urls for subscribe url provider://192.168.28.123:9330/cn.mldn.dibmp.service.IMemberService?anyhost=true&application=mldn-service-member&category=configurators&check=false&default.timeout=10000000&dubbo=2.5.6&generic=false&interface=cn.mldn.dibmp.service.IMemberService&methods=getRoleAndActionByMember,get&pid=8900&revision=dev&side=provider&timestamp=1510330077287&version=dev, urls: [empty://192.168.28.123:9330/cn.mldn.dibmp.service.IMemberService?anyhost=true&application=mldn-service-member&category=configurators&check=false&default.timeout=10000000&dubbo=2.5.6&generic=false&interface=cn.mldn.dibmp.service.IMemberService&methods=getRoleAndActionByMember,get&pid=8900&revision=dev&side=provider&timestamp=1510330077287&version=dev], dubbo version: 2.5.6, current host: 127.0.0.1
+2017-11-11 00:07:58,597 INFO [com.alibaba.dubbo.container.Main] -  [DUBBO] Dubbo SpringContainer started!, dubbo version: 2.5.6, current host: 127.0.0.1
+2017-11-11 00:08:15,696 INFO [com.alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol] -  [DUBBO] disconected from /192.168.28.123:54662,url:dubbo://192.168.28.123:9330/cn.mldn.dibmp.service.IMemberService?anyhost=true&application=mldn-service-member&channel.readonly.sent=true&codec=dubbo&default.timeout=10000000&dubbo=2.5.6&generic=false&heartbeat=60000&interface=cn.mldn.dibmp.service.IMemberService&methods=getRoleAndActionByMember,get&pid=8900&revision=dev&side=provider&timestamp=1510330077287&version=dev, dubbo version: 2.5.6, current host: 127.0.0.1
+2017-11-11 09:40:53,540 INFO [com.alibaba.dubbo.common.logger.LoggerFactory] - using logger: com.alibaba.dubbo.common.logger.log4j.Log4jLoggerAdapter
+2017-11-11 09:40:53,656 INFO [com.alibaba.dubbo.container.Main] -  [DUBBO] Use container type([spring]) to run dubbo serivce., dubbo version: 2.5.6, current host: 127.0.0.1
+2017-11-11 09:40:58,543 ERROR [com.alibaba.dubbo.container.Main] -  [DUBBO] Error creating bean with name 'memberServiceImpl': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'IMemberDAO' defined in file [C:\Users\Administrator\git\DIBMP\dibmp-service-member\target\classes\cn\mldn\dibmp\dao\IMemberDAO.class]: Cannot resolve reference to bean 'sessionFactory' while setting bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sessionFactory' defined in file [C:\Users\Administrator\git\DIBMP\dibmp-service-member\target\classes\META-INF\spring\spring-mybatis.xml]: Cannot resolve reference to bean 'dataSource' while setting bean property 'dataSource'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in file [C:\Users\Administrator\git\DIBMP\dibmp-service-member\target\classes\META-INF\spring\spring-datasource.xml]: Invocation of init method failed; nested exception is com.mysql.jdbc.CommunicationsException: Communications link failure due to underlying exception: 
+
+** BEGIN NESTED EXCEPTION ** 
+
+java.net.SocketException
+MESSAGE: java.net.ConnectException: Connection refused: connect
+
+STACKTRACE:
+
+java.net.SocketException: java.net.ConnectException: Connection refused: connect
+	at com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:156)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:276)
+	at com.mysql.jdbc.Connection.createNewIO(Connection.java:2666)
+	at com.mysql.jdbc.Connection.<init>(Connection.java:1531)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:266)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:149)
+	at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:218)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:143)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1466)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1529)
+	at com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:846)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeCustomInitMethod(AbstractAutowireCapableBeanFactory.java:1829)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1772)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1700)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:583)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:502)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:312)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:310)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:367)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:110)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1607)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1352)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:502)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:312)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:310)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:367)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:110)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1607)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1352)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:502)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:312)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:310)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:251)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1133)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1060)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.autowireResource(CommonAnnotationBeanPostProcessor.java:506)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.getResource(CommonAnnotationBeanPostProcessor.java:484)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor$ResourceElement.getResourceToInject(CommonAnnotationBeanPostProcessor.java:618)
+	at org.springframework.beans.factory.annotation.InjectionMetadata$InjectedElement.inject(InjectionMetadata.java:177)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:91)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessPropertyValues(CommonAnnotationBeanPostProcessor.java:318)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1340)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:502)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:312)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:310)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:756)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:868)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:144)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:95)
+	at com.alibaba.dubbo.container.spring.SpringContainer.start(SpringContainer.java:46)
+	at com.alibaba.dubbo.container.Main.main(Main.java:86)
+	at cn.mldn.dibmp.service.main.ProviderStartupMemberService.main(ProviderStartupMemberService.java:7)
+
+
+** END NESTED EXCEPTION **
+
+
+
+Last packet sent to the server was 59 ms ago., dubbo version: 2.5.6, current host: 127.0.0.1
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'memberServiceImpl': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'IMemberDAO' defined in file [C:\Users\Administrator\git\DIBMP\dibmp-service-member\target\classes\cn\mldn\dibmp\dao\IMemberDAO.class]: Cannot resolve reference to bean 'sessionFactory' while setting bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sessionFactory' defined in file [C:\Users\Administrator\git\DIBMP\dibmp-service-member\target\classes\META-INF\spring\spring-mybatis.xml]: Cannot resolve reference to bean 'dataSource' while setting bean property 'dataSource'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in file [C:\Users\Administrator\git\DIBMP\dibmp-service-member\target\classes\META-INF\spring\spring-datasource.xml]: Invocation of init method failed; nested exception is com.mysql.jdbc.CommunicationsException: Communications link failure due to underlying exception: 
+
+** BEGIN NESTED EXCEPTION ** 
+
+java.net.SocketException
+MESSAGE: java.net.ConnectException: Connection refused: connect
+
+STACKTRACE:
+
+java.net.SocketException: java.net.ConnectException: Connection refused: connect
+	at com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:156)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:276)
+	at com.mysql.jdbc.Connection.createNewIO(Connection.java:2666)
+	at com.mysql.jdbc.Connection.<init>(Connection.java:1531)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:266)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:149)
+	at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:218)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:143)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1466)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1529)
+	at com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:846)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeCustomInitMethod(AbstractAutowireCapableBeanFactory.java:1829)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1772)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1700)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:583)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:502)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:312)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:310)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:367)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:110)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1607)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1352)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:502)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:312)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:310)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:367)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:110)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1607)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1352)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:502)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:312)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:310)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:251)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1133)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1060)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.autowireResource(CommonAnnotationBeanPostProcessor.java:506)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.getResource(CommonAnnotationBeanPostProcessor.java:484)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor$ResourceElement.getResourceToInject(CommonAnnotationBeanPostProcessor.java:618)
+	at org.springframework.beans.factory.annotation.InjectionMetadata$InjectedElement.inject(InjectionMetadata.java:177)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:91)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessPropertyValues(CommonAnnotationBeanPostProcessor.java:318)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1340)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:502)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:312)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:310)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:756)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:868)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:144)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:95)
+	at com.alibaba.dubbo.container.spring.SpringContainer.start(SpringContainer.java:46)
+	at com.alibaba.dubbo.container.Main.main(Main.java:86)
+	at cn.mldn.dibmp.service.main.ProviderStartupMemberService.main(ProviderStartupMemberService.java:7)
+
+
+** END NESTED EXCEPTION **
+
+
+
+Last packet sent to the server was 59 ms ago.
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessPropertyValues(CommonAnnotationBeanPostProcessor.java:321)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1340)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:502)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:312)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:310)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:756)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:868)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:144)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:95)
+	at com.alibaba.dubbo.container.spring.SpringContainer.start(SpringContainer.java:46)
+	at com.alibaba.dubbo.container.Main.main(Main.java:86)
+	at cn.mldn.dibmp.service.main.ProviderStartupMemberService.main(ProviderStartupMemberService.java:7)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'IMemberDAO' defined in file [C:\Users\Administrator\git\DIBMP\dibmp-service-member\target\classes\cn\mldn\dibmp\dao\IMemberDAO.class]: Cannot resolve reference to bean 'sessionFactory' while setting bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sessionFactory' defined in file [C:\Users\Administrator\git\DIBMP\dibmp-service-member\target\classes\META-INF\spring\spring-mybatis.xml]: Cannot resolve reference to bean 'dataSource' while setting bean property 'dataSource'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in file [C:\Users\Administrator\git\DIBMP\dibmp-service-member\target\classes\META-INF\spring\spring-datasource.xml]: Invocation of init method failed; nested exception is com.mysql.jdbc.CommunicationsException: Communications link failure due to underlying exception: 
+
+** BEGIN NESTED EXCEPTION ** 
+
+java.net.SocketException
+MESSAGE: java.net.ConnectException: Connection refused: connect
+
+STACKTRACE:
+
+java.net.SocketException: java.net.ConnectException: Connection refused: connect
+	at com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:156)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:276)
+	at com.mysql.jdbc.Connection.createNewIO(Connection.java:2666)
+	at com.mysql.jdbc.Connection.<init>(Connection.java:1531)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:266)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:149)
+	at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:218)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:143)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1466)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1529)
+	at com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:846)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeCustomInitMethod(AbstractAutowireCapableBeanFactory.java:1829)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1772)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1700)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:583)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:502)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:312)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:310)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:367)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:110)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1607)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1352)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:502)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:312)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:310)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:367)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:110)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1607)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1352)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:502)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:312)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:310)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:251)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1133)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1060)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.autowireResource(CommonAnnotationBeanPostProcessor.java:506)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.getResource(CommonAnnotationBeanPostProcessor.java:484)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor$ResourceElement.getResourceToInject(CommonAnnotationBeanPostProcessor.java:618)
+	at org.springframework.beans.factory.annotation.InjectionMetadata$InjectedElement.inject(InjectionMetadata.java:177)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:91)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessPropertyValues(CommonAnnotationBeanPostProcessor.java:318)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1340)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:502)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:312)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:310)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:756)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:868)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:144)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:95)
+	at com.alibaba.dubbo.container.spring.SpringContainer.start(SpringContainer.java:46)
+	at com.alibaba.dubbo.container.Main.main(Main.java:86)
+	at cn.mldn.dibmp.service.main.ProviderStartupMemberService.main(ProviderStartupMemberService.java:7)
+
+
+** END NESTED EXCEPTION **
+
+
+
+Last packet sent to the server was 59 ms ago.
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:378)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:110)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1607)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1352)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:502)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:312)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:310)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:251)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1133)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1060)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.autowireResource(CommonAnnotationBeanPostProcessor.java:506)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.getResource(CommonAnnotationBeanPostProcessor.java:484)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor$ResourceElement.getResourceToInject(CommonAnnotationBeanPostProcessor.java:618)
+	at org.springframework.beans.factory.annotation.InjectionMetadata$InjectedElement.inject(InjectionMetadata.java:177)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:91)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessPropertyValues(CommonAnnotationBeanPostProcessor.java:318)
+	... 15 more
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sessionFactory' defined in file [C:\Users\Administrator\git\DIBMP\dibmp-service-member\target\classes\META-INF\spring\spring-mybatis.xml]: Cannot resolve reference to bean 'dataSource' while setting bean property 'dataSource'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in file [C:\Users\Administrator\git\DIBMP\dibmp-service-member\target\classes\META-INF\spring\spring-datasource.xml]: Invocation of init method failed; nested exception is com.mysql.jdbc.CommunicationsException: Communications link failure due to underlying exception: 
+
+** BEGIN NESTED EXCEPTION ** 
+
+java.net.SocketException
+MESSAGE: java.net.ConnectException: Connection refused: connect
+
+STACKTRACE:
+
+java.net.SocketException: java.net.ConnectException: Connection refused: connect
+	at com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:156)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:276)
+	at com.mysql.jdbc.Connection.createNewIO(Connection.java:2666)
+	at com.mysql.jdbc.Connection.<init>(Connection.java:1531)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:266)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:149)
+	at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:218)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:143)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1466)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1529)
+	at com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:846)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeCustomInitMethod(AbstractAutowireCapableBeanFactory.java:1829)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1772)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1700)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:583)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:502)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:312)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:310)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:367)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:110)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1607)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1352)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:502)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:312)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:310)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:367)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:110)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1607)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1352)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:502)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:312)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:310)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:251)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1133)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1060)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.autowireResource(CommonAnnotationBeanPostProcessor.java:506)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.getResource(CommonAnnotationBeanPostProcessor.java:484)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor$ResourceElement.getResourceToInject(CommonAnnotationBeanPostProcessor.java:618)
+	at org.springframework.beans.factory.annotation.InjectionMetadata$InjectedElement.inject(InjectionMetadata.java:177)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:91)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessPropertyValues(CommonAnnotationBeanPostProcessor.java:318)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1340)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:502)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:312)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:310)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:756)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:868)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:144)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:95)
+	at com.alibaba.dubbo.container.spring.SpringContainer.start(SpringContainer.java:46)
+	at com.alibaba.dubbo.container.Main.main(Main.java:86)
+	at cn.mldn.dibmp.service.main.ProviderStartupMemberService.main(ProviderStartupMemberService.java:7)
+
+
+** END NESTED EXCEPTION **
+
+
+
+Last packet sent to the server was 59 ms ago.
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:378)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:110)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1607)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1352)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:502)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:312)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:310)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:367)
+	... 33 more
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in file [C:\Users\Administrator\git\DIBMP\dibmp-service-member\target\classes\META-INF\spring\spring-datasource.xml]: Invocation of init method failed; nested exception is com.mysql.jdbc.CommunicationsException: Communications link failure due to underlying exception: 
+
+** BEGIN NESTED EXCEPTION ** 
+
+java.net.SocketException
+MESSAGE: java.net.ConnectException: Connection refused: connect
+
+STACKTRACE:
+
+java.net.SocketException: java.net.ConnectException: Connection refused: connect
+	at com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:156)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:276)
+	at com.mysql.jdbc.Connection.createNewIO(Connection.java:2666)
+	at com.mysql.jdbc.Connection.<init>(Connection.java:1531)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:266)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:149)
+	at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:218)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:143)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1466)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1529)
+	at com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:846)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeCustomInitMethod(AbstractAutowireCapableBeanFactory.java:1829)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1772)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1700)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:583)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:502)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:312)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:310)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:367)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:110)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1607)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1352)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:502)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:312)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:310)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:367)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:110)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1607)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1352)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:502)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:312)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:310)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:251)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1133)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1060)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.autowireResource(CommonAnnotationBeanPostProcessor.java:506)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.getResource(CommonAnnotationBeanPostProcessor.java:484)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor$ResourceElement.getResourceToInject(CommonAnnotationBeanPostProcessor.java:618)
+	at org.springframework.beans.factory.annotation.InjectionMetadata$InjectedElement.inject(InjectionMetadata.java:177)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:91)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessPropertyValues(CommonAnnotationBeanPostProcessor.java:318)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1340)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:502)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:312)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:310)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:756)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:868)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:144)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:95)
+	at com.alibaba.dubbo.container.spring.SpringContainer.start(SpringContainer.java:46)
+	at com.alibaba.dubbo.container.Main.main(Main.java:86)
+	at cn.mldn.dibmp.service.main.ProviderStartupMemberService.main(ProviderStartupMemberService.java:7)
+
+
+** END NESTED EXCEPTION **
+
+
+
+Last packet sent to the server was 59 ms ago.
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1704)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:583)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:502)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:312)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:310)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:367)
+	... 43 more
+Caused by: com.mysql.jdbc.CommunicationsException: Communications link failure due to underlying exception: 
+
+** BEGIN NESTED EXCEPTION ** 
+
+java.net.SocketException
+MESSAGE: java.net.ConnectException: Connection refused: connect
+
+STACKTRACE:
+
+java.net.SocketException: java.net.ConnectException: Connection refused: connect
+	at com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:156)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:276)
+	at com.mysql.jdbc.Connection.createNewIO(Connection.java:2666)
+	at com.mysql.jdbc.Connection.<init>(Connection.java:1531)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:266)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:149)
+	at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:218)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:143)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1466)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1529)
+	at com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:846)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeCustomInitMethod(AbstractAutowireCapableBeanFactory.java:1829)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1772)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1700)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:583)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:502)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:312)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:310)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:367)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:110)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1607)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1352)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:502)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:312)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:310)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:367)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:110)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1607)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1352)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:502)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:312)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:310)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:251)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1133)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1060)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.autowireResource(CommonAnnotationBeanPostProcessor.java:506)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.getResource(CommonAnnotationBeanPostProcessor.java:484)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor$ResourceElement.getResourceToInject(CommonAnnotationBeanPostProcessor.java:618)
+	at org.springframework.beans.factory.annotation.InjectionMetadata$InjectedElement.inject(InjectionMetadata.java:177)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:91)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessPropertyValues(CommonAnnotationBeanPostProcessor.java:318)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1340)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:502)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:312)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:310)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:756)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:868)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:144)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:95)
+	at com.alibaba.dubbo.container.spring.SpringContainer.start(SpringContainer.java:46)
+	at com.alibaba.dubbo.container.Main.main(Main.java:86)
+	at cn.mldn.dibmp.service.main.ProviderStartupMemberService.main(ProviderStartupMemberService.java:7)
+
+
+** END NESTED EXCEPTION **
+
+
+
+Last packet sent to the server was 59 ms ago.
+	at com.mysql.jdbc.Connection.createNewIO(Connection.java:2741)
+	at com.mysql.jdbc.Connection.<init>(Connection.java:1531)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:266)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:149)
+	at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:218)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:143)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1466)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1529)
+	at com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:846)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeCustomInitMethod(AbstractAutowireCapableBeanFactory.java:1829)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1772)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1700)
+	... 50 more
+2017-11-11 09:42:26,186 INFO [com.alibaba.dubbo.common.logger.LoggerFactory] - using logger: com.alibaba.dubbo.common.logger.log4j.Log4jLoggerAdapter
+2017-11-11 09:42:26,297 INFO [com.alibaba.dubbo.container.Main] -  [DUBBO] Use container type([spring]) to run dubbo serivce., dubbo version: 2.5.6, current host: 127.0.0.1
+2017-11-11 09:42:30,501 INFO [com.alibaba.dubbo.config.AbstractConfig] -  [DUBBO] The service ready on spring started. service: cn.mldn.dibmp.service.IMemberService, dubbo version: 2.5.6, current host: 127.0.0.1
+2017-11-11 09:42:30,708 INFO [com.alibaba.dubbo.config.AbstractConfig] -  [DUBBO] Export dubbo service cn.mldn.dibmp.service.IMemberService to local registry, dubbo version: 2.5.6, current host: 127.0.0.1
+2017-11-11 09:42:30,708 INFO [com.alibaba.dubbo.config.AbstractConfig] -  [DUBBO] Export dubbo service cn.mldn.dibmp.service.IMemberService to url dubbo://192.168.28.123:9330/cn.mldn.dibmp.service.IMemberService?anyhost=true&application=mldn-service-member&default.timeout=10000000&dubbo=2.5.6&generic=false&interface=cn.mldn.dibmp.service.IMemberService&methods=getRoleAndActionByMember,get&pid=5180&revision=dev&side=provider&timestamp=1510364550523&version=dev, dubbo version: 2.5.6, current host: 127.0.0.1
+2017-11-11 09:42:30,708 INFO [com.alibaba.dubbo.config.AbstractConfig] -  [DUBBO] Register dubbo service cn.mldn.dibmp.service.IMemberService url dubbo://192.168.28.123:9330/cn.mldn.dibmp.service.IMemberService?anyhost=true&application=mldn-service-member&default.timeout=10000000&dubbo=2.5.6&generic=false&interface=cn.mldn.dibmp.service.IMemberService&methods=getRoleAndActionByMember,get&pid=5180&revision=dev&side=provider&timestamp=1510364550523&version=dev to registry registry://192.168.28.95:2181/com.alibaba.dubbo.registry.RegistryService?application=mldn-service-member&dubbo=2.5.6&pid=5180&registry=zookeeper&timestamp=1510364550510, dubbo version: 2.5.6, current host: 127.0.0.1
+2017-11-11 09:42:31,076 INFO [com.alibaba.dubbo.remoting.transport.AbstractServer] -  [DUBBO] Start NettyServer bind /0.0.0.0:9330, export /192.168.28.123:9330, dubbo version: 2.5.6, current host: 127.0.0.1
+2017-11-11 09:42:31,105 INFO [com.alibaba.dubbo.registry.zookeeper.ZookeeperRegistry] -  [DUBBO] Load registry store file C:\Users\Administrator\.dubbo\dubbo-registry-192.168.28.95.cache, data: {cn.mldn.dibmp.service.IMemberService:dev=empty://192.168.28.123/cn.mldn.dibmp.service.IMemberService?application=mldn-service-test2&category=configurators&dubbo=2.5.6&interface=cn.mldn.dibmp.service.IMemberService&methods=getRoleAndActionByMember,get&pid=2328&revision=dev&side=consumer&timestamp=1510330093536&version=dev empty://192.168.28.123/cn.mldn.dibmp.service.IMemberService?application=mldn-service-test2&category=routers&dubbo=2.5.6&interface=cn.mldn.dibmp.service.IMemberService&methods=getRoleAndActionByMember,get&pid=2328&revision=dev&side=consumer&timestamp=1510330093536&version=dev dubbo://192.168.28.123:9330/cn.mldn.dibmp.service.IMemberService?anyhost=true&application=mldn-service-member&default.timeout=10000000&dubbo=2.5.6&generic=false&interface=cn.mldn.dibmp.service.IMemberService&methods=getRoleAndActionByMember,get&pid=8900&revision=dev&side=provider&timestamp=1510330077287&version=dev, cn.mldn.dibmp.service.IWarehouseService:dev=empty://192.168.28.123/cn.mldn.dibmp.service.IWarehouseService?application=mldn-service-test2&category=configurators&dubbo=2.5.6&interface=cn.mldn.dibmp.service.IWarehouseService&methods=add,EditByWid,getCityByPid,edit,getById,getMemberByDid,getAllProvice,getAllDept,getByName,getAllWitem,list&pid=5368&revision=dev&side=consumer&timestamp=1510330854368&version=dev empty://192.168.28.123/cn.mldn.dibmp.service.IWarehouseService?application=mldn-service-test2&category=routers&dubbo=2.5.6&interface=cn.mldn.dibmp.service.IWarehouseService&methods=add,EditByWid,getCityByPid,edit,getById,getMemberByDid,getAllProvice,getAllDept,getByName,getAllWitem,list&pid=5368&revision=dev&side=consumer&timestamp=1510330854368&version=dev dubbo://192.168.28.123:9329/cn.mldn.dibmp.service.IWarehouseService?anyhost=true&application=mldn-service-warehouse&default.timeout=10000000&dubbo=2.5.6&generic=false&interface=cn.mldn.dibmp.service.IWarehouseService&methods=add,EditByWid,getCityByPid,getById,edit,getMemberByDid,getAllProvice,getAllDept,getByName,getAllWitem,list&pid=6932&revision=dev&side=provider&timestamp=1510330840589&version=dev}, dubbo version: 2.5.6, current host: 127.0.0.1
+2017-11-11 09:42:31,258 INFO [com.alibaba.dubbo.registry.zookeeper.ZookeeperRegistry] -  [DUBBO] Register: dubbo://192.168.28.123:9330/cn.mldn.dibmp.service.IMemberService?anyhost=true&application=mldn-service-member&default.timeout=10000000&dubbo=2.5.6&generic=false&interface=cn.mldn.dibmp.service.IMemberService&methods=getRoleAndActionByMember,get&pid=5180&revision=dev&side=provider&timestamp=1510364550523&version=dev, dubbo version: 2.5.6, current host: 127.0.0.1
+2017-11-11 09:42:31,316 INFO [com.alibaba.dubbo.registry.zookeeper.ZookeeperRegistry] -  [DUBBO] Subscribe: provider://192.168.28.123:9330/cn.mldn.dibmp.service.IMemberService?anyhost=true&application=mldn-service-member&category=configurators&check=false&default.timeout=10000000&dubbo=2.5.6&generic=false&interface=cn.mldn.dibmp.service.IMemberService&methods=getRoleAndActionByMember,get&pid=5180&revision=dev&side=provider&timestamp=1510364550523&version=dev, dubbo version: 2.5.6, current host: 127.0.0.1
+2017-11-11 09:42:31,382 INFO [com.alibaba.dubbo.registry.zookeeper.ZookeeperRegistry] -  [DUBBO] Notify urls for subscribe url provider://192.168.28.123:9330/cn.mldn.dibmp.service.IMemberService?anyhost=true&application=mldn-service-member&category=configurators&check=false&default.timeout=10000000&dubbo=2.5.6&generic=false&interface=cn.mldn.dibmp.service.IMemberService&methods=getRoleAndActionByMember,get&pid=5180&revision=dev&side=provider&timestamp=1510364550523&version=dev, urls: [empty://192.168.28.123:9330/cn.mldn.dibmp.service.IMemberService?anyhost=true&application=mldn-service-member&category=configurators&check=false&default.timeout=10000000&dubbo=2.5.6&generic=false&interface=cn.mldn.dibmp.service.IMemberService&methods=getRoleAndActionByMember,get&pid=5180&revision=dev&side=provider&timestamp=1510364550523&version=dev], dubbo version: 2.5.6, current host: 127.0.0.1
+2017-11-11 09:42:31,432 INFO [com.alibaba.dubbo.container.Main] -  [DUBBO] Dubbo SpringContainer started!, dubbo version: 2.5.6, current host: 127.0.0.1
+2017-11-11 09:48:34,786 WARN [com.alibaba.dubbo.remoting.transport.AbstractServer] -  [DUBBO] All clients has discontected from /192.168.28.123:9330. You can graceful shutdown now., dubbo version: 2.5.6, current host: 127.0.0.1
+2017-11-11 09:48:34,788 INFO [com.alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol] -  [DUBBO] disconected from /192.168.28.123:55196,url:dubbo://192.168.28.123:9330/cn.mldn.dibmp.service.IMemberService?anyhost=true&application=mldn-service-member&channel.readonly.sent=true&codec=dubbo&default.timeout=10000000&dubbo=2.5.6&generic=false&heartbeat=60000&interface=cn.mldn.dibmp.service.IMemberService&methods=getRoleAndActionByMember,get&pid=5180&revision=dev&side=provider&timestamp=1510364550523&version=dev, dubbo version: 2.5.6, current host: 127.0.0.1
+2017-11-11 09:49:04,624 WARN [com.alibaba.dubbo.remoting.transport.AbstractServer] -  [DUBBO] All clients has discontected from /192.168.28.123:9330. You can graceful shutdown now., dubbo version: 2.5.6, current host: 127.0.0.1
+2017-11-11 09:49:04,625 INFO [com.alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol] -  [DUBBO] disconected from /192.168.28.123:55899,url:dubbo://192.168.28.123:9330/cn.mldn.dibmp.service.IMemberService?anyhost=true&application=mldn-service-member&channel.readonly.sent=true&codec=dubbo&default.timeout=10000000&dubbo=2.5.6&generic=false&heartbeat=60000&interface=cn.mldn.dibmp.service.IMemberService&methods=getRoleAndActionByMember,get&pid=5180&revision=dev&side=provider&timestamp=1510364550523&version=dev, dubbo version: 2.5.6, current host: 127.0.0.1
+2017-11-11 09:49:11,557 WARN [com.alibaba.dubbo.remoting.transport.AbstractServer] -  [DUBBO] All clients has discontected from /192.168.28.123:9330. You can graceful shutdown now., dubbo version: 2.5.6, current host: 127.0.0.1
+2017-11-11 09:49:11,558 INFO [com.alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol] -  [DUBBO] disconected from /192.168.28.123:56004,url:dubbo://192.168.28.123:9330/cn.mldn.dibmp.service.IMemberService?anyhost=true&application=mldn-service-member&channel.readonly.sent=true&codec=dubbo&default.timeout=10000000&dubbo=2.5.6&generic=false&heartbeat=60000&interface=cn.mldn.dibmp.service.IMemberService&methods=getRoleAndActionByMember,get&pid=5180&revision=dev&side=provider&timestamp=1510364550523&version=dev, dubbo version: 2.5.6, current host: 127.0.0.1

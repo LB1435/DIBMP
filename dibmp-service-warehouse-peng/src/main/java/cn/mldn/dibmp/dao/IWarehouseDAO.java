@@ -13,6 +13,9 @@ import cn.mldn.dibmp.vo.Witem;
 
 public interface IWarehouseDAO {
 	
+	//修改仓库信息
+	public boolean doEdit(Warehouse wh);
+	
 	//通过仓库编号修改仓库管理人员
 	public boolean doEditByWid(Map<String,Object> map);
 	

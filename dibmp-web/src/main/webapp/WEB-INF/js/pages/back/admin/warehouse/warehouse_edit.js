@@ -76,7 +76,19 @@ $(function(){
 	}) ;
 	$(pid).on("change",function(){
 		if (this.value != "") {	// 有内容，需要进行ajax异步加载
-			handleAddress() ;	// 处理地址 
+		
+			$("#cid option:gt(0)").remove() ;
+			//console.log(pid);
+			$.post("pages/back/admin/warehouse/addCity",{"pid":this.value},
+					function(data){
+				handleAddress() ;	// 处理地址 
+				//console.log(data);
+				for (var x = 0; x < data.length; x++) {
+					//console.log(data[x].cid);
+					//console.log(data[x].title);
+					$("#cid").append("<option value="+data[x].cid+">"+data[x].title+"</option>") ;
+				}
+			},"json");
 		} else {
 			$("#cid option:gt(0)").remove() ;
 		}

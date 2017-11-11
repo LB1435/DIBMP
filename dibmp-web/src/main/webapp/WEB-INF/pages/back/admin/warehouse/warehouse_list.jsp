@@ -52,7 +52,7 @@
 								<button id="editadmin-${wh.wid}" class="btn btn-primary btn-xs">
 										<span class="glyphicon glyphicon-plus-sign"></span>&nbsp;编辑库管</button>
 										
-								<a href="<%=WAREHOUSE_EDIT_URL%>?wid=1" id="editinfo-1" class="btn btn-warning btn-xs">
+								<a href="<%=WAREHOUSE_EDIT_URL%>?wid=${wh.wid}" id="editinfo-${wh.wid}" class="btn btn-warning btn-xs">
 										<span class="glyphicon glyphicon-edit"></span>&nbsp;编辑信息</a>
 							</td>
 						</tr>

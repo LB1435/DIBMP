@@ -82,12 +82,18 @@ public class WarehouseActionBack extends AbstractAction {
 	@RequestMapping("edit_pre")
 	public ModelAndView editPre(long wid) {
 		ModelAndView mav = new ModelAndView(super.getPage("warehouse.edit.page"));
+		mav.addAllObjects(whService.getAllProvice());
+		mav.addAllObjects(whService.getAllWitem());
 		return mav;
 	}
 	@RequestMapping("edit")
-	public ModelAndView edit() {
+	public ModelAndView edit(Warehouse wh) {
 		ModelAndView mav = new ModelAndView(super.getPage("forward.page"));
-		super.setMsgAndUrl(mav, "warehouse.list.action", "vo.edit.success", TITLE);
+		if (whService.edit(wh)) {
+			super.setMsgAndUrl(mav, "warehouse.list.action", "vo.edit.success", TITLE);
+		}else {
+			super.setMsgAndUrl(mav, "warehouse.list.action", "vo.edit.failure", TITLE);
+		}
 		return mav;
 	}
 	@RequestMapping("list")

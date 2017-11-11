@@ -21,8 +21,25 @@ public class TestWarehouseService extends TestCase {
 	private IWarehouseService whService;
 
 	@Test
-	public void test() {
+	public void testAAA() {
 		System.out.println("*********************");
+	}
+	
+	@Test
+	public void testEdit() {
+		Warehouse wh = new Warehouse() ; 
+		wh.setName("你大爷");
+		wh.setPid(20L);
+		wh.setCid(20L);
+		wh.setWiid(2L);
+		wh.setAddress("地狱");
+		wh.setArea(250.0);
+		wh.setMaximum(250);
+		wh.setPhoto("123456465");
+		wh.setNote("我干");
+		wh.setWid(10L); 
+		
+		System.err.println(this.whService.edit(wh));
 	}
 	
 	@Test

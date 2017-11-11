@@ -91,4 +91,9 @@ public class WarehouseServiceImpl implements IWarehouseService {
 		map.put("admin", admin) ; 
 		return this.whDAO.doEditByWid(map) ; 
 	}
+
+	@Override
+	public boolean edit(Warehouse wh) {
+		return this.whDAO.doEdit(wh);
+	}
 }

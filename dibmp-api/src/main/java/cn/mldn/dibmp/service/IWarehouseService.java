@@ -13,6 +13,14 @@ import cn.mldn.dibmp.vo.Witem;
 
 
 public interface IWarehouseService {
+	
+	/**
+	 * 进行仓库数据的修改
+	 * @param wh vo类
+	 * @return 失败返回false
+	 */
+	public boolean edit(Warehouse wh);
+	
 	/**
 	 * 修改仓库管理员
 	 * @return 失败返回false
